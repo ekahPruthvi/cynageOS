@@ -25,7 +25,8 @@ use of asusctl is recomended
 > **Warning**
 >
 > Install script will auto-detect nvidia card and install nvidia-dkms drivers for your kernel.   
-> Nvidia drm will be enabled in grub, so please [ensure](https://wiki.archlinux.org/title/NVIDIA) your nvidia card supports dkms drivers/hyprland.   
+> Nvidia drm will be enabled in grub, so please [ensure](https://wiki.archlinux.org/title/NVIDIA) your nvidia card supports dkms drivers/hyprland.
+> if on install the resolution is incorrect pls change in ```~/.config/hyprland.conf``` under monitor   
 
 After minimal Arch install (with grub), clone and execute -
 ```shell
@@ -147,5 +148,5 @@ pokemon-colorscripts-git | display pokemon sprites
 </details>
 
 ### Credits
-prashantrangan(tittu)
+prashantrangan(tittu).
 This install script has been adopted from hyprdots with little modifications to it.
