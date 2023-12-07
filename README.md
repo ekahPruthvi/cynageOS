@@ -19,14 +19,14 @@ The Project overtaken by SCU
 The installation script is made for Arch, but **may** work on some Arch based distros.   
 For Debian, please refer **Senshi111**'s version [here](https://github.com/Senshi111/debian-hyprland-hyprdots).
 
-THIS IS SPECIALLY TUNED FOR ASUS( ROG & TUF )LAPTOPS
+THIS IS SPECIALLY TUNED FOR ASUS ( ROG & TUF ) LAPTOPS 
 use of asusctl is recomended    
 
 > **Warning**
 >
 > Install script will auto-detect nvidia card and install nvidia-dkms drivers for your kernel.   
 > Nvidia drm will be enabled in grub, so please [ensure](https://wiki.archlinux.org/title/NVIDIA) your nvidia card supports dkms drivers/hyprland.
-> if on install the resolution is incorrect pls change in ```~/.config/hypr/hyprland.conf``` under monitor
+> if on install the resolution is incorrect pls change in ```~/.config/hypr/hyprland.conf``` under monitor.
 > The keybinding for utility capsule is there only for ROG and TUF laptops. For others change in ```~/.config/hypr/keybindings.conf```
 
 After minimal Arch install (with grub), clone and execute -
