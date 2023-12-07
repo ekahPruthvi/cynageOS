@@ -2,7 +2,7 @@
 The Project overtaken by SCU
 
 <p align="center">
-  <img width="250" src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/hyprdots_arch.png">   
+  <img width="250" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/COSlogo/COS(2).png">   
 </p>
 
 
