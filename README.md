@@ -37,7 +37,7 @@ pacman -S archlinux-keyring
 
 sudo pacman-key --init
 sudo pacman-key --populate
-sudo pacman-key --lsign cachyos (Possible error in this command .. This will not be a problem)
+sudo pacman-key --lsign cachyos <sub>(Possible error in this command .. This will not be a problem)</sub>
 
 (For Fakeroot)
 sudo pacman -Sy --needed base-devel
