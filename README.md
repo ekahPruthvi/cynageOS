@@ -2,7 +2,7 @@
 The Project overtaken by SCU
 
 <p align="center">
-  <img width="250" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/COSlogo/COS(2).png" />   
+  <img width="250" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/COSlogo/COS.png" />   
 </p>
 
 
