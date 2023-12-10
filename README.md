@@ -32,21 +32,11 @@ Use of asusctl is recomended
 > The keybinding for utility capsule is there only for ROG and TUF laptops. For others change in ```~/.config/hypr/keybindings.conf```
 
 Some errors might be encountered during the installation due to chroot or gpg keyring , etc
-To Fix them
+To Fix them </br>
+(Recomended to run before installing, but can be done later also if found error)
 ```shell
-pacman -Syu
-pacman -S archlinux-keyring
-
-sudo pacman-key --init
-sudo pacman-key --populate
-sudo pacman-key --lsign cachyos (Possible error in this command .. This will not be a problem)
-
-(For Fakeroot)
-sudo pacman -Sy --needed base-devel
-
-(For wlogout pgp keyring error)
-curl -sS https://keys.openpgp.org/vks/v1/by-fingerprint/F4FDB18A9937358364B276E9E25D679AF73C6D2F | gpg --import -
-
+cd ~/cynageOS/Scripts
+./error.sh
 ```
 
 After minimal Arch install (with grub), clone and execute -
