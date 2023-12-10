@@ -32,7 +32,7 @@ Use of asusctl is recomended
 > The keybinding for utility capsule is there only for ROG and TUF laptops. For others change in ```~/.config/hypr/keybindings.conf```
 
 Some errors might be encountered during the installation due to chroot or gpg keyring , etc </br>
-To Fix them </br>
+To Fix them run after cloning</br>
 (Recomended to run before installing, but can be done later also if found error)
 ```shell
 cd ~/cynageOS/Scripts
