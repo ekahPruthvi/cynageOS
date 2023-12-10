@@ -16,6 +16,8 @@ The Project overtaken by SCU
 
 ### Installation
 
+⚠️ Under ~~development~~ <sup>constant</sup> development 
+
 The installation script is made for Arch, but **may** work on some Arch based distros.   
 For Debian, please refer **Senshi111**'s version [here](https://github.com/Senshi111/debian-hyprland-hyprdots).
 
