@@ -4,7 +4,7 @@
 #|-/ /--| Kemipso                            |-/ /--|#
 #|/ /---+------------------------------------+/ /---|#
 
-read -p "Are you installing for the FIRST time? If u are updating press n\n (Y/n) " yn
+read -p "Are you installing cynageOS for the FIRST time? If u are updating press n\n (Y/n) " yn
 
 case $yn in
   [Nn]*)
