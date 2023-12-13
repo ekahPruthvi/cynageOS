@@ -4,6 +4,18 @@
 #|-/ /--| Kemipso                            |-/ /--|#
 #|/ /---+------------------------------------+/ /---|#
 
+read -p "Are you installing for the FIRST time? If u are updating press n\n (Y/n) " yn
+
+case $yn in
+  [Nn]*)
+    echo "skipping cacheing Wallpaper images"
+    exit 0
+    ;;
+  *)
+    echo "SWWW cacheing"
+    
+
+
 source global_fn.sh
 if [ $? -ne 0 ] ; then
     echo "Error: unable to source global_fn.sh, please execute from $(dirname $(realpath $0))..."
@@ -71,3 +83,6 @@ do
     done
 
 done
+
+;;
+esac
