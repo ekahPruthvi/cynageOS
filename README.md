@@ -16,7 +16,7 @@ It can be easily called back and edited from the ```Utility Capsule```  </br>
 ![-20231227-14:44:43](https://github.com/ekahPruthvi/cynageOS/assets/136414172/110cedfb-7fb7-4907-ab56-91ad55760e5b)
 
 ### Utility Capsule
-(mouse_right_click != mouse_left_click)
+(mouse_right_click != mouse_left_click) </br>
 Smart Topbar for useful tools that appear only when needed </br>
 activated with AURA key on asus keyboards
 
