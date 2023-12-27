@@ -1,6 +1,6 @@
 # cynageOS
-The Project overtaken by SCU
-
+The Project overtaken by SCU </br>
+update .2
 ## Y cynageOS?
 
 ### Deadline Doomsday
