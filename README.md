@@ -1,4 +1,4 @@
-# cynageOS
+![231217_17h52m16s_screenshot](https://github.com/ekahPruthvi/cynageOS/assets/136414172/8224287c-65fc-4fba-b829-3b29afa9e9ad)# cynageOS
 The Project overtaken by SCU
 
 ## Y cynageOS?
@@ -33,6 +33,17 @@ An useful Settings applet to control and calibrate cynageOS </br>
 ![231214_09h00m59s_screenshot](https://github.com/ekahPruthvi/cynageOS/assets/136414172/20ebf43a-fd59-457b-908b-cc532c0b3f26)
 
 > can also be activated using the keybinding ```MOD```+```SPACE```
+
+### DeTox
+Cleans cynageOS from cache and unused app data
+![231217_17h52m16s_screenshot](https://github.com/ekahPruthvi/cynageOS/assets/136414172/7d012140-c80b-48d9-b606-dcd2d7004f92)
+
+### Others 
+[o] Super FASTTT!!!
+[o] Amazing animations
+[o] Game mode (```MOD```+```ALT```+```G```)
+[o] Looks COOOL
+
 
 <p align="center">
   <img width="250" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/COSlogo/COS.png" />   
