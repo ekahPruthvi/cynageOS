@@ -20,7 +20,7 @@ It can be easily called back and edited from the ```Utility Capsule```  </br>
 Smart Topbar for useful tools that appear only when needed </br>
 activated with AURA key on asus keyboards
 
-> The AURA key can be changed from ~/.config/hypr/keybindings.conf
+> The AURA key can be changed from ~/.config/hypr/keybindings.conf </br>
 > Clicking on cynageOS will close the bar
 
 ![-20231227-14:57:52](https://github.com/ekahPruthvi/cynageOS/assets/136414172/405b66f7-ac62-4f96-960b-35b73223e05e)
