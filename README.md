@@ -39,10 +39,10 @@ Cleans cynageOS from cache and unused app data
 ![231217_17h52m16s_screenshot](https://github.com/ekahPruthvi/cynageOS/assets/136414172/7d012140-c80b-48d9-b606-dcd2d7004f92)
 
 ### Others 
-[o] Super FASTTT!!!
-[o] Amazing animations
-[o] Game mode (```MOD```+```ALT```+```G```)
-[o] Looks COOOL
+[o] Super FASTTT!!! </br>
+[o] Amazing animations </br>
+[o] Game mode (```MOD```+```ALT```+```G```) </br>
+[o] Looks COOOL </br>
 
 
 <p align="center">
