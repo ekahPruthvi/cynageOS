@@ -1,7 +1,7 @@
 # cynageOS
 The Project overtaken by SCU </br>
 > update .2
-## Y cynageOS?
+## Why cynageOS?
 
 ### Deadline Doomsday
 Keep track of ur whole week and stay focused </br>
