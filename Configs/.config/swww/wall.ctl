@@ -1,9 +1,0 @@
-1|Catppuccin-Mocha|~/.config/swww/Catppuccin-Mocha/redstar.jpg
-0|Catppuccin-Latte|~/.config/swww/Catppuccin-Latte/sd.jpg
-0|Decay-Green|~/.config/swww/Decay-Green/forest.jpg
-0|Rose-Pine|~/.config/swww/Rose-Pine/blue.png
-0|Tokyo-Night|~/.config/swww/Tokyo-Night/zer.png
-0|Material-Sakura|~/.config/swww/Material-Sakura/material_pastel_2.jpg
-0|Graphite-Mono|~/.config/swww/Graphite-Mono/tokyoG.jpg
-0|Cyberpunk-Edge|~/.config/swww/Cyberpunk-Edge/david.jpg
-0|Frosted-Glass|~/.config/swww/Frosted-Glass/frost-white.png
