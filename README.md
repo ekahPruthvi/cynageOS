@@ -1,4 +1,4 @@
-![231217_17h52m16s_screenshot](https://github.com/ekahPruthvi/cynageOS/assets/136414172/8224287c-65fc-4fba-b829-3b29afa9e9ad)# cynageOS
+# cynageOS
 The Project overtaken by SCU
 
 ## Y cynageOS?
