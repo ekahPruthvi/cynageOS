@@ -1,6 +1,23 @@
 # cynageOS
 The Project overtaken by SCU
 
+## Y cynageOS?
+(features) </br>
+
+### Deadline Doomsday
+Keep track of ur whole week and stay focused </br>
+cynageOS welcomes you to your desktop with DDmd which lets you set To-Dos for your Week. </br>
+![231213_18h27m52s_screenshot](https://github.com/ekahPruthvi/cynageOS/assets/136414172/17ce6d66-8a36-4c54-909a-1f336ce6b089)
+DDmd conveniently auto-hides after 2 seconds, letting you remember your productivity goals. </br>
+It can be easily called back and edited from the ```Utility Capsule```  </br>
+![-20231227-14:44:17](https://github.com/ekahPruthvi/cynageOS/assets/136414172/8bf4f729-f19b-45b1-98a6-5d8524f37263)
+ </br>Edit by Day </br>
+![-20231227-14:44:43](https://github.com/ekahPruthvi/cynageOS/assets/136414172/110cedfb-7fb7-4907-ab56-91ad55760e5b)
+
+### Untility Capsule
+
+
+
 <p align="center">
   <img width="250" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/COSlogo/COS.png" />   
 </p>
