@@ -15,7 +15,7 @@ case $1 in
 p)  grim $save_dir/$save_file ;;
 s)  mkdir -p $swpy_dir
     echo -e "[Default]\nsave_dir=$save_dir\nsave_filename_format=$save_file" > $swpy_dir/config
-    grim -g "$(slurp -o -r -c '#000000')" - | satty --init-tool brush --filename - --output-filename ~/Pictures/-$(date '+%Y%m%d-%H:%M:%S').png ;;
+    grimblast copysave area $temp_screenshot && swappy -f $temp_screenshot ;;
 *)  echo "...valid options are..."
     echo "p : print screen to $save_dir"
     echo "s : snip current screen to $save_dir"   
