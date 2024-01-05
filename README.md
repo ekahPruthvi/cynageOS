@@ -35,7 +35,7 @@ An useful Settings applet to control and calibrate cynageOS </br>
 > can also be activated using the keybinding ```MOD```+```SPACE```
 
 ### DeTox
-Cleans cynageOS from cache and unused app data
+Cleans cynageOS of cache and unused app data
 ![231217_17h52m16s_screenshot](https://github.com/ekahPruthvi/cynageOS/assets/136414172/7d012140-c80b-48d9-b606-dcd2d7004f92)
 
 ### Others 
