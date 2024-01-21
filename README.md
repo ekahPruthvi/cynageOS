@@ -100,11 +100,11 @@ cd ~/cynageOS/Scripts
 >```
 
 Please reboot after the install script completes and takes you to sddm login screen (or black screen) for the first time.   
-For more details, please refer [installation.md](https://github.com/ekahPruthvi/blob/main/installation.md)
+For more details, please refer [installation.md](https://github.com/ekahPruthvi/cynageOS/blob/main/installation.md)
 
 
 ### Theming
-To add your own custom theme, please refer [theming.md](https://github.com/ekahPruthvi/hyprdots/blob/main/theming.md)
+To add your own custom theme, please refer [theming.md](https://github.com/ekahPruthvi/cynageOS/blob/main/theming.md)
 - Available themes
     - [x] Catppuccin-Mocha
     - [x] Catppuccin-Latte
