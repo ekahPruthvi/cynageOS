@@ -45,7 +45,7 @@ if pkg_installed grub
         then
         echo "configuring grub..."
         sudo cp /etc/default/grub /etc/default/grub.t2.bkp
-        sudo tar -xzf ${CloneDir}/Source/arcs/Grub_Pochita.tar.gz -C /usr/share/grub/themes/
+        sudo tar -xzf ${CloneDir}/Source/arcs/grub_cOS.tar.gz -C /usr/share/grub/themes/
 
         if nvidia_detect
             then
@@ -54,7 +54,7 @@ if pkg_installed grub
 
         sudo sed -i "/^GRUB_DEFAULT=/c\GRUB_DEFAULT=saved
         /^GRUB_GFXMODE=/c\GRUB_GFXMODE=1280x1024x32,auto
-        /^#GRUB_THEME=/c\GRUB_THEME=\"/usr/share/grub/themes/pochita/theme.txt\"
+        /^#GRUB_THEME=/c\GRUB_THEME=\"/usr/share/grub/themes/cOS/theme.txt\"
         /^#GRUB_SAVEDEFAULT=true/c\GRUB_SAVEDEFAULT=true" /etc/default/grub
 
         sudo cp /boot/grub/grub.cfg /boot/grub/grub.t2.bkp
