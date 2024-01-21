@@ -7,7 +7,6 @@
 
 <p align="center">
   ![COS](https://github.com/ekahPruthvi/cynageOS/assets/136414172/ad38c8a0-6120-4f82-8585-cc6d1d773e9e)
-
 </p>
 
 
