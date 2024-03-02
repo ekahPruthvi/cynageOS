@@ -144,7 +144,7 @@ brightnessctl | brightness control for laptop
 
 | login | |
 | :-- | --- |
-sddm-git | display manager for login
+sddm | display manager for login
 qt5-wayland | for QT wayland XDP
 qt6-wayland | for QT wayland XDP
 qt5-quickcontrols | for sddm theme
