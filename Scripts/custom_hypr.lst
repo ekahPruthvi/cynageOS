@@ -11,7 +11,7 @@ bluez
 bluez-utils
 blueman
 brightnessctl
-sddm-git
+sddm
 qt5-wayland
 qt6-wayland
 qt5-quickcontrols
