@@ -1,0 +1,122 @@
+// Config //
+// @ekah //
+configuration {
+    modi:                        "drun,filebrowser,window,run";
+    show-icons:                  true;
+    display-drun:                "";
+    display-run:                 "";
+    display-filebrowser:         "";
+    display-window:              "";
+    drun-display-format:         "{name}";
+    window-format:               "{w}{t}";
+    font:                        "JetBrainsMono Nerd Font 10";
+    icon-theme:                  "Tela-circle-dracula";
+}
+
+@theme "~/.config/rofi/themes/theme.rasi"
+
+
+// Main //
+window {
+    height:                      600px;
+    width:                       1500px;
+    location:                    center;
+    transparency:                "real";
+    fullscreen:                  false;
+    enabled:                     true;
+    cursor:                      "default";
+    spacing:                     10px;
+    padding:                     0px;
+    border:                      1px;
+    border-radius:               20px;
+    border-color:                #f4f4f4;
+    background-color:            transparent;
+}
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    orientation:                 horizontal;
+    children:                    [ "listmode" , "inputbar" ];
+    background-color:            #76787C;
+    background-image:            url("~/.config/hypr/cCal/MAIN/mainbg.jpg");
+}
+
+
+// Lists //
+listmode {
+    enabled:                     true;
+    children:                    [ "listbox" ];
+    background-color:            #76787C;
+}
+listbox {
+    spacing:                     5px;
+    padding:                     10px;
+    border-radius:               15px;
+    children:                    [ "listview" ];
+    background-color:            transparent;
+    background-image:            url("~/.config/swww/wall.blur",width);
+}
+listview {
+    padding:                     15px;
+    enabled:                     true;
+    columns:                     1;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    cursor:                      "default";
+    background-color:            transparent;
+    text-color:                  @main-fg;
+    border-radius:               30px;
+}
+
+
+
+// Inputs //
+inputbar {
+    enabled:                     true;
+    width:                       150px;
+    children:                    [ "entry" ];
+    background-color:            transparent;
+}
+entry {
+    enabled:                     false;
+}
+
+
+// Elements //
+element {
+    enabled:                     true;
+    spacing:                     20px;
+    padding:                     6px;
+    border-radius:               20px;
+    cursor:                      pointer;
+    background-color:            transparent;
+    text-color:                  #919191;
+}
+@media(max-aspect-ratio: 1.8) {
+    element {
+        orientation:             vertical;
+    }
+}
+element selected.normal {
+    background-color:            #e0e0e0;
+    text-color:                  #000000;
+}
+element-icon {
+    size:                        48px;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+element-text {
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+

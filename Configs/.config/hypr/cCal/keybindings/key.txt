@@ -1,0 +1,47 @@
+# WINDOW
+[MOD] + [Q]                       Quit Window
+[MOD] + [DEL]                     Exit hyprland
+[MOD] + [W]                       Toggle floating
+[MOD] + [G]                       Grouping TABS
+[MOD] + [L]                       LockScreen
+[MOD] + [BACK]                    ShutDown menu
+[MOD] + [SHIFT] + [ARROW]         Resize Window
+[MOD] + [J]                       Toggle layout
+[MOD] + [S]                       Special Workspace
+
+# APPS
+[MOD] + [T]                       Terminal
+[MOD] + [E]                       Files
+[MOD] + [C]                       code
+[MOD] + [F]                       Browser
+[MOD] + [B]                       Brave
+[MOD] + [N]                       Note.txt
+
+# COMPOSITOR
+[MOD] + [A]                       Applications
+[MOD] + [R]                       Files
+[MOD] + [TAB]                     Open APPS
+[MOD] + [P]                       ScreenShot
+[MOD] + [ALT] + [G]               GameMode
+[MOD] + [SHIFT] + [D]             Wallbash
+[MOD] + [SHIFT] + [T]             Change Theme
+[MOD] + [SHIFT] + [W]             Change wallpaper
+[MOD] + [V]                       Clipboard
+[MOD] + [ALT] + [V]               clear Clipboard
+[MOD] + [SPACE]                   Settings
+
+# WORKSPACES
+[MOD] + [SHIFT] + [NUMBER]        goto Workspace
+[MOD] + [ALT] + [NUMBER]          move app to Workspace
+[MOD] + [ALT] + [S]               Move to special Workspace
+
+# Alias 
+[install]                         sudo pacman -S
+[uninstall]                       sudo pacman -Rns
+[up]                              sudo pacman -Syu && yay -Syu  
+[list]                            list all APPS
+[ser]                             search pacman
+[flatun]                          clean uninstall flatpak apps
+
+*For more advanced
+goto hyr/keybindings.config
