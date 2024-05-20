@@ -3,6 +3,10 @@
 {
 // sourced from header module //
     "name":"panel",
+    //"margin-top": 5,
+    //"margin-bottom": 5,
+    //"margin-left": 10,
+    //"margin-right": 10,
     "layer": "top",
     "position": "bottom",
     "mode": "panel",
@@ -15,7 +19,7 @@
 // positions generated based on config.ctl //
 
 	"modules-left": ["custom/padd","custom/padd","custom/power","custom/mode","custom/cliphist","custom/gmail","custom/wallchange","custom/padd","custom/padd","idle_inhibitor","clock","custom/padd"],
-	"modules-center": ["custom/padd","custom/l_end","wlr/taskbar","hyprland/workspaces","custom/r_end","custom/padd"],
+	"modules-center": ["custom/padd","wlr/taskbar","hyprland/workspaces","custom/padd"],
 	"modules-right": ["custom/padd","tray","custom/padd","custom/padd","network","battery","bluetooth","pulseaudio","pulseaudio#microphone","custom/padd","custom/padd"],
 
 
@@ -77,6 +81,7 @@
         "tooltip": true
     },
 
+
     "custom/wallchange": {
         "format": "{}",
         "exec": "echo ; echo 󰆊 switch wallpaper",
@@ -118,11 +123,8 @@
 		"on-click": "activate",
 		"on-click-middle": "close",
 		"ignore-list": [
-			"Alacritty"
-		],
-		"app_ids-mapping": {
-			"firefoxdeveloperedition": "firefox-developer-edition"
-		}
+            "kitty-dropterm"
+		]
 	},
 
     "tray": {

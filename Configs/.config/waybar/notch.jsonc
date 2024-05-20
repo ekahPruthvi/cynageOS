@@ -1,0 +1,103 @@
+
+{
+// sourced from header module //
+    "name":"notch",
+    "layer": "top",
+    "position": "top",
+    "mode": "panel",
+    "width": 900,
+    "border-radius": 5,
+    "height": 30,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+
+
+// positions generated based on config.ctl //
+
+	"modules-center": ["custom/padd","custom/line","custom/spotify","custom/padd"],
+
+
+// sourced from modules based on config.ctl //
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+        "activated": "󰥔",
+        "deactivated": ""
+        }
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p 󰃭 %a %d}",
+        "format-alt": "{:%H:%M  %b %Y}",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>"
+    },
+
+    "custom/spotify": {
+        "exec": "/usr/bin/python3 $HOME/.config/waybar/modules/mediaplayer.py --player spotify",
+        "format": "{} ",
+        "return-type": "json",
+        "on-click": "playerctl play-pause --player spotify",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+    },
+
+    "custom/line": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+
+// modules for padding //
+
+    "custom/l_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/r_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/sl_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/sr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rl_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/padd": {
+        "format": "  ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/n_r": {
+        "format": "●",
+        "interval" : "once",
+        "tooltip": false
+    },
+}
+
