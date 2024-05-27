@@ -14,6 +14,14 @@ cat << "EOF"
 
 EOF
 
+#------------------#
+# clear all errors #
+#------------------#
+source error.sh
+if [ $? -ne 0 ] ; then
+    echo "Error: unable to source error.sh, please execute manually"
+    exit 1
+fi
 
 #--------------------------------#
 # import variables and functions #
