@@ -15,6 +15,7 @@ bluez-utils                                            # bluetooth utility cli
 blueman                                                # bluetooth manager gui
 brightnessctl                                          # screen brightness control
 udiskie                                                # manage removable media
+asusctl                                                # asus system utilities
 
 # --------------------------------------------------- // Display Manager
 sddm                                                   # display manager for KDE plasma
@@ -35,6 +36,7 @@ hyprpicker                                             # color picker
 slurp                                                  # region select for screenshot/screenshare
 swappy                                                 # screenshot editor
 cliphist                                               # clipboard manager
+pyprland                                               # plugins
 
 # --------------------------------------------------- // Dependencies
 polkit-gnome                                           # authentication agent
