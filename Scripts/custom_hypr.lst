@@ -75,5 +75,7 @@ oh-my-zsh-git                                          # plugin manager for zsh
 zsh-theme-powerlevel10k-git                            # theme for zsh
 neofetch                                               # system information fetch tool
 pokemon-colorscripts-git                               # display pokemon sprites
+zsh-syntax-highlighting-git                            # zsh plugin
+zsh-autosuggestions-git                                # zsh plugin2
 
 # credits- Prashanth Rangan
