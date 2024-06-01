@@ -70,10 +70,10 @@ vim                                                    # terminal text editor
 code                                                   # ide text editor
 
 # --------------------------------------------------- // Shell
-eza|zsh                                                # file lister for zsh
-oh-my-zsh-git|zsh                                      # plugin manager for zsh
-zsh-theme-powerlevel10k-git|zsh oh-my-zsh-git          # theme for zsh
+eza                                                    # file lister for zsh
+oh-my-zsh-git                                          # plugin manager for zsh
+zsh-theme-powerlevel10k-git                            # theme for zsh
 neofetch                                               # system information fetch tool
-pokemon-colorscripts-git|zsh                           # display pokemon sprites
+pokemon-colorscripts-git                               # display pokemon sprites
 
 # credits- Prashanth Rangan
