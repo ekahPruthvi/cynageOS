@@ -152,9 +152,10 @@ cat << "EOF"
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
 EOF
-
+    ln -s ~/.config ~/Settings
     service_ctl NetworkManager
     service_ctl bluetooth
     service_ctl sddm
+    
 fi
 
