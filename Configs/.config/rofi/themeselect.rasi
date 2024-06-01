@@ -12,76 +12,81 @@ configuration {
 // Main //
 window {
     enabled:                     true;
-    fullscreen:                  false;
     width:                       100%;
+    fullscreen:                  false;
     transparency:                "real";
     cursor:                      "default";
-    spacing:                     0px;
-    padding:                     0px;
-    border:                      0px;
-    border-radius:               0px;
-    border-color:                transparent;
-    background-color:            transparent;
+    spacing:                     0em;
+    padding:                     0em;
+    border:                      0px 0px 10px 0px;
+    border-radius:               0em;
+    border-color:                @main-br;
+    background-image:            url("~/.config/swww/wall.blur", width);
 }
 mainbox {
     enabled:                     true;
+    orientation:                 horizontal;
+    children:                    [ "dummy", "frame", "dummy" ];
+    background-color:            transparent;
+}
+frame {
     children:                    [ "listview" ];
-    background-color:            @main-bg;
+    background-color:            transparent;
 }
 
 
 // Lists //
 listview {
     enabled:                     true;
-    columns:                     3;
+    spacing:                     4em;
+    padding:                     4em;
+    columns:                     7;
     lines:                       1;
-    spacing:                     50px;
-    padding:                     50px 60px 50px 60px;
-    cycle:                       true;
     dynamic:                     false;
-    scrollbar:                   false;
-    layout:                      vertical;
-    reverse:                     true;
-    fixed-height:                true;
+    fixed-height:                false;
     fixed-columns:               true;
+    reverse:                     true;
     cursor:                      "default";
     background-color:            transparent;
     text-color:                  @main-fg;
 }
-
+dummy {
+    width:                       10em;
+    expand:                      false;
+    background-color:            transparent;
+}
 
 // Elements //
 element {
     enabled:                     true;
-    orientation:                 horizontal;
-    spacing:                     0px;
-    padding:                     10px;
-    border-radius:               40px;
+    spacing:                     0em;
+    padding:                     0em;
     cursor:                      pointer;
     background-color:            transparent;
     text-color:                  @main-fg;
 }
-@media(max-aspect-ratio: 1.8) {
-    element {
-        orientation:             vertical;
-    }
-}
 element selected.normal {
-    background-color:            @select-bg;
-    text-color:                  @select-fg;
-}
-element-icon {
-    size:                        33%;
-    cursor:                      inherit;
-    border-radius:               35px;
-    background-color:            transparent;
-    text-color:                  inherit;
-}
-element-text {
-    vertical-align:              0.5;
-    horizontal-align:            0.5;
-    cursor:                      inherit;
-    background-color:            transparent;
-    text-color:                  inherit;
+    background-color:            black;
+    padding:                     10em;
+    text-color:                  @main-bg;
+    border-radius:               10px;
+    border:                      3px 3px 3px 3px;
+    border-color:                black;
 }
 
+element-icon {
+    cursor:                      inherit;
+    size:                        10em;
+    background-color:            transparent;
+    text-color:                  inherit;
+    expand:                      false;
+}
+
+element-text {
+    enabled:                     true;
+    vertical-align:              0.0;
+    horizontal-align:            0.0;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
