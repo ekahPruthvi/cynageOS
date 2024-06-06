@@ -1,16 +1,11 @@
 #! /bin/bash
 # ekah, cCal
 
-menu=$(printf 'static\nbreathe\nstrobe\npulse\n change_color\n\n\n EXIT' | rofi -dmenu -i -theme-str '@import "~/.config/hypr/cCal/MAIN/Main.rasi"')
-
-col=$("F4ACD1")
+menu=$(printf "Select_color\nBacklight_style\n BACK" | rofi -dmenu -i -theme-str '@import "~/.config/hypr/cCal/MAIN/Main.rasi"')
 
 case "$menu" in
- 'static') asusctl led-mode static -c $col;;
- 'breathe') asusctl led-mode breathe -c F4ACD1;;
- 'strobe') asusctl led-mode strobe;;
- 'pulse') asusctl led-mode pulse -c $col;;
- " change_color") kitty python ~/.config/hypr/cCal/aura/color.py > ~/.config/hypr/cCal/aura/color.txt
- " EXIT") exit 1;;
+ "Select_color") python3 ~/.config/hypr/cCal/aura/aura_work.py;;
+ "Backlight_style") ./.config/hypr/cCal/aura/back.sh;;
+ " BACK") ./.config/hypr/cCal/cCal.sh;;
 esac
   

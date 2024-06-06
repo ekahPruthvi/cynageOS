@@ -1,16 +1,9 @@
 // Config //
-// @ekah //
 configuration {
-    modi:                        "drun,filebrowser,window,run";
+    modi:                        "drun";
     show-icons:                  true;
-    display-drun:                "";
-    display-run:                 "";
-    display-filebrowser:         "";
-    display-window:              "";
     drun-display-format:         "{name}";
-    window-format:               "{w}{t}";
     font:                        "JetBrainsMono Nerd Font 10";
-    icon-theme:                  "Tela-circle-dracula";
 }
 
 @theme "~/.config/rofi/themes/theme.rasi"
@@ -18,61 +11,50 @@ configuration {
 
 // Main //
 window {
-    height:                      600px;
-    width:                       1500px;
-    location:                    center;
-    transparency:                "real";
-    fullscreen:                  false;
     enabled:                     true;
+    width:                       100%;
+    fullscreen:                  false;
+    transparency:                "real";
     cursor:                      "default";
-    spacing:                     10px;
-    padding:                     0px;
-    border:                      1px;
-    border-radius:               20px;
-    border-color:                #BC596C;
-    background-color:            transparent;
+    spacing:                     0em;
+    padding:                     0em;
+    border:                      0px 0px 10px 0px;
+    border-radius:               0em;
+    border-color:                @main-br;
+    background-image:            url("~/.config/swww/wall.blur", width);
 }
 mainbox {
     enabled:                     true;
-    spacing:                     0px;
-    orientation:                 horizontal;
-    children:                    [ "listmode" , "inputbar" ];
-    background-color:            #BC596C;
-    background-image:            url("~/.config/hypr/cCal/MAIN/mainbg.jpg");
+    orientation:                 vertical;
+    children:                    [ "dummy", "frame", "dummy" ];
+    background-color:            transparent;
+}
+frame {
+    children:                    [ "listview","inputbar" ];
+    background-color:            transparent;
 }
 
 
 // Lists //
-listmode {
-    enabled:                     true;
-    children:                    [ "listbox" ];
-    background-color:            #BC596C;
-}
-listbox {
-    spacing:                     5px;
-    padding:                     10px;
-    border-radius:               15px;
-    children:                    [ "listview" ];
-    background-color:            transparent;
-    background-image:            url("~/.config/swww/wall.blur",width);
-}
 listview {
-    padding:                     15px;
     enabled:                     true;
+    spacing:                     1em;
+    padding:                     1em;
     columns:                     1;
-    cycle:                       true;
-    dynamic:                     true;
-    scrollbar:                   false;
-    layout:                      vertical;
-    reverse:                     false;
-    fixed-height:                true;
+    lines:                       10;
+    dynamic:                     false;
+    fixed-height:                false;
     fixed-columns:               true;
+    reverse:                     true;
     cursor:                      "default";
     background-color:            transparent;
     text-color:                  @main-fg;
-    border-radius:               30px;
 }
-
+dummy {
+    width:                       30em;
+    expand:                      false;
+    background-color:            transparent;
+}
 
 
 // Inputs //
@@ -90,24 +72,20 @@ entry {
 // Elements //
 element {
     enabled:                     true;
-    spacing:                     20px;
-    padding:                     6px;
-    border-radius:               20px;
+    spacing:                     0px;
+    padding:                     1px;
+    border-radius:               5px;
     cursor:                      pointer;
     background-color:            transparent;
-    text-color:                  #919191;
+    text-color:                  @main-fg;
 }
-@media(max-aspect-ratio: 1.8) {
-    element {
-        orientation:             vertical;
-    }
-}
+
 element selected.normal {
-    background-color:            #e0e0e0;
-    text-color:                  #000000;
+    background-color:            black;
+    text-color:                  white;
 }
 element-icon {
-    size:                        48px;
+    size:                        30px;
     cursor:                      inherit;
     background-color:            transparent;
     text-color:                  inherit;

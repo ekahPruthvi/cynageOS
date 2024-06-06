@@ -1,7 +1,7 @@
 #!/bin/bash
 # ekah, CCal
 
-menu=$(printf "Compositor_Settings\nWindow_rules\nTheme_Settings\nWaybar_color_Transperent\nWaybar_color_Black\nWaybar_Blur_Enable\nWaybar_Blur_Disable\n BACK" | rofi -dmenu -i -theme-str '@import "~/.config/hypr/cCal/calib/calib.rasi"')
+menu=$(printf "Compositor_Settings\nWindow_rules\nTheme_Settings\nWaybar_color_Transperent\nWaybar_color_Black\nWaybar_Blur_Enable\nWaybar_Blur_Disable\n BACK" | rofi -dmenu -i -theme-str '@import "~/.config/hypr/cCal/MAIN/Main.rasi"')
 
 case "$menu" in
  "Compositor_Settings") kitty nvim ~/.config/hypr/hyprland.conf;;
