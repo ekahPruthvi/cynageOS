@@ -68,6 +68,7 @@ nautilus                                               # file manager
 ark                                                    # kde file archiver
 vim                                                    # terminal text editor
 code                                                   # ide text editor
+loupe                                                  # image viewer
 
 # --------------------------------------------------- // Shell
 eza                                                    # file lister for zsh
