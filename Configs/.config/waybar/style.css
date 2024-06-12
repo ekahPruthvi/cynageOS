@@ -26,6 +26,16 @@ tooltip {
     border-width: 0px;
 }
 
+#custom-notification {
+    font-family: "NotoSansMono Nerd Font";
+    font-size: 20;
+    color: @main-fg;
+    opacity: 1;
+    margin: 3px 0px 3px 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
 #workspaces button {
     box-shadow: none;
 	text-shadow: none;
@@ -110,10 +120,9 @@ tooltip {
 #network,
 #custom-power,
 #pulseaudio,
-#custom-gmail,
 #custom-updates,
 #custom-wallchange{
-color: @main-fg;
+    color: @main-fg;
     opacity: 1;
     margin: 3px 0px 3px 0px;
     padding-left: 4px;

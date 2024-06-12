@@ -18,9 +18,9 @@
 
 // positions generated based on config.ctl //
 
-	"modules-left": ["custom/padd","custom/padd","custom/power","custom/mode","custom/cliphist","custom/gmail","custom/wallchange","custom/padd","custom/padd","idle_inhibitor","clock","custom/padd"],
+	"modules-left": ["custom/padd","custom/padd","custom/power","custom/mode","custom/cliphist","custom/wallchange","custom/padd","custom/padd","clock","custom/padd"],
 	"modules-center": ["custom/padd","wlr/taskbar","hyprland/workspaces","custom/padd"],
-	"modules-right": ["custom/padd","tray","custom/padd","custom/padd","network","battery","bluetooth","pulseaudio","pulseaudio#microphone","custom/padd","custom/padd"],
+	"modules-right": ["custom/padd","tray","custom/padd","custom/padd","network","battery","bluetooth","pulseaudio","custom/notification","pulseaudio#microphone","custom/padd","custom/padd"],
 
 
 // sourced from modules based on config.ctl //
@@ -38,6 +38,26 @@
 	"sort-by-number": true
 },
 
+"custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
 
     "custom/power": {
         "format": "{}",
@@ -93,13 +113,6 @@
     },
 
 
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-        "activated": "󰥔",
-        "deactivated": ""
-        }
-    },
 
     "clock": {
         "format": "{:%I:%M %p 󰃭 %a %d}",
@@ -107,12 +120,6 @@
         "tooltip-format": "<tt><big>{calendar}</big></tt>",
     },
 
-    "custom/gmail": {
-        "format": "{}",
-        "on-click": "vivaldi --app=https://gmail.com",
-        "on-click-right":"brave --app=https://gmail.com",
-        "tooltip":false
-    },
 
 	"wlr/taskbar": {
 		"format": "∘ {app_id} ∘",
