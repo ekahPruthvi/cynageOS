@@ -1,6 +1,6 @@
 * {
     border: none;
-    border-radius: 10px;
+    border-radius: 0px;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
     font-size: 10px;
@@ -10,7 +10,7 @@
 @import "themes/theme.css";
 
 window.panel#waybar {
-background: @bar-bg;
+background: #000000;
 }
 
 window.notch#waybar {
@@ -51,7 +51,6 @@ tooltip {
 
 #workspaces button.active {
     color: @main-fg;
-    
 }
 
 
@@ -106,19 +105,10 @@ tooltip {
     padding-right: 4px;
 }
 
-#clock{
-    font-family: "FreeMono";
-    font-size: 15;
-    color: @main-fg;
-    opacity: 1;
-    margin: 3px 0px 3px 0px;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
 #battery,
 #bluetooth,
 #custom-cliphist,
+#clock,
 #cpu,
 #tray,
 #custom-gpuinfo,
@@ -133,7 +123,6 @@ tooltip {
 #custom-updates,
 #custom-wallchange{
     color: @main-fg;
-    font-size: 14;
     opacity: 1;
     margin: 3px 0px 3px 0px;
     padding-left: 4px;

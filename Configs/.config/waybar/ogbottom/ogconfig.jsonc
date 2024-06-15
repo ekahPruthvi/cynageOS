@@ -3,15 +3,14 @@
 {
 // sourced from header module //
     "name":"panel",
-    "margin-top": 5,
-    "margin-bottom": 5,
-    "margin-left": 5,
-    "margin-right": 0,
-    "layer": "bottom",
+    //"margin-top": 5,
+    //"margin-bottom": 5,
+    //"margin-left": 10,
+    //"margin-right": 10,
+    "layer": "top",
     "position": "left",
-    "mode": "panel",
+    "mode": "dock",
     "height": 30,
-    "width":40,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
@@ -20,8 +19,8 @@
 // positions generated based on config.ctl //
 
 	"modules-left": ["custom/padd","custom/padd","custom/power","custom/mode","custom/cliphist","custom/wallchange","custom/padd","custom/padd","clock","custom/padd"],
-	"modules-center": ["custom/padd",/*"wlr/taskbar",*/"hyprland/workspaces","custom/padd"],
-	"modules-right": ["custom/padd","tray","custom/padd","custom/padd","battery","network","bluetooth","pulseaudio","custom/notification","pulseaudio#microphone","custom/padd","custom/padd"],
+	"modules-center": ["custom/padd","wlr/taskbar","hyprland/workspaces","custom/padd"],
+	"modules-right": ["custom/padd","tray","custom/padd","custom/padd","network","battery","bluetooth","pulseaudio","custom/notification","pulseaudio#microphone","custom/padd","custom/padd"],
 
 
 // sourced from modules based on config.ctl //
@@ -43,7 +42,7 @@
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
-      "notification": "<span foreground='red'><sup></sup></span>",
+      "notification": "<span foreground='red'><sup></sup></span>",
       "none": "",
       "dnd-notification": "<span foreground='red'><sup></sup></span>",
       "dnd-none": "",
@@ -79,17 +78,15 @@
     },
 
     "battery": {
-        "rotate": 0,
         "states": {
             "good": 95,
             "warning": 30,
             "critical": 20
         },
-        "format": " {icon} ",
-        "format-charging": "",
-        "format-plugged": "",
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
-        "tooltip-format": "{capacity}%",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
         "on-click-right": "~/.config/rofi/files/applets/bin/battery.sh"
     },
@@ -121,8 +118,6 @@
         "format": "{:%I:%M %p 󰃭 %a %d}",
         "format-alt": "{:%H:%M  %b %Y}",
         "tooltip-format": "<tt><big>{calendar}</big></tt>",
-        "rotate": 90,
-        "spacing": 5
     },
 
 
@@ -146,8 +141,8 @@
 
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "󰤨",
-        "format-ethernet": "󱘖",
+        "format-wifi": "󰤨 {essid}",
+        "format-ethernet": "󱘖 Wired",
         "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
         "format-linked": "󱘖 {ifname} (No IP)",
         "format-disconnected": " Disconnected",
@@ -165,12 +160,12 @@
     },
 
     "pulseaudio": {
-        "format": "{icon}",
+        "format": "{icon} {volume}",
         "format-muted": "婢",
         "on-click": "pavucontrol -t 3",
-        "on-click-middle": "swayosd-client --output-volume mute-toggle ",
-        "on-scroll-up": "swayosd-client --output-volume raise",
-        "on-scroll-down": "swayosd-client --output-volume lower",
+        "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh -o m",
+        "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh -o i",
+        "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh -o d",
         "tooltip-format": "{icon} {desc} // {volume}%",
         "scroll-step": 5,
         "format-icons": {
@@ -189,9 +184,9 @@
         "format-source": "",
         "format-source-muted": "",
         "on-click": "pavucontrol -t 4",
-        "on-click-middle": "swayosd-client --input-volume mute-toggle",
-        "on-scroll-up": "swayosd-client --input-volume lower",
-        "on-scroll-down": "swayosd-client --input-volume raise",
+        "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh -i m",
+        "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh -i i",
+        "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh -i d",
         "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
         "scroll-step": 5
     },
