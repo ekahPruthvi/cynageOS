@@ -155,6 +155,7 @@ EOF
     ln -s ~/.config ~/Settings
     service_ctl NetworkManager
     service_ctl bluetooth
+    sudo systemctl enable --now swayosd-libinput-backend.service
     service_ctl sddm
     
 fi
