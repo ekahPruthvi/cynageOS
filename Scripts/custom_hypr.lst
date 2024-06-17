@@ -37,6 +37,7 @@ slurp                                                  # region select for scree
 swappy                                                 # screenshot editor
 cliphist                                               # clipboard manager
 pyprland                                               # plugins
+swayosd-git                                            # OSD
 
 # --------------------------------------------------- // Dependencies
 polkit-kde-agent                                       # authentication agent
@@ -50,6 +51,7 @@ qt5-imageformats                                       # for dolphin image thumb
 ffmpegthumbs                                           # for dolphin video thumbnails
 kde-cli-tools                                          # for dolphin file type defaults
 libnotify                                              # for notifications
+xdg-desktop-portal-gtk                                 # gtk 
 
 # --------------------------------------------------- // Theming
 nwg-look                                               # gtk configuration tool
