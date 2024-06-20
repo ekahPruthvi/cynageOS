@@ -2,7 +2,7 @@
 
 # set variables
 ThemeSet="$HOME/.config/hypr/themes/theme.conf"
-RofiConf="$HOME/.config/rofi/themeselect.rasi"
+RofiConf="$HOME/.config/rofi/rec.rasi"
 CurTheme=`gsettings get org.gnome.desktop.interface gtk-theme | sed "s/'//g"`
 WallPath="$HOME/.config/swww/$CurTheme"
 CacheDir="$HOME/.config/swww/.cache"

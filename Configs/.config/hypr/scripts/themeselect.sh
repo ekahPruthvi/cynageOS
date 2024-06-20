@@ -15,7 +15,7 @@ x_monres=$(( x_monres*17/100 ))
 
 # set rofi override
 hypr_border=`awk -F '=' '{if($1~" rounding ") print $2}' $ThemeSet | sed 's/ //g'`
-elem_border=$(( hypr_border * 5 ))
+elem_border=$(( hypr_border * 1 ))
 icon_border=$(( elem_border - 5 ))
 r_override="element{border-radius:${elem_border}px;} element-icon{border-radius:${icon_border}px;size:${x_monres}px;}"
 
