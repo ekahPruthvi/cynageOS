@@ -4,6 +4,8 @@
 #|-/ /--| @ekah cynageOS           |-/ /--|#
 #|/ /---+--------------------------+/ /---|#
 
+clear
+
 cat << "EOF"
 
 -----------------------------------------------------------------
@@ -11,6 +13,11 @@ cat << "EOF"
    ░█░░░█▄▄█░█░▒█░█▄▄█░█░▀▄░█▀▀░▒█░░▒█░░▀▀▀▄▄ INSTALLATION
    ░▀▀▀░▄▄▄▀░▀░░▀░▀░░▀░▀▀▀▀░▀▀▀░▒█▄▄▄█░▒█▄▄▄█     
 -----------------------------------------------------------------
+
+cynageOS installer will install your customized hyprland WM (cynageOS)
+Estimated TIME: 1:40:00
+Toxify --> Radiate --> Ionize
+It will automatically Start SDDM. PLEASE RESTART AFTER THAT
 
 EOF
 
@@ -150,6 +157,8 @@ cat << "EOF"
 ██░███░███░██░█░█░██░███▀▀▀▄▄██░███░█░█░██░█▀▀██
 █▀░▀██░▀▀▀░██░██▄░█▀░▀██░▀▀▀░█▀░▀██░██▄░██░▀▀▄██
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+REMINDER: RESTART after loginscreen 
 
 EOF
     ln -s ~/.config ~/Settings
