@@ -48,7 +48,7 @@
     },
     "title": {
       "text": "Notifications",
-      "button-text": "󰎟 Clear",
+      "button-text": " Clear",
       "clear-all-button": true      
     },
     "volume": {
@@ -61,8 +61,8 @@
 
   "widgets": [
     "title",
-    "buttons-grid",
     "notifications",
+    "buttons-grid",
     "mpris"
   ]
 }

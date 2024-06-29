@@ -209,7 +209,7 @@
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
   padding: 0.341rem;
-  background-color: rgba(28, 28, 34, 0.35);
+  background-color: rgba(53, 53, 53, 0.808);
   padding: unset;
 }
 
@@ -282,7 +282,7 @@
 .widget-mpris {
   background-color: rgba(28, 28, 34, 0.35);
   padding: 8px;
-  margin: 8px;  
+  margin: 10px;  
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;  
 }
