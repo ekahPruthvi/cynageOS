@@ -10,7 +10,8 @@ cynageOS welcomes you to your desktop with DDmd which lets you set To-Dos for yo
 
 DDmd conveniently auto-hides after 2 seconds, letting you remember your productivity goals and then get right back to your place. </br>
 It can be easily called back and edited from the ```Utility Capsule```  </br>
-![-20231227-14:44:17](https://github.com/ekahPruthvi/cynageOS/assets/136414172/8bf4f729-f19b-45b1-98a6-5d8524f37263)
+![swappy-20240629_124317](https://github.com/ekahPruthvi/cynageOS/assets/136414172/6586947e-e167-4b16-a49f-700b43762383)
+
  </br>Edit by Day </br>
  
 ![-20231227-14:44:43](https://github.com/ekahPruthvi/cynageOS/assets/136414172/110cedfb-7fb7-4907-ab56-91ad55760e5b)
