@@ -9,7 +9,8 @@ The Project overtaken by SCU </br>
 cynageOS, an innovative operating system that is meticulously crafted to boost productivity. </br>
 The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
 By combining modern aesthetics with user-friendly interfaces, </br>
-## Why cynageOS?
+
+## What makes The cynageOS?
 
 ### Deadline Doomsday
 Keep track of ur whole week and stay focused </br>
@@ -17,7 +18,7 @@ cynageOS welcomes you to your desktop with DDmd which lets you set To-Dos for yo
 ![231213_18h27m52s_screenshot](https://github.com/ekahPruthvi/cynageOS/assets/136414172/17ce6d66-8a36-4c54-909a-1f336ce6b089)
 
 DDmd conveniently auto-hides after 2 seconds, letting you remember your productivity goals and then get right back to your place. </br>
-It can be easily called back and edited from the ```Utility Capsule```  </br>
+It can be easily called back and edited from the "cynicalCalibrator" - ```cCAL```  </br>
 ![swappy-20240629_124317](https://github.com/ekahPruthvi/cynageOS/assets/136414172/6586947e-e167-4b16-a49f-700b43762383)
 
  </br>Edit by Day </br>
