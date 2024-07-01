@@ -1,6 +1,14 @@
+<p align="center">
+    <img align="center" width="49%" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/cynageOS.png" /> 
+</p>
+
 # cynageOS
 The Project overtaken by SCU </br>
 > update .3
+</br>
+cynageOS, an innovative operating system that is meticulously crafted to boost productivity. </br>
+The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
+By combining modern aesthetics with user-friendly interfaces, </br>
 ## Why cynageOS?
 
 ### Deadline Doomsday
