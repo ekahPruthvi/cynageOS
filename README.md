@@ -81,7 +81,7 @@ Custom configuration of swaync
 ## desktop
 
 
-<p align="center">
+<p>
     <img align="center" width="49%" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/cosdemo.png" /> 
 </p>
 
@@ -102,14 +102,6 @@ Consider installing asusctl
 > If on install the resolution is incorrect pls change in ```~/.config/hypr/hyprland.conf``` under monitor.
 > The keybinding for utility capsule is there only for ROG and TUF laptops. For others change in ```~/.config/hypr/keybindings.conf```
 
-Some errors might be encountered during the installation due to chroot or gpg keyring , etc </br>
-To Fix them run after cloning and chmodding </br>
-(Recomended to run before installing, but can be done later also if found error)
-```shell
-cd ~/cynageOS/Scripts
-./error.sh
-```
-
 After minimal Arch install (with grub), clone and execute -
 ```shell
 pacman -Sy git
@@ -119,6 +111,7 @@ sudo chmod -R 777 cynageOS
 cd ~/cynageOS/Scripts
 ./install.sh
 ```
+RESTART pc after the install completes and sddm appears 
 
 > **Note**
 >
