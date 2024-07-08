@@ -82,7 +82,7 @@ Custom configuration of swaync
 
 
 <p align="center">
-    <img align="center" width="49%" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/cosdem.png" /> 
+    <img align="center" width="49%" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/cosdemo.png" /> 
 </p>
 
 
