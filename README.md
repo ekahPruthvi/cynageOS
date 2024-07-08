@@ -12,10 +12,19 @@ By combining modern aesthetics with user-friendly interfaces, </br>
 
 ## What makes The cynageOS?
 
+### Minimilitic nature 
+cynageOS integrates the features of the desktop in a very minimalistic nature to keep away the distractions and allows you to focus on your work. ``The Simple by design concept`` 
+![swappy-20240708_124848](https://github.com/ekahPruthvi/cynageOS/assets/136414172/3544433c-d762-4ea8-8148-32bbc8aeca0e)
+
+The sysBar ``Clyde`` integrates itself with the wallpaper to show Important information in a very subtle manner
+![swappy-20240708_125518](https://github.com/ekahPruthvi/cynageOS/assets/136414172/0a52b9c9-a4ca-41b0-ac8a-c720c6aa86ec)
+
+
 ### Deadline Doomsday
 Keep track of ur whole week and stay focused </br>
 cynageOS welcomes you to your desktop with DDmd which lets you set To-Dos for your Week. </br>
-![231213_18h27m52s_screenshot](https://github.com/ekahPruthvi/cynageOS/assets/136414172/17ce6d66-8a36-4c54-909a-1f336ce6b089)
+![swappy-20240708_122733](https://github.com/ekahPruthvi/cynageOS/assets/136414172/d3be860a-f8ee-4264-b87e-f7bb37819a2b)
+
 
 DDmd conveniently auto-hides after 2 seconds, letting you remember your productivity goals and then get right back to your place. </br>
 It can be easily called back and edited from the "cynicalCalibrator" - ```cCAL```  </br>
@@ -23,34 +32,45 @@ It can be easily called back and edited from the "cynicalCalibrator" - ```cCAL``
 
  </br>Edit by Day </br>
  
-![-20231227-14:44:43](https://github.com/ekahPruthvi/cynageOS/assets/136414172/110cedfb-7fb7-4907-ab56-91ad55760e5b)
-
-### Utility Capsule
-Activated with AURA key on ROG/TUF keyboards 
-
-> The AURA key can be changed from ~/.config/hypr/keybindings.conf </br>
-> Clicking on cynageOS will close the bar
-
-![-20231227-14:57:52](https://github.com/ekahPruthvi/cynageOS/assets/136414172/405b66f7-ac62-4f96-960b-35b73223e05e)
+![swappy-20240708_122239](https://github.com/ekahPruthvi/cynageOS/assets/136414172/d191c3ac-cd3f-4a76-83a7-8a066c66e7cc)
 
 ### cCal
 cynicalCalibrator </br>
-An useful Settings applet to control and calibrate cynageOS </br>
+A useful Settings applet to control and calibrate cynageOS </br>
 
-![231213_18h24m13s_screenshot](https://github.com/ekahPruthvi/cynageOS/assets/136414172/bb996b50-4981-46fe-866d-4c2859c9e357)
-![231214_09h00m59s_screenshot](https://github.com/ekahPruthvi/cynageOS/assets/136414172/20ebf43a-fd59-457b-908b-cc532c0b3f26)
+![swappy-20240708_123006](https://github.com/ekahPruthvi/cynageOS/assets/136414172/99d94c6f-d3a9-40a9-94f7-72f5a9d933e4)
 
-> can also be activated using the keybinding ```MOD```+```SPACE```
+> can also be activated using the keybinding ```AURA``` on asus keyboards </br>
+> This can be changed in keybindings.conf by changing the aura binding  
+
+### Wallpapers
+quick change : ```ALT```+```-->```  or  ```ALT```+```<--``` </br>
+or simply use the change wallpaper applet
+![swappy-20240708_122803](https://github.com/ekahPruthvi/cynageOS/assets/136414172/3c75bf91-d7d6-4247-bdcb-2f76cb51fa86)
+
+### Themes
+The themes applet lets to easily switch the color profiles and the shaders 
+![swappy-20240708_122849](https://github.com/ekahPruthvi/cynageOS/assets/136414172/b322505f-ad6a-4b56-b521-eb374a3f4b03)
+
+### AURA
+Change the keyboard colors easily 
+
+![swappy-20240708_122311](https://github.com/ekahPruthvi/cynageOS/assets/136414172/ce6b7cd3-13d0-404c-902f-044768cbd200)
 
 ### DeTox
 Cleans cynageOS of cache and unused app data
-![231217_17h52m16s_screenshot](https://github.com/ekahPruthvi/cynageOS/assets/136414172/7d012140-c80b-48d9-b606-dcd2d7004f92)
+![swappy-20240708_122419](https://github.com/ekahPruthvi/cynageOS/assets/136414172/ba0123ea-e296-49c4-85ac-6e59e91935ec)
+
+### Notification center
+Custom configuration of swaync
+![swappy-20240708_122905](https://github.com/ekahPruthvi/cynageOS/assets/136414172/922163c1-3409-4e56-ba03-ed55d16ed7ef)
+
+
 
 ### Others 
-[o] Super FASTTT!!! </br>
-[o] Amazing animations </br>
-[o] Game mode (```MOD```+```ALT```+```G```) </br>
-[o] Looks COOOL </br>
+[ ] Super FASTTT!!! </br>
+[ ] Amazing animations </br>
+[ ] Looks COOOL </br>
 
 
 <p align="center">
