@@ -206,10 +206,10 @@
 /* Buttons widget */
 
 .widget-buttons-grid {
-  border-radius: 1.159rem;
-  -gtk-outline-radius: 1.159rem;
+  border-radius: 9999px;
+  -gtk-outline-radius: 9999px;
   padding: 0.341rem;
-  background-color: rgba(53, 53, 53, 0.808);
+  background-color: #1D1D22;
   padding: unset;
 }
 
