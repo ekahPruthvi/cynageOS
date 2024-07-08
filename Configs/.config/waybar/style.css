@@ -13,12 +13,6 @@ window.panel#waybar {
 background: @bar-bg;
 }
 
-window.notch#waybar {
-    background: #000000;
-    border-bottom-right-radius: 15;
-    border-bottom-left-radius: 15;
-}
-
 tooltip {
     background: @main-bg;
     color: @main-fg;
