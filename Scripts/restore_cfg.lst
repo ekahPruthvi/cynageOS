@@ -2,7 +2,7 @@ ${HOME}|.zshrc .p10k.zsh|zsh oh-my-zsh-git zsh-theme-powerlevel10k-git zsh-synta
 ${HOME}/.config/Code/User|settings.json|visual-studio-code-bin
 ${HOME}/.config|dunst|dunst
 ${HOME}/.config|swaync|swaync
-${HOME}/.config/hypr|animations.conf hyprland.conf keybindings.conf windowrules.conf scripts shaders themes wallbash pyprland.toml hyprlock.conf cCal|hyprland
+${HOME}/.config/hypr|animations.conf hyprland.conf keybindings.conf windowrules.conf scripts shaders themes wallbash pyprland.toml hyprlock.conf cCal startup.mp3|hyprland
 ${HOME}/.config|kitty|kitty
 ${HOME}/.config|Kvantum|kvantum
 ${HOME}/.config|MangoHud|mangohud
