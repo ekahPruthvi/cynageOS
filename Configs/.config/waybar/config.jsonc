@@ -150,7 +150,7 @@
         "format-ethernet": "󱘖",
         "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
         "format-linked": "󱘖 {ifname} (No IP)",
-        "format-disconnected": " Disconnected",
+        "format-disconnected": "",
         "format-alt": "󰤨 {signalStrength}%",
         "interval": 5
     },
