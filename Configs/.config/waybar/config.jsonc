@@ -21,7 +21,7 @@
 
 	"modules-left": ["custom/padd","custom/padd","custom/power","custom/mode","custom/cliphist","custom/wallchange","custom/padd","custom/padd","clock","custom/padd"],
 	"modules-center": ["custom/padd",/*"wlr/taskbar",*/"hyprland/workspaces","custom/padd"],
-	"modules-right": ["custom/padd","tray","custom/padd","custom/padd","battery","network","bluetooth","pulseaudio","custom/notification","pulseaudio#microphone","custom/padd","custom/padd"],
+	"modules-right": ["custom/padd","tray","custom/padd","custom/padd","battery","pulseaudio","custom/notification","pulseaudio#microphone","custom/padd","custom/padd"],
 
 
 // sourced from modules based on config.ctl //
@@ -158,7 +158,7 @@
     "bluetooth": {
         "format": "",
         "format-disabled": "", // an empty format will hide the module
-        "format-connected": " {num_connections}",
+        "format-connected": "",
         "tooltip-format": " {device_alias}",
         "tooltip-format-connected": "{device_enumerate}",
         "tooltip-format-enumerate-connected": " {device_alias}"
