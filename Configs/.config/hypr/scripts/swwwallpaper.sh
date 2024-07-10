@@ -26,10 +26,15 @@ Wall_Update()
         convert -strip -scale 10% -blur 0x3 -resize 100% $x_wall ${cacheDir}/${curTheme}/${cacheImg}.blur
     fi
 
+    if [ ! -f "${cacheDir}/${curTheme}/${cacheImg}.png" ] ; then
+        ffmpeg -i $x_wall -compression_level 50 ${cacheDir}/${curTheme}/${cacheImg}.png
+    fi
+
     sed -i "/^1|/c\1|${curTheme}|${x_update}" $ctlFile
     ln -fs $x_wall $wallSet
     ln -fs ${cacheDir}/${curTheme}/${cacheImg}.rofi $wallRfi
     ln -fs ${cacheDir}/${curTheme}/${cacheImg}.blur $wallBlr
+    ln -fs ${cacheDir}/${curTheme}/${cacheImg}.png $wallscl
 }
 
 Wall_Change()
@@ -76,6 +81,7 @@ ctlFile="$HOME/.config/swww/wall.ctl"
 wallSet="$HOME/.config/swww/wall.set"
 wallBlr="$HOME/.config/swww/wall.blur"
 wallRfi="$HOME/.config/swww/wall.rofi"
+wallscl="$HOME/.config/swww/wall.png"
 ctlLine=`grep '^1|' $ctlFile`
 
 if [  `echo $ctlLine | wc -w` -ne "1" ] ; then
