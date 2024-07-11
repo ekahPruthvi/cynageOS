@@ -19,7 +19,7 @@
 
 // positions generated based on config.ctl //
 
-	"modules-left": ["custom/padd","custom/padd","custom/power","custom/mode","custom/cliphist","custom/wallchange","custom/padd","custom/padd","clock","custom/padd"],
+	"modules-left": ["custom/padd","custom/padd","custom/power","custom/cliphist","custom/terminal","custom/note","custom/padd","custom/padd","clock","custom/padd"],
 	"modules-center": ["custom/padd",/*"wlr/taskbar",*/"hyprland/workspaces","custom/padd"],
 	"modules-right": ["custom/padd","tray","custom/padd","custom/padd","battery","pulseaudio","custom/notification","pulseaudio#microphone","custom/padd","custom/padd"],
 
@@ -29,7 +29,7 @@
 "hyprland/workspaces": {
 	"format": "{icon}",
 	"format-icons": {
-		"1": "",
+		"1": "一",
 		"2": "カ",
 		"3": "ザ",
 		"4": "ホ",
@@ -94,23 +94,19 @@
         "on-click-right": "~/.config/rofi/files/applets/bin/battery.sh"
     },
 
-    "custom/mode": {
-        "format": "{}",
+    "custom/note": {
+        "format": "{}",
         "exec": "echo ; echo 󰟡 switch theme",
-        "on-click": "~/.config/hypr/scripts/themeswitch.sh -n",
-        "on-click-right": "~/.config/hypr/scripts/themeswitch.sh -p",
-        "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/themeselect.sh",
+        "on-click": "touch note.txt && kitty vim ~/note.txt",
         "interval" : 86400, // once every day
         "tooltip": true
     },
 
 
-    "custom/wallchange": {
-        "format": "{}",
-        "exec": "echo ; echo 󰆊 switch wallpaper",
-        "on-click": "~/.config/hypr/scripts/swwwallpaper.sh -n",
-        "on-click-right": "~/.config/hypr/scripts/swwwallpaper.sh -p",
-        "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/swwwallselect.sh",
+    "custom/terminal": {
+        "format": "{}",
+        "exec": "echo ; echo open Terminal",
+        "on-click": "kitty",
         "interval" : 86400, // once every day
         "tooltip": true
     },

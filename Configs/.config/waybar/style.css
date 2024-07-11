@@ -119,13 +119,13 @@ tooltip {
 #idle_inhibitor,
 #language,
 #memory,
-#custom-mode,
+#custom-note,
 #mpris,
 #network,
 #custom-power,
 #pulseaudio,
 #custom-updates,
-#custom-wallchange{
+#custom-terminal{
     color: @main-fg;
     font-size: 14;
     opacity: 1;
