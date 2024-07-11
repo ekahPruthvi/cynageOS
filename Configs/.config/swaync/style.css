@@ -39,7 +39,7 @@
   border-right: 1px solid rgba(128, 127, 132, 0.15);
   border-bottom: 1px solid rgba(128, 127, 132, 0.15);*/
   background-color: #1D1D22;
-  padding: 0.818rem;
+  padding: 1.518rem;
   padding-right: unset;
   margin-right: unset;
 }
@@ -129,15 +129,15 @@
 }
 
 .control-center {
-  border-radius: 1.705rem;
+  border-radius: 0.8rem;
   -gtk-outline-radius: 1.705rem;
   border-top: 1px solid rgba(164, 162, 167, 0.19);
   border-left: 1px solid rgba(164, 162, 167, 0.19);
   border-right: 1px solid rgba(128, 127, 132, 0.145);
   border-bottom: 1px solid rgba(128, 127, 132, 0.145);
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 5px 0px rgb(0, 0, 0);
   margin: 7px;
-  background-color: #14141B;
+  background-color: #a2a2d3;
   padding: 1.023rem;
 }
 
@@ -175,7 +175,7 @@
 .widget-title label {
   font-family: 'Gabarito', 'Lexend', sans-serif;
   font-size: 1.364rem;
-  color: #e4e1e6;
+  color: #000000;
   margin-left: 0.941rem;
 }
 
@@ -191,7 +191,7 @@
 .widget-title button label {
   font-family: 'Gabarito', sans-serif;
   font-size: 1.0409rem;
-  color: #e4e1e6;
+  color: #000000;
   margin-right: 0.841rem;
 }
 
@@ -208,9 +208,11 @@
 .widget-buttons-grid {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
-  padding: 0.341rem;
+  padding: 1.341rem;
   background-color: #1D1D22;
   padding: unset;
+  margin-right: 630px;
+  margin-left:30px
 }
 
 .widget-buttons-grid>flowbox {
@@ -218,15 +220,15 @@
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:first-child {
-  margin-left:unset ;
+  margin-left:unset;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button {
   border:none;
   background-color: unset;
   border-radius: 9999px;
-  min-width: 5.522rem;
-  min-height: 2.927rem;
+  min-width: 7rem;
+  min-height: 1rem;
   padding: unset;
   margin: unset;
 }
@@ -250,6 +252,36 @@
   color: #14141B;
 }
 
+/* Do not disturb */
+  .widget-dnd {
+    margin: 6px;
+    font-size: 1.2rem;
+  }
+  
+  .widget-dnd > switch {
+    background: @background-alt;
+    font-size: initial;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 2px;
+  }
+  
+  .widget-dnd > switch:hover {
+    background: @hover;
+  }
+  
+  .widget-dnd > switch:checked {
+    background: @selected;
+  }
+  
+  .widget-dnd > switch:checked:hover {
+    background: @hover;
+  }
+  
+  .widget-dnd > switch slider {
+    background: @text;
+    border-radius: 6px;
+  }
 
 /* Volume widget */
 
@@ -280,15 +312,15 @@
 /* Mpris widget */
 
 .widget-mpris {
-  background-color: rgba(28, 28, 34, 0.35);
+  background-color: rgb(28, 28, 34);
   padding: 8px;
-  margin: 10px;  
+  margin: 0px;  
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;  
 }
 
 .widget-mpris-player {
-  padding: 8px;
+  padding: 20px;
   margin: 8px;
 }
 

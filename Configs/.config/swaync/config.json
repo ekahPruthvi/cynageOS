@@ -39,42 +39,21 @@
           "label": "󰤄",
           "type": "toggle",
           "update_command": "swaync-client -df"
-        },
-
-        {
-          "active":false,
-          "command": "kitty nano ~/Documents/note.txt",
-          "label": ""
-        },
-
-        {
-          "active":false,
-          "command": "kitty",
-          "label": ""
-        },
-
-        {
-          "active":false,
-          "command": "pactl load-module module-combine-sink ",
-          "label": ""
-        },
-
-        {
-          "active":false,
-          "command": " hyprlock",
-          "label": ""
         }
 
       ]
     },
     "mpris": {
-      "image-radius": 12,
-      "image-size": 96
+      "image-radius": 0,
+      "image-size": 56
     },
     "title": {
       "text": "Notifications",
       "button-text": "Clear",
       "clear-all-button": true      
+    },
+    "dnd": {
+      "text": "Do not disturb"
     },
     "volume": {
       "label": "",
@@ -86,8 +65,8 @@
 
   "widgets": [
     "title",
-    "buttons-grid",
     "notifications",
+    "buttons-grid",
     "mpris"
   ]
 }
