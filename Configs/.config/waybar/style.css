@@ -101,8 +101,8 @@ tooltip {
 }
 
 #clock{
-    font-family: "FreeMono";
-    font-size: 15;
+    font-family: "Maple Bold";
+    font-size: 13;
     color: @main-fg;
     opacity: 1;
     margin: 3px 0px 3px 0px;
