@@ -64,7 +64,6 @@ qt6-wayland                                            # wayland support in qt6
 
 # --------------------------------------------------- // Applications
 vivaldi                                                # browser
-brave-bin                                              # secondary browser
 kitty                                                  # terminal
 nautilus                                               # file manager
 ark                                                    # kde file archiver
