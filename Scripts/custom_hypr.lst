@@ -36,6 +36,7 @@ grimblast-git                                          # screenshot tool
 hyprpicker                                             # color picker
 slurp                                                  # region select for screenshot/screenshare
 swappy                                                 # screenshot editor
+hyprshot                                               # screenshot to keyboard
 cliphist                                               # clipboard manager
 pyprland                                               # plugins
 swayosd-git                                            # OSD
