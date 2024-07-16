@@ -8,6 +8,7 @@ gst-plugin-pipewire                                    # pipewire gstreamer clie
 wireplumber                                            # pipewire session manager
 pavucontrol                                            # pulseaudio volume control
 pamixer                                                # pulseaudio cli mixer
+mpv                                                    # music and video
 networkmanager                                         # network manager
 network-manager-applet                                 # network manager system tray utility
 bluez                                                  # bluetooth protocol stack
