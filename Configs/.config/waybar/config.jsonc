@@ -96,7 +96,7 @@
     
         "custom/note": {
             "format": "{}",
-            "exec": "echo ; echo 󰟡 switch theme",
+            "exec": "echo ; echo Quick Notes",
             "on-click": "touch note.txt && kitty vim ~/note.txt",
             "interval" : 86400, // once every day
             "tooltip": true
