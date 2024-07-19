@@ -6,7 +6,7 @@ plugins = [
 
 
 [layout_center]
-margin = 60
+margin = 10
 offset = [0, 0]
 next = "movefocus r"
 prev = "movefocus l"
