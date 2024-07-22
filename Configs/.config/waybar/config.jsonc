@@ -21,7 +21,7 @@
     
         "modules-left": ["custom/padd","custom/padd","custom/power","custom/cliphist","custom/terminal","custom/note","custom/padd","custom/padd","custom/padd","clock","clock#min","custom/padd"],
         "modules-center": ["custom/padd","custom/padd",/*"wlr/taskbar",*/"hyprland/workspaces","custom/padd","custom/padd"],
-        "modules-right": ["custom/padd","tray","custom/padd","custom/padd","battery","pulseaudio","custom/notification","pulseaudio#microphone","custom/padd","custom/padd"],
+        "modules-right": ["custom/padd","network","bluetooth","custom/padd","custom/padd","battery","pulseaudio","custom/notification","pulseaudio#microphone","custom/padd","custom/padd"],
     
     
     // sourced from modules based on config.ctl //
@@ -144,17 +144,20 @@
     
         "tray": {
             "icon-size": 16,
-            "spacing": 5
+            "spacing": 5,
+            "fotmat-icons":{
+                "*":"<span foreground='black'></span>"
+            }
         },
     
         "network": {
             // "interface": "wlp2*", // (Optional) To force the use of this interface
             "format-wifi": "󰤨",
             "format-ethernet": "󱘖",
-            "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+            "tooltip-format": "󱘖 {essid}  {bandwidthUpBytes}  {bandwidthDownBytes}",
             "format-linked": "󱘖 {ifname} (No IP)",
             "format-disconnected": "",
-            "format-alt": "󰤨 {signalStrength}%",
+            "on-click":"~/.config/hypr/scripts/wifi_menu.sh",
             "interval": 5
         },
     
