@@ -18,8 +18,8 @@ configuration {
 // Main //
 window {
     enabled:                     true;
-    height:                      40%;
-    width:                       90%;
+    height:                      60%;
+    width:                       70%;
     fullscreen:                  false;
     transparency:                "real";
     cursor:                      "default";
