@@ -32,7 +32,7 @@ fi
 
 fields="SSID,SIGNAL,SECURITY"
 lines_full=$(nmcli --terse --fields $fields dev wifi)
-lines=$(echo -e "$lines_full"| awk -F ":" '{print $1" - "$2}')
+lines=$(echo -e "$lines_full"| awk -F ":" '{print $1"  "$2}')
 cons=$(nmcli con show)
 current=$(iwgetid -r)
 ssid_field=$(echo -e "$fields"| awk  'BEGIN{FS=","}{for(i=1;i<=NF;++i) {if($i ~ "SSID") print i}}')
