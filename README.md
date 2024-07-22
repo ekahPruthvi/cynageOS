@@ -225,5 +225,5 @@ pokemon-colorscripts-git | display pokemon sprites
 </details>
 
 ### Credits
-prashantrangan(tittu).
-This install script has been adopted from hyprdots with little modifications to it.
+
+This install script has been adopted from hyprdots with modifications.
