@@ -22,8 +22,8 @@ esac
 # read hypr theme border
 
 hypr_border=`awk -F '=' '{if($1~" rounding ") print $2}' $theme_file | sed 's/ //g'`
-hypr_width=`awk -F '=' '{if($1~" border_size ") print $2}' $theme_file | sed 's/ //g'`
-wind_border=$(( hypr_border * 3 ))
+hypr_width=0
+wind_border=$(( hypr_border * 1 ))
 elem_border=`[ $hypr_border -eq 0 ] && echo "10" || echo $(( hypr_border * 2 ))`
 r_override="window {border: ${hypr_width}px; border-radius: ${wind_border}px;} element {border-radius: ${elem_border}px;}"
 
