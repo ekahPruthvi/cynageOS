@@ -157,7 +157,7 @@
             "tooltip-format": "󱘖 {essid}  {bandwidthUpBytes}  {bandwidthDownBytes}",
             "format-linked": "󱘖 {ifname} (No IP)",
             "format-disconnected": "",
-            "on-click":"~/.config/hypr/scripts/wifi_menu.sh",
+            "on-click":"rofi -show wifi -modi 'wifi:~/.config/hypr/scripts/wifi/iwdrofimenu.py' ",
             "interval": 5
         },
     
@@ -167,7 +167,8 @@
             "format-connected": "",
             "tooltip-format": " {device_alias}",
             "tooltip-format-connected": "{device_enumerate}",
-            "tooltip-format-enumerate-connected": " {device_alias}"
+            "tooltip-format-enumerate-connected": " {device_alias}",
+            "on-click":"blueman-manager"
         },
     
         "pulseaudio": {
