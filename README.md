@@ -17,7 +17,9 @@ cynageOS integrates the features of the desktop in a very minimalistic nature to
 ![swappy-20240708_124848](https://github.com/ekahPruthvi/cynageOS/assets/136414172/3544433c-d762-4ea8-8148-32bbc8aeca0e)
 
 The sysBar ``Clyde`` integrates itself with the wallpaper to show Important information in a very subtle manner
-![image](https://github.com/user-attachments/assets/7b0d3fb1-b532-430f-8e30-f2ced493a7a9)
+
+![image](https://github.com/user-attachments/assets/6941a328-a9e3-4c09-824c-dbdd5235fd9d)
+
 
 
 
