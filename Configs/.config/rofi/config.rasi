@@ -44,7 +44,7 @@ mainbox {
 // Inputs //
 inputbar {
     enabled:                     true;
-    width:                       15%;
+    width:                       10%;
     children:                    [ "mode-switcher" , "entry" ];
     background-color:            transparent;
     background-image:            url("~/.config/swww/wall.rofi", height);
@@ -67,7 +67,7 @@ mode-switcher{
 }
 button {
     cursor:                      pointer;
-    border-radius:               5px;
+    border-radius:               2px;
     background-color:            transparent;
     text-color:                  @main-fg;
 }
