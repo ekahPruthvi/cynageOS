@@ -54,6 +54,7 @@ ffmpegthumbs                                           # for dolphin video thumb
 kde-cli-tools                                          # for dolphin file type defaults
 libnotify                                              # for notifications
 xdg-desktop-portal-gtk                                 # gtk 
+ttf-heavydata-nerd                                     # waybar clock font
 
 # --------------------------------------------------- // Theming
 nwg-look                                               # gtk configuration tool
