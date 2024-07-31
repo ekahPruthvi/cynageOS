@@ -1,7 +1,6 @@
 * {
     border: none;
-    border-radius: 10px;
-    font-family: "JetBrainsMono Nerd Font";
+    border-radius: 3px;
     font-weight: bold;
     font-size: 10px;
     min-height: 20px;
@@ -9,14 +8,16 @@
 
 @import "themes/theme.css";
 
-window.panel#waybar {
+window.panel#waybar { 
 background: @bar-bg;
-}
+/*border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+ont change the lines(12,13,14)*/}
 
 tooltip {
     background: @main-bg;
     color: @main-fg;
-    border-radius: 7px;
+    border-radius: 5px;
     border-width: 0px;
 }
 
@@ -38,14 +39,14 @@ tooltip {
     margin: 5px 0px 3px 0px;
     padding-left: 5px;
     padding-right: 2px;
-    color: #ffffff;
+    color: @main-fg;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #workspaces button.active {
     color: @main-fg;
-    
+
 }
 
 
@@ -101,8 +102,8 @@ tooltip {
 }
 
 #clock{
-    font-family: "Maple Bold";
-    font-size: 13;
+    font-family: "HeavyData Nerd Font";
+    font-size: 20;
     color: @main-fg;
     opacity: 1;
     margin: 3px 0px 3px 0px;
@@ -127,7 +128,8 @@ tooltip {
 #custom-updates,
 #custom-terminal{
     color: @main-fg;
-    font-size: 14;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 16;
     opacity: 1;
     margin: 3px 0px 3px 0px;
     padding-left: 4px;
