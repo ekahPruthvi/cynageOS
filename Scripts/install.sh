@@ -165,7 +165,6 @@ EOF
     service_ctl NetworkManager
     service_ctl bluetooth
     sudo systemctl enable --now swayosd-libinput-backend.service
-    sudo echo '[device] \nwifi.backend=iwd' > /etc/NetworkManager/conf.d/wifi_backend.conf
     service_ctl sddm
     
 fi
