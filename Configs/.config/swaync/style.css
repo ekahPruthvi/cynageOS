@@ -312,16 +312,16 @@
 /* Mpris widget */
 
 .widget-mpris {
-  background-color: rgb(28, 28, 34);
+  background-color: rgb(67, 67, 102);
   padding: 8px;
   margin: 0px;  
   border-radius: 1.159rem;
-  -gtk-outline-radius: 1.159rem;  
+  -gtk-outline-radius: 0rem;  
 }
 
 .widget-mpris-player {
   padding: 20px;
-  margin: 8px;
+  margin: 0px;
 }
 
 .widget-mpris-title {
