@@ -20,7 +20,7 @@ window {
 	text-color:			inherit;
 	background-color:	inherit;
 	border-radius: 		8px;
-	height:                      40%;
+	height:                      80%;
     width:                       15%;
 
 }
