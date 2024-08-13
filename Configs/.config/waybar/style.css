@@ -3,16 +3,16 @@
     border-radius: 3px;
     font-weight: bold;
     font-size: 10px;
-    min-height: 20px;
+    min-height: 30px;
 }
 
 @import "themes/theme.css";
 
 window.panel#waybar { 
 background: @bar-bg;
-/*border-top-right-radius: 5px;
+background: @bar-bg;
 border-bottom-right-radius: 5px;
-ont change the lines(12,13,14)*/}
+}
 
 tooltip {
     background: @main-bg;
