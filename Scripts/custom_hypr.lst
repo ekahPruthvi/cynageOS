@@ -73,6 +73,9 @@ ark                                                    # kde file archiver
 vim                                                    # terminal text editor
 code                                                   # ide text editor
 loupe                                                  # image viewer
+lavat                                                  # lava
+btop                                                   # taskmanager
+peaclock                                               # clock
 
 # --------------------------------------------------- // Shell
 eza                                                    # file lister for zsh
