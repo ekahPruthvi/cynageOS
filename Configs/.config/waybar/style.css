@@ -10,8 +10,12 @@
 
 window.panel#waybar { 
 background: @bar-bg;
-background: @bar-bg;
-border-bottom-right-radius: 5px;
+background: alpha(#000000, 0.4);
+}
+
+window.music#waybar { 
+    background: rgba(0, 0, 0, 0);
+    border-bottom-right-radius: 5px;
 }
 
 tooltip {
@@ -126,6 +130,7 @@ tooltip {
 #custom-power,
 #pulseaudio,
 #custom-updates,
+#custom-spotify,
 #custom-terminal{
     color: @main-fg;
     font-family: "JetBrainsMono Nerd Font";

@@ -10,7 +10,6 @@
         "layer": "bottom",
         "position": "left",
         "mode": "panel",
-        "height": 30,
         "width":40,
         "exclusive": true,
         "passthrough": false,
