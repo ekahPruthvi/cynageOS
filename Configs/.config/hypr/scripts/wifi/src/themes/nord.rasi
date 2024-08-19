@@ -19,9 +19,9 @@
 window {
 	text-color:			inherit;
 	background-color:	inherit;
-	border-radius: 		8px;
-	height:                      80%;
-    width:                       15%;
+	border-radius: 		0px;
+	height:                      99%;
+    width:                       10%;
 
 }
 mainbox {
@@ -41,11 +41,11 @@ listview {
 inputbar {
 	background-color: @bg-alt;
 	children: [textbox-prompt-colon,entry];
-	padding: 1px;
+	padding: 0px;
 }
 
 entry {
-	placeholder:	"";
+	placeholder:	"search";
 	padding:  30px;
 	background-color: inherit;
     background-image:            url("~/.config/swww/wall.blur", width);
