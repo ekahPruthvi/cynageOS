@@ -73,7 +73,7 @@ ark                                                    # kde file archiver
 vim                                                    # terminal text editor
 code                                                   # ide text editor
 loupe                                                  # image viewer
-lavat                                                  # lava
+lavat-git                                              # lava
 btop                                                   # taskmanager
 peaclock                                               # clock
 
