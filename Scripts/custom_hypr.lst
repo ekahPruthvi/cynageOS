@@ -55,6 +55,7 @@ kde-cli-tools                                          # for dolphin file type d
 libnotify                                              # for notifications
 xdg-desktop-portal-gtk                                 # gtk 
 ttf-heavydata-nerd                                     # waybar clock font
+ttf-bigblueterminal-nerd                               # dependency font
 
 # --------------------------------------------------- // Theming
 nwg-look                                               # gtk configuration tool
