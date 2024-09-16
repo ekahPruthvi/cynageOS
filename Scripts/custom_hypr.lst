@@ -17,6 +17,8 @@ blueman                                                # bluetooth manager gui
 brightnessctl                                          # screen brightness control
 udiskie                                                # manage removable media
 asusctl                                                # asus system utilities
+usbutils                                               # for usb printers
+cups-pdf                                               # printing pdf files
 
 # --------------------------------------------------- // Display Manager
 sddm                                                   # display manager for KDE plasma
