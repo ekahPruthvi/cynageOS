@@ -19,6 +19,7 @@ udiskie                                                # manage removable media
 asusctl                                                # asus system utilities
 usbutils                                               # for usb printers
 cups-pdf                                               # printing pdf files
+pv                                                     # monitor progress of data by piping
 
 # --------------------------------------------------- // Display Manager
 sddm                                                   # display manager for KDE plasma
