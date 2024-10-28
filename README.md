@@ -10,38 +10,19 @@ cynageOS, an innovative operating system that is meticulously crafted to boost p
 The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
 By combining modern aesthetics with user-friendly interfaces, </br>
 
-## What makes The cynageOS?
+## What makes The cynageOS?</br>
+
+![cynageOS_show](https://github.com/user-attachments/assets/a323d14a-886d-43b5-ba23-ae03eba488e8)
+
 
 ### Minimilitic nature 
 cynageOS integrates the features of the desktop in a very minimalistic nature to keep away the distractions and allows you to focus on your work. ``The Simple by design concept`` 
-![swappy-20240708_124848](https://github.com/ekahPruthvi/cynageOS/assets/136414172/3544433c-d762-4ea8-8148-32bbc8aeca0e)
 
 The sysBar ``Clyde`` integrates itself with the wallpaper to show Important information in a very subtle manner
-
-![image](https://github.com/user-attachments/assets/6941a328-a9e3-4c09-824c-dbdd5235fd9d)
-
-
-
-
-### Deadline Doomsday
-Keep track of ur whole week and stay focused </br>
-cynageOS welcomes you to your desktop with DDmd which lets you set To-Dos for your Week. </br>
-![swappy-20240708_122733](https://github.com/ekahPruthvi/cynageOS/assets/136414172/d3be860a-f8ee-4264-b87e-f7bb37819a2b)
-
-
-DDmd conveniently auto-hides after 2 seconds, letting you remember your productivity goals and then get right back to your place. </br>
-It can be easily called back and edited from the "cynicalCalibrator" - ```cCAL```  </br>
-![swappy-20240629_124317](https://github.com/ekahPruthvi/cynageOS/assets/136414172/6586947e-e167-4b16-a49f-700b43762383)
-
- </br>Edit by Day </br>
- 
-![swappy-20240708_122239](https://github.com/ekahPruthvi/cynageOS/assets/136414172/d191c3ac-cd3f-4a76-83a7-8a066c66e7cc)
 
 ### cCal
 cynicalCalibrator </br>
 A useful Settings applet to control and calibrate cynageOS </br>
-
-![swappy-20240708_123006](https://github.com/ekahPruthvi/cynageOS/assets/136414172/99d94c6f-d3a9-40a9-94f7-72f5a9d933e4)
 
 > can also be activated using the keybinding ```AURA``` on asus keyboards </br>
 > This can be changed in keybindings.conf by changing the aura binding  
@@ -49,31 +30,26 @@ A useful Settings applet to control and calibrate cynageOS </br>
 ### Wallpapers
 quick change : ```ALT```+```-->```  or  ```ALT```+```<--``` </br>
 or simply use the change wallpaper applet
-![swappy-20240708_122803](https://github.com/ekahPruthvi/cynageOS/assets/136414172/3c75bf91-d7d6-4247-bdcb-2f76cb51fa86)
 
 ### Themes
 The themes applet lets to easily switch the color profiles and the shaders 
-![swappy-20240708_122849](https://github.com/ekahPruthvi/cynageOS/assets/136414172/b322505f-ad6a-4b56-b521-eb374a3f4b03)
 
 ### AURA
 Change the keyboard colors easily 
 
-![swappy-20240708_122311](https://github.com/ekahPruthvi/cynageOS/assets/136414172/ce6b7cd3-13d0-404c-902f-044768cbd200)
 
 ### DeTox
 Cleans cynageOS of cache and unused app data
-![swappy-20240708_122419](https://github.com/ekahPruthvi/cynageOS/assets/136414172/ba0123ea-e296-49c4-85ac-6e59e91935ec)
 
 ### Notification center
 Custom configuration of swaync
-![swappy-20240708_122905](https://github.com/ekahPruthvi/cynageOS/assets/136414172/922163c1-3409-4e56-ba03-ed55d16ed7ef)
-
 
 
 ### Others 
-[ ] Super FASTTT!!! </br>
+[ ] Super FAST!!! </br>
 [ ] Amazing animations </br>
 [ ] Looks COOOL </br>
+[ ] Devloper friendly</br>
 
 
 <p align="center">
