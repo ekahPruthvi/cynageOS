@@ -59,9 +59,9 @@ Custom configuration of swaync
   <img width="150" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/COSlogo/COS.png" />   
 </p>
 
-
-### Installation
 <a id="inst"></a>
+### Installation
+
 ⚠️ Under ~~development~~ constant development 
 
 The installation script is made for Arch, but **may** work on some Arch based distros.   
