@@ -8,7 +8,10 @@ The Project overtaken by SCU </br>
 </br>
 cynageOS, an innovative operating system that is meticulously crafted to boost productivity. </br>
 The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
-By combining modern aesthetics with user-friendly interfaces, </br>
+By combining modern aesthetics with user-friendly interfaces. </br>
+
+>For Installing or updating Instructions scroll below ⬇⬇</br>
+>❗❗❗ CYNAGEOS IS CONSTANTLY BEING UPDATED (CHECK UPDATING INSTRUCTIONS BELOW) ❗❗❗
 
 ## What makes The cynageOS?</br>
 
@@ -46,22 +49,14 @@ Custom configuration of swaync
 
 
 ### Others 
-[ ] Super FAST!!! </br>
-[ ] Amazing animations </br>
-[ ] Looks COOOL </br>
-[ ] Devloper friendly</br>
+❏ Super FAST!!! </br>
+❏ Amazing animations </br>
+❏ Looks COOOL </br>
+❏ Devloper friendly</br>
 
 
 <p align="center">
-  <img width="250" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/COSlogo/COS.png" />   
-</p>
-
-
-## desktop
-
-
-<p>
-    <img align="center" width="49%" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/cosdemo.png" /> 
+  <img width="150" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/COSlogo/COS.png" />   
 </p>
 
 
