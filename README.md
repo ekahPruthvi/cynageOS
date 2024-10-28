@@ -8,9 +8,9 @@ The Project overtaken by SCU </br>
 </br>
 cynageOS, an innovative operating system that is meticulously crafted to boost productivity. </br>
 The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
-By combining modern aesthetics with user-friendly interfaces. </br>
+By combining modern aesthetics with user-friendly interfaces. </br></br>
 
->For Installing or updating Instructions scroll below ⬇⬇</br>
+>For Installing or updating Instructions scroll below ⬇⬇ or [click here](#inst) </br>
 >❗❗❗ CYNAGEOS IS CONSTANTLY BEING UPDATED (CHECK UPDATING INSTRUCTIONS BELOW) ❗❗❗
 
 ## What makes The cynageOS?</br>
@@ -61,7 +61,7 @@ Custom configuration of swaync
 
 
 ### Installation
-
+<a id="inst"></a>
 ⚠️ Under ~~development~~ constant development 
 
 The installation script is made for Arch, but **may** work on some Arch based distros.   
