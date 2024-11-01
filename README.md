@@ -66,8 +66,7 @@ Custom configuration of swaync
 
 The installation script is made for Arch, but **may** work on some Arch based distros.   
 
-THIS IS SPECIALLY TUNED FOR ASUS ( ROG & TUF ) LAPTOPS. </br>
-Consider installing asusctl   
+THIS IS SPECIALLY TUNED FOR ASUS ( ROG & TUF ) LAPTOPS. </br>   
 
 > **Warning**
 >
