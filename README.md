@@ -96,6 +96,17 @@ RESTART pc after the install completes and sddm appears
 Please reboot after the install script completes and takes you to sddm login screen (or black screen) for the first time.   
 For more details, please refer [installation.md](https://github.com/ekahPruthvi/cynageOS/blob/main/installation.md)
 
+### Updating
+
+If you have a working cynageOS installation, Checkout the github releases page under the cynageos tag and download the tarball file.
+![image](https://github.com/user-attachments/assets/0da922f4-fbf4-4016-a680-ae2348890871)
+</br>
+Download the latest update and extract it.
+![image](https://github.com/user-attachments/assets/f8fc57e3-f0ee-44c3-bfd1-43366dac64fb)
+</br>
+run the updateX_XX.sh file either in the terminal or by simply through the file manager
+![image](https://github.com/user-attachments/assets/b005b34f-5d93-4870-aab3-21d04644ea46)
+
 
 ### Theming
 To add your own custom theme, please refer [theming.md](https://github.com/ekahPruthvi/cynageOS/blob/main/theming.md)
