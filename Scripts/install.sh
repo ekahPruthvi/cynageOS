@@ -17,11 +17,11 @@ center_text() {
 
 clear
 
-center_text " "
+center_text ""
 center_text "░█▀▄░█░░█░█▀▀▄░█▀▀▄░█▀▀▀░█▀▀░▒█▀▀▀█░▒█▀▀▀█             "
 center_text "░█░░░█▄▄█░█░▒█░█▄▄█░█░▀▄░█▀▀░▒█░░▒█░░▀▀▀▄▄ INSTALLATION"
 center_text "░▀▀▀░▄▄▄▀░▀░░▀░▀░░▀░▀▀▀▀░▀▀▀░▒█▄▄▄█░▒█▄▄▄█             "
-center_text " "
+center_text ""
 
 cat << "EOF"
 
@@ -172,9 +172,9 @@ cat << "EOF"
 
 EOF
 
-center_text " "
+center_text ""
 center_text "REMINDER: RESTART after loginscreen appears"
-center_text " "
+center_text ""
 
     ln -s ~/.config ~/Settings
     service_ctl NetworkManager
