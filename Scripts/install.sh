@@ -4,15 +4,26 @@
 #|-/ /--| @ekah cynageOS           |-/ /--|#
 #|/ /---+--------------------------+/ /---|#
 
+white='\033[7m'   
+clear='\033[m'
+
+center_text() {
+    text="$1"
+    width=$(tput cols)
+    padding=$(( (width - ${#text}) / 2 ))
+    endpad=$((( (width - ${#text}) / 2 )-1))
+    printf "${white} %${padding}s%s%${endpad}s\n${clear}" "" "$text"
+}
+
 clear
 
-cat << "EOF"
+center_text " "
+center_text "░█▀▄░█░░█░█▀▀▄░█▀▀▄░█▀▀▀░█▀▀░▒█▀▀▀█░▒█▀▀▀█             "
+center_text "░█░░░█▄▄█░█░▒█░█▄▄█░█░▀▄░█▀▀░▒█░░▒█░░▀▀▀▄▄ INSTALLATION"
+center_text "░▀▀▀░▄▄▄▀░▀░░▀░▀░░▀░▀▀▀▀░▀▀▀░▒█▄▄▄█░▒█▄▄▄█             "
+center_text " "
 
------------------------------------------------------------------
-   ░█▀▄░█░░█░█▀▀▄░█▀▀▄░█▀▀▀░█▀▀░▒█▀▀▀█░▒█▀▀▀█
-   ░█░░░█▄▄█░█░▒█░█▄▄█░█░▀▄░█▀▀░▒█░░▒█░░▀▀▀▄▄ INSTALLATION
-   ░▀▀▀░▄▄▄▀░▀░░▀░▀░░▀░▀▀▀▀░▀▀▀░▒█▄▄▄█░▒█▄▄▄█     
------------------------------------------------------------------
+cat << "EOF"
 
 cynageOS installer will install your customized hyprland WM (cynageOS)
 Estimated TIME: 1:40:00
@@ -158,9 +169,13 @@ cat << "EOF"
 █▀░▀██░▀▀▀░██░██▄░█▀░▀██░▀▀▀░█▀░▀██░██▄░██░▀▀▄██
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
-REMINDER: RESTART after loginscreen 
 
 EOF
+
+center_text " "
+center_text "REMINDER: RESTART after loginscreen appears"
+center_text " "
+
     ln -s ~/.config ~/Settings
     service_ctl NetworkManager
     service_ctl bluetooth
