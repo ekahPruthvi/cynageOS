@@ -4,7 +4,7 @@
 
 # cynageOS
 The Project overtaken by SCU </br>
-> update .4
+> update .4.2
 </br>
 cynageOS, an innovative operating system that is meticulously crafted to boost productivity. </br>
 The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
