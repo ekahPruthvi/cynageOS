@@ -22,11 +22,11 @@ while true; do
     battery_percentage=$(cat /sys/class/power_supply/BAT1/capacity)
 
     if [ "$battery_status" == "Discharging" ] && [ "$battery_percentage" -le 20 ]; then
-        dunstify -u CRITICAL "Battery Low" "Battery is at $battery_percentage%. Connect the charger."
+        notify-send -u critical "Battery Low" "Battery is at $battery_percentage%. Connect the charger."
     fi
 
-    if [ "$battery_status" == "Charging" ] && [ "$battery_percentage" -ge 60 ]; then
-        dunstify -u NORMAL "Battery Charged" "Battery is at $battery_percentage%. You can unplug the charger."
+    if [ "$battery_status" == "Not charging" ] && [ "$battery_percentage" -ge 60 ]; then
+        notify-send -u normal "Battery Charged" "Battery is at $battery_percentage%. You can unplug the charger."
     fi
 
     sleep 300  # Sleep for 5 minutes before checking again
