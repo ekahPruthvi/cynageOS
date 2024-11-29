@@ -78,4 +78,5 @@ EOF
 sed -i '43d;'  ~/.config/hypr/hyprland.conf 
 sed -i 's/^#exec-once2/exec-once/g' ~/.config/hypr/hyprland.conf
 
-sleep 10s && ~/.config/hypr/keyframe/cheatsheet.sh 
+printf "\nPress Enter"
+read inp && ~/.config/hypr/keyframe/cheatsheet.sh 
