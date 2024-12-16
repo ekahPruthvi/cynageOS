@@ -91,6 +91,7 @@ zsh-syntax-highlighting-git                            # zsh plugin
 zsh-autosuggestions-git                                # zsh plugin2
 
 # --------------------------------------------------- //python
+python-cursor                                          # for clock
 
 
 # credits- Prashanth Rangan
