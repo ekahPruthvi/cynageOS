@@ -110,6 +110,80 @@ Now Run the updateX_XX.sh file either in the terminal or by simply through the f
 
 ![image](https://github.com/user-attachments/assets/9f55341a-1eee-4087-8a8a-ab52eda7719f)
 
+### INSTALL ARCH
+NOT TO BE USED AS A GUIDE. USE ONLY IF YOU KNOW WHAT YOU ARE DOING
+```bash
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+██░▀██░█▀▄▄▀█▄░▄█░▄▄█░▄▄█████
+██░█░█░█░██░██░██░▄▄█▄▄▀█▀▀██
+██░██▄░██▄▄███▄██▄▄▄█▄▄▄█▄▄██
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+INSTALL arch
+1] <iwctl> - station 'device' get-networks
+	     station 'device' connect 'ssid'
+
+2] <pacman -Sy> and <pacman -Sy archlinux-keyring>
+	 
+3] <lsblk> and <cfdisk> -  to get the partition names and creating them
+			   create EFI partition and linux filesystem 
+			   and linux swap (optional)
+
+4] <mkfs.fat -F32 '/dev/devicelocation'> - for boot partition
+   <mkfs.ext4 '/dev/devicelocation'> - for root partition
+   (optional)
+   <mkswap '/dev/deviceloaction'> - for swap partition
+
+5] <mount 'root partition' /mnt> - mounting the root partition into /mnt to access it
+   <mkdir /mnt/boot> - making boot directory for linking boot partition with root partition
+   <mount 'boot partition' /mnt/boot> - mounting bootpartition in /mnt/boot
+   (optional)
+   <swapon 'swap partition'> - to mount the swap partition
+
+NOW lsblk should give the mounted output
+
+6] <pacstrap -i /mnt base base-devel linux linux-firmware git sudo neofetch htop 'intel-ucode' nano vim bluez bluez-utils 'networkmanager'>  - installing basic linux and its packages in mnt root partition
+																	       REMEMBER replace intel-ucode with amd-ucode for amd processors and use the 
+																	       tools of your liking (bluez and networkmanager)	
+
+7] <genfstab -U /mnt >> /mnt/etc/fstab> - generating file system and check if it is generated with <cat /mnt/etc/fstab>
+
+NOW to chroot into /mnt and finish settingup arch linux
+
+8] <arch-chroot /mnt> - change root into /mnt
+   <passwd> - set password
+   <useradd -m -g users -G wheel, storage, power, video, audio -s /bin/bash 'username'> - replace username with your user name
+   <passwd 'username'>
+   <visudo> - HERE uncomment to allow members of group wheel to execute any command
+   
+9] <su - 'username'> - superuser into the username
+   <sudo pacman -Syu> - update archlinux
+   <exit> - exit out of superuser
+
+10]<ln -sf /usr/share/zoneinfo/'zone' /etc/localtime> - use tab space after zoneinfo/ to find the zones available and type it in zone
+   <hwclock --systohc> 
+   <nano /etc/locale.gen> - select language (for english us en-US UTF-8) 
+   <locale-gen> - genrate locale
+   <nano /etc/locale.conf> -> LANG=en_US.UTF-8
+   <nano /etc/hostname> -> 'computername' 
+   <nano /etc/hosts> -> 127.0.0.1		 localhost
+			::1			 localhost
+			127.0.1.1 		 'computername'.localdomain		'computername'
+
+11]<pacman -S grub efibootmgr dosfstools mtools os-prober> - install efi tools 
+   <grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id='bootloader_name'> - installing grub in /boot
+   <grub-mkconfig -o /boot/grub/grub.cfg> - enable osprober before this step to show other os in grub menu
+   
+ENABLING system services
+
+12]<systemctl enable bluetooth>
+   <systemctl enable NetworkManager>
+
+EXIT and unmounting
+
+13]<exit>
+   <umount -lR /mnt>
+   <shutdown now>
+```
 
 ### Theming
 To add your own custom theme, please refer [theming.md](https://github.com/ekahPruthvi/cynageOS/blob/main/theming.md)
