@@ -12,7 +12,7 @@ configuration {
 // Main //
 window {
     enabled:                     true;
-    width:                       1980px;
+    width:                       105%;
     fullscreen:                  false;
     transparency:                "real";
     cursor:                      "default";
@@ -21,7 +21,8 @@ window {
     border:                      0px 0px 10px 0px;
     border-radius:               0em;
     border-color:                @main-br;
-    background-image:            url("~/.config/swww/wall.blur", width);
+    background-color:            @main-bg;
+   //background-image:            url("~/.config/swww/wall.blur", width);//
 }
 mainbox {
     enabled:                     true;

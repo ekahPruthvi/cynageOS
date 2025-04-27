@@ -19,7 +19,7 @@ x_mon=$( cat /sys/class/drm/*/modes | head -1  )
 y_mon=$( echo $x_mon | cut -d 'x' -f 2 )
 x_mon=$( echo $x_mon | cut -d 'x' -f 1 )
 
-x_cur=$(hyprctl cursorpos | sed 's/ //g')
+x_cur=1735,998
 y_cur=$( echo $x_cur | cut -d ',' -f 2 )
 x_cur=$( echo $x_cur | cut -d ',' -f 1 )
 
@@ -50,10 +50,7 @@ fi
 
 # read hypr theme border
 
-hypr_border=`awk -F '=' '{if($1~" rounding ") print $2}' $theme_file | sed 's/ //g'`
-wind_border=$(( hypr_border * 3/2 ))
-elem_border=`[ $hypr_border -eq 0 ] && echo "5" || echo $hypr_border`
-r_override="window{width:$dockWidth;border-radius:${wind_border}px;} listview{columns:$#;} element{border-radius:${elem_border}px;}"
+r_override="window{width:$dockWidth;} listview{columns:$#;} "
 
 
 # launch rofi menu

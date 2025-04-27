@@ -19,7 +19,7 @@ configuration {
 window {
     
     height:                      60px;
-    width:                       900px;
+    width:                       60%;
     transparency:                "real";
     fullscreen:                  false;
     enabled:                     true;

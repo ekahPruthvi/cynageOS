@@ -18,9 +18,9 @@ window {
     cursor:                      "default";
     spacing:                     0px;
     padding:                     0px;
-    border:                      2px;
-    border-radius:               15px;
-    border-color:                @main-br;
+    border:                      1px 1px 5px 1px;
+    border-radius:               8px;
+    border-color:                black;
     background-color:            transparent;
 }
 mainbox {

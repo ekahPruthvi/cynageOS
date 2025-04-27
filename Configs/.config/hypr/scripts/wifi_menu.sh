@@ -4,7 +4,7 @@
 
 get_match()
 {
-  selection=$(echo -e "$1" | rofi -dmenu -p "$2" -config ~/.config/rofi/config.rasi)
+  selection=$(echo -e "$1" | rofi -dmenu -p "$2" -config ~/.config/rofi/wifi.rasi)
   [[ -z "$selection" ]] && exit 1
   does_match_=$(echo -e "$1" | grep "$selection")
   [[ -n "$1" ]] && [[ -z "$does_match_" ]] && exit 1
@@ -21,8 +21,8 @@ enable_test=$(echo "$state" | grep "enabled")
 echo $enable_test
 if [[ -z "$enable_test" ]]; then
 	toggle="$toggle_entry on"
-  selection=$(get_match "Yes\nNo" "Enable WiFi")
-  if [ $selection = "Yes" ];then
+  selection=$(get_match "wifi on\nNo" "Enable WiFi")
+  if [ $selection = "wifi on" ];then
     nmcli radio wifi on
   fi
   exit 1

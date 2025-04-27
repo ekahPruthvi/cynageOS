@@ -25,9 +25,9 @@ window {
     cursor:                      "default";
     spacing:                     0em;
     padding:                     0em;
-    border:                      0px 0px 0px 0px;
-    border-radius:               0em;
-    border-color:                @main-br;
+    border:                      1px 1px 5px 1px;
+    border-radius:               8px;
+    border-color:                black;
     background-image:            url("~/.config/swww/wall.blur", width);
 }
 
@@ -67,7 +67,7 @@ mode-switcher{
 }
 button {
     cursor:                      pointer;
-    border-radius:               2px;
+    border-radius:               3px;
     background-color:            transparent;
     text-color:                  @main-fg;
 }

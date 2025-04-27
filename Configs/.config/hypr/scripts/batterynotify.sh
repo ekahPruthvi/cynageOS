@@ -25,7 +25,7 @@ while true; do
         notify-send -u critical "Battery Low" "Battery is at $battery_percentage%. Connect the charger."
     fi
 
-    if [ "$battery_status" == "Not charging" ] && [ "$battery_percentage" -ge 60 ]; then
+    if [ "$battery_status" == "Not charging" ] && [ "$battery_percentage" -ge 100 ]; then
         notify-send -u normal "Battery Charged" "Battery is at $battery_percentage%. You can unplug the charger."
     fi
 

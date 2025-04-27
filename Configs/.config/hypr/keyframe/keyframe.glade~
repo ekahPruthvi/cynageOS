@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="window">
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="default-width">1000</property>
+    <property name="default-height">520</property>
+    <property name="decorated">False</property>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">5</property>
+        <child>
+          <object class="GtkBox" id="header">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkLabel" id="heading">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+██░█▀▄█░▄▄█░██░█░▄▄█░▄▄▀█░▄▄▀█░▄▀▄░█░▄▄███████████████████████████████████████████
+██░▄▀██░▄▄█░▀▀░█░▄██░▀▀▄█░▀▀░█░█▄█░█░▄▄█▀▀████████████████████████████████████████
+██░██░█▄▄▄█▀▀▀▄█▄███▄█▄▄█▄██▄█▄███▄█▄▄▄█▄▄████████████████████████████████████████
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+</property>
+                <attributes>
+                  <attribute name="weight" value="heavy"/>
+                  <attribute name="variant" value="unicase"/>
+                  <attribute name="scale" value="1.5"/>
+                  <attribute name="foreground" value="#9a9a99999696"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="subhead1">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">░█░░░█░░▀░░█▀▀▄░█▀▄░▄▀▀▄░█░░░█░░░█▀▀░█▀▀░█▀▀░█▀▀░░▀░░▄▀▀▄░█▀▀▄░░░█▀▀▄░█▀▄░▀█▀░░▀░░▄▀▀▄░█▀▀▄░█▀▀░░
+░▀▄█▄▀░░█▀░█░▒█░█░█░█░░█░▀▄█▄▀░░░▀▀▄░█▀▀░▀▀▄░▀▀▄░░█▀░█░░█░█░▒█░░░█▄▄█░█░░░░█░░░█▀░█░░█░█░▒█░▀▀▄░░
+░░▀░▀░░▀▀▀░▀░░▀░▀▀░░░▀▀░░░▀░▀░░░░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░░▀▀░░▀░░▀░░░▀░░▀░▀▀▀░░▀░░▀▀▀░░▀▀░░▀░░▀░▀▀▀░░
+</property>
+            <attributes>
+              <attribute name="weight" value="ultrabold"/>
+              <attribute name="variant" value="unicase"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkLabel" id="move">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">[Mod + Q
+[Mod + Backspace
+[Mod + T
+[Mod + L
+[Mod + Enter
+[Alt     Enter
+[Mod + O</property>
+                <attributes>
+                  <attribute name="font-desc" value="HeavyData Nerd Font Propo Bold 20"/>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="disp_move">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="xpad">41</property>
+                <property name="label" translatable="yes">Quit Application
+Power Menu
+Open terminal
+Lock Screen
+Application Maximize
+Application Fullscreen
+hide cynbar</property>
+                <attributes>
+                  <attribute name="font-desc" value="HeavyData Nerd Font Bold 20"/>
+                  <attribute name="foreground" value="#9a9a99999696"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="subhead2">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">░█▀▄▀█░█▀▀░█▀▀▄░█░▒█
+░█░▀░█░█▀▀░█░▒█░█░▒█
+░▀░░▒▀░▀▀▀░▀░░▀░░▀▀▀</property>
+            <attributes>
+              <attribute name="weight" value="ultrabold"/>
+              <attribute name="variant" value="unicase"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkLabel" id="move1">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">[Mod + a
+[Mod + Shift + T
+[Mod + Shift  + w</property>
+                <attributes>
+                  <attribute name="font-desc" value="HeavyData Nerd Font Propo Bold 20"/>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="disp_move1">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="xpad">41</property>
+                <property name="label" translatable="yes">application launcher
+Theme selection menu
+wallpaper selection menu</property>
+                <attributes>
+                  <attribute name="font-desc" value="HeavyData Nerd Font Bold 20"/>
+                  <attribute name="foreground" value="#9a9a99999696"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <object class="GtkLabel" id="info">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Cheatsheet for cynageOS.</property>
+            <property name="xalign">0.97000002861022949</property>
+            <attributes>
+              <attribute name="font-desc" value="BigBlueTerm437 Nerd Font 10"/>
+              <attribute name="weight" value="ultralight"/>
+              <attribute name="variant" value="all-petite-caps"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">6</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

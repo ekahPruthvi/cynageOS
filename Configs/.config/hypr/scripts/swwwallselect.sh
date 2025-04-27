@@ -15,7 +15,7 @@ x_monres=$(( x_monres*17/100 ))
 
 # set rofi override
 hypr_border=`awk -F '=' '{if($1~" rounding ") print $2}' $ThemeSet | sed 's/ //g'`
-elem_border=$(( hypr_border * 3 ))
+elem_border=$(( hypr_border * 10 ))
 r_override="element{border-radius:${elem_border}px;} listview{columns:6;spacing:100px;} element{padding:0px;orientation:vertical;} element-icon{size:${x_monres}px;border-radius:0px;} element-text{padding:20px;}"
 
 
@@ -37,6 +37,6 @@ if [ ! -z $RofiSel ] ; then
         ncolor="-h string:bgcolor:#f4ede8 -h string:fgcolor:#9893a5 -h string:frcolor:#908caa"
     fi
 
-    dunstify $ncolor "theme" -a " ${RofiSel}" -i "${CacheDir}/${CurTheme}/${RofiSel}" -r 91190 -t 2200
+    dunstify "Wallpaper changed"
 fi
 

@@ -12,7 +12,7 @@ configuration {
 // Main //
 window {
     enabled:                     true;
-    width:                       1980px;
+    width:                       105%;
     fullscreen:                  false;
     transparency:                "real";
     cursor:                      "default";
@@ -21,7 +21,8 @@ window {
     border:                      0px 0px 10px 0px;
     border-radius:               0em;
     border-color:                @main-br;
-    background-image:            url("~/.config/swww/wall.blur", width);
+    background-color:            @main-bg;
+   //background-image:            url("~/.config/swww/wall.blur", width);//
 }
 mainbox {
     enabled:                     true;
@@ -39,13 +40,13 @@ frame {
 listview {
     enabled:                     true;
     spacing:                     1em;
-    padding:                     1em;
+    padding:                     5em;
     columns:                     1;
     lines:                       10;
     dynamic:                     false;
     fixed-height:                false;
     fixed-columns:               true;
-    reverse:                     true;
+    reverse:                     false;
     cursor:                      "default";
     background-color:            transparent;
     text-color:                  @main-fg;
@@ -82,6 +83,8 @@ element {
 
 element selected.normal {
     background-color:            black;
+    border:                      0px 0px 5px 0px;
+    border-color:                @main-bg;
     text-color:                  white;
 }
 element-icon {

@@ -78,16 +78,13 @@ getName=`basename $getWall`
 ln -fs $getWall $ConfDir/swww/wall.set
 ln -fs $WallCache/${ThemeSet}/${getName}.rofi $ConfDir/swww/wall.rofi
 ln -fs $WallCache/${ThemeSet}/${getName}.blur $ConfDir/swww/wall.blur
+ln -fs $WallCache/${ThemeSet}/${getName}.png $ConfDir/swww/wall.png
 $BaseDir/swwwallpaper.sh
 
 if [ $? -ne 0 ] ; then
     echo "ERROR: Unable to set wallpaper"
     exit 1
 fi
-
-
-# code
-sed -i "/workbench.colorTheme/c\    \"workbench.colorTheme\": \"${ThemeSet}\"," $ConfDir/Code/User/settings.json
 
 
 # kitty
@@ -124,7 +121,7 @@ if [ "${gtkMode}" == "light" ] ; then
     ncolor="-h string:bgcolor:#f4ede8 -h string:fgcolor:#9893a5 -h string:frcolor:#908caa"
 fi
 
-dunstify $ncolor "theme" -a " ${ThemeSet}" -i "~/.config/dunst/icons/COS.png" -r 91190 -t 2200
+notify-send $ncolor "theme" "${ThemeSet}"  -r 91190 -t 2200
 
 
 # rofi & waybar

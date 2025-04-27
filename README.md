@@ -188,14 +188,11 @@ EXIT and unmounting
 ### Theming
 To add your own custom theme, please refer [theming.md](https://github.com/ekahPruthvi/cynageOS/blob/main/theming.md)
 - Available themes
-    - [x] Catppuccin-Mocha
-    - [x] Catppuccin-Latte
-    - [x] Decay-Green
+    - [x] Cynage
+    - [x] Lightage
+    - [x] Developer
     - [x] Rosé-Pine
-    - [x] Tokyo-Night
-    - [x] Material-Sakura
     - [x] Graphite-Mono
-    - [x] Cyberpunk-Edge
 
 <details>
 <summary><h4>Packages</h4></summary>

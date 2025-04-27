@@ -10,7 +10,7 @@ configuration {
 
 // Main //
 window {
-    height:                      50%;
+    height:                      10%;
     width:                       30%;
     transparency:                "real";
     fullscreen:                  false;

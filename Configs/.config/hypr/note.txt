@@ -3,4 +3,20 @@
 ██░█░█░█░██░██░██░▄▄█▄▄▀█▀▀██
 ██░██▄░██▄▄███▄██▄▄▄█▄▄▄█▄▄██
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+grime 
+-shell based
+-single directory history
+-all basic file operations
+-copy tab to select multiple
+-dynamic keybindingsi
+-dependecnies find la cd rm fzf tput cat wayland
 
+can only open normal txt html and other file types
+can't copy folders
+hav to manually refresh window
+
+lightage
+dev
+
+-- frost
+-- cyberpunk

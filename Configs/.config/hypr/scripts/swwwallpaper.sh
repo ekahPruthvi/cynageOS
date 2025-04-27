@@ -23,7 +23,7 @@ Wall_Update()
     fi
 
     if [ ! -f "${cacheDir}/${curTheme}/${cacheImg}.blur" ] ; then
-        convert -strip -scale 10% -blur 0x3 -resize 100% $x_wall ${cacheDir}/${curTheme}/${cacheImg}.blur
+        convert -strip -blur 0x25 -resize 100% $x_wall ${cacheDir}/${curTheme}/${cacheImg}.blur
     fi
 
     if [ ! -f "${cacheDir}/${curTheme}/${cacheImg}.png" ] ; then

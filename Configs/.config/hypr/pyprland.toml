@@ -2,6 +2,7 @@
 plugins = [
     "scratchpads",
     "layout_center",
+    "expose"
 ]
 
 
@@ -21,3 +22,5 @@ size = "90% 60%"
 max_size = "1920px 100%"
 margin = 50
 
+[expose]
+include_special = false

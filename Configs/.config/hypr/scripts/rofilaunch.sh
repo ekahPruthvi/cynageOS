@@ -25,7 +25,7 @@ hypr_border=`awk -F '=' '{if($1~" rounding ") print $2}' $theme_file | sed 's/ /
 hypr_width=0
 wind_border=$(( hypr_border * 1 ))
 elem_border=`[ $hypr_border -eq 0 ] && echo "10" || echo $(( hypr_border * 2 ))`
-r_override="window {border: ${hypr_width}px; border-radius: ${wind_border}px;} element {border-radius: ${elem_border}px;}"
+r_override="element {border-radius: ${elem_border}px;}"
 
 
 # read hypr font size

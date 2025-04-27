@@ -76,9 +76,11 @@ plugins=(git)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source $ZSH/oh-my-zsh.sh
+source <(fzf --zsh)
 
 # User configuration
 
+set FZF_DEFAULT_OPTS "--layout=reverse --border=bold --border=rounded --margin=10% --color=dark"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -102,22 +104,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias  l='eza -l  --icons'
-alias ls='eza -1  --icons'
-alias ll='eza -la --icons'
-alias ld='eza -lD --icons'
 
-alias install='sudo pacman -S' # install package
-alias uninstall='sudo pacman -Rns' # uninstall package
+alias get='sudo pacman -S' # install package
+alias yeet='sudo pacman -Rns' # uninstall package
 alias up='sudo pacman -Syu && yay -Syu' # update system/package/aur
 alias list='pacman -Qs' # list installed package
 alias ser='pacman -Ss' # list availabe package
-alias pc='sudo pacman -Sc' # remove unused cache
-alias po='pacman -Qtdq | sudo pacman -Rns -' # remove unused packages, also try > pacman -Qqd | pacman -Rsu --print -
-alias vc='code'  # gui code editor
+alias bat='cat /sys/class/power_supply/BAT1/capacity'
 alias flatun='flatpak uninstall --delete-data'
+alias sink='pactl load-module module-combine-sink'
 alias mirror='scrcpy --video-codec=h265 -m1920 --max-fps=122'
-alias maketar='tar -czvf'
+alias tarit='tar -zcvf'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -136,3 +133,5 @@ echo "
 ░█░░░█▄▄█░█░▒█░█▄▄█░█░▀▄░█▀▀░▒█░░▒█░░▀▀▀▄▄ 
 ░▀▀▀░▄▄▄▀░▀░░▀░▀░░▀░▀▀▀▀░▀▀▀░▒█▄▄▄█░▒█▄▄▄█
 "
+
+export PATH="$PATH:/home/ekah/.local/bin"

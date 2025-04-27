@@ -1,7 +1,7 @@
 ${HOME}|.zshrc .p10k.zsh|zsh oh-my-zsh-git zsh-theme-powerlevel10k-git zsh-syntax-highlighting-git zsh-autosuggestions-git pokemon-colorscripts-git
 ${HOME}/.config/Code/User|settings.json|visual-studio-code-bin
 ${HOME}/.config|dunst|dunst
-${HOME}/.config|swaync|swaync
+${HOME}/.config|swayosd|swayosd
 ${HOME}/.config/hypr|animations.conf hyprland.conf keybindings.conf windowrules.conf scripts shaders themes wallbash pyprland.toml hyprlock.conf cCal startup.mp3 note.txt|hyprland
 ${HOME}/.config|kitty|kitty
 ${HOME}/.config|Kvantum|kvantum
@@ -9,13 +9,9 @@ ${HOME}/.config|MangoHud|mangohud
 ${HOME}/.config|neofetch|neofetch
 ${HOME}/.config|qt5ct|qt5ct
 ${HOME}/.config|rofi|rofi
-${HOME}/.config|swaylock|swaylock-effects
 ${HOME}/.config|swww|swww
 ${HOME}/.config|waybar|waybar
 ${HOME}/.config|wlogout|wlogout
 ${HOME}/.config|nwg-look gtk-3.0 xsettingsd|nwg-look
 ${HOME}/.icons|default|nwg-look
 ${HOME}|.gtkrc-2.0|nwg-look
-${HOME}/.config|dolphinrc kdeglobals|dolphin
-${HOME}/.local/share|dolphin|dolphin
-${HOME}/.local/share/kxmlgui5|dolphin|dolphin
