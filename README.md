@@ -285,4 +285,4 @@ pokemon-colorscripts-git | display pokemon sprites
 ### Credits
 
 This install script and some modules has been adopted from hyprdots with modifications. </br>
-quickshell config is adopted from (caelestia-dots)[https://github.com/caelestia-dots/shell?tab=readme-ov-file] with little modification 
+quickshell config is adopted from [caelestia-dots](https://github.com/caelestia-dots/shell?tab=readme-ov-file) with little modification 
