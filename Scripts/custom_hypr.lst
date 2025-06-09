@@ -59,6 +59,8 @@ libnotify                                              # for notifications
 xdg-desktop-portal-gtk                                 # gtk 
 ttf-heavydata-nerd                                     # waybar clock font
 ttf-bigblueterminal-nerd                               # dependency font
+ttf-material-symbols-variable-git                       
+ttf-jetbrains-mono-nerd ttf-ibm-plex
 
 # --------------------------------------------------- // Theming
 nwg-look                                               # gtk configuration tool
