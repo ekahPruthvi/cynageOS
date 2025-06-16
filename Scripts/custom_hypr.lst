@@ -16,7 +16,6 @@ bluez-utils                                            # bluetooth utility cli
 blueman                                                # bluetooth manager gui
 brightnessctl                                          # screen brightness control
 udiskie                                                # manage removable media
-asusctl                                                # asus system utilities
 usbutils                                               # for usb printers
 cups-pdf                                               # printing pdf files
 pv                                                     # monitor progress of data by piping
@@ -29,17 +28,16 @@ qt5-graphicaleffects                                   # for sddm theme effects
 
 # --------------------------------------------------- // Window Manager
 hyprland                                               # wlroots-based wayland compositor
-dunst                                                 # notification daemon
+dunst                                                  # notification daemon
 rofi-lbonn-wayland-git                                 # application launcher
 waybar                                                 # system bar
 swww                                                   # wallpaper
-hyprlock                                               # lock screen           
-wlogout                                                # logout menu
+hyprlock                                               # lock screen     
 grimblast-git                                          # screenshot tool
 hyprpicker                                             # color picker
 slurp                                                  # region select for screenshot/screenshare
 swappy                                                 # screenshot editor
-hyprshot                                               # screenshot to keyboard
+hyprshot                                               # screenshot to clipboard
 cliphist                                               # clipboard manager
 pyprland                                               # plugins
 swayosd-git                                            # OSD
@@ -57,10 +55,7 @@ ffmpegthumbs                                           # for dolphin video thumb
 kde-cli-tools                                          # for dolphin file type defaults
 libnotify                                              # for notifications
 xdg-desktop-portal-gtk                                 # gtk 
-ttf-heavydata-nerd                                     # waybar clock font
 ttf-bigblueterminal-nerd                               # dependency font
-ttf-material-symbols-variable-git                       
-ttf-jetbrains-mono-nerd ttf-ibm-plex
 
 # --------------------------------------------------- // Theming
 nwg-look                                               # gtk configuration tool
@@ -80,8 +75,7 @@ vim                                                    # terminal text editor
 code                                                   # ide text editor
 loupe                                                  # image viewer
 lavat-git                                              # lava
-btop                                                   # taskmanager
-peaclock                                               # clock
+htop                                                   # taskmanager
 
 # --------------------------------------------------- // Shell
 eza                                                    # file lister for zsh
@@ -92,8 +86,6 @@ pokemon-colorscripts-git                               # display pokemon sprites
 zsh-syntax-highlighting-git                            # zsh plugin
 zsh-autosuggestions-git                                # zsh plugin2
 
-# --------------------------------------------------- //python
-python-cursor                                          # for clock
 
 
 # credits- Prashanth Rangan
