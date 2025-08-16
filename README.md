@@ -4,111 +4,15 @@
 
 # cynageOS
 The Project overtaken by SCU </br>
-> update .4.9
+> update .5.0.0
 </br>
 cynageOS, an innovative operating system that is meticulously crafted to boost productivity. </br>
 The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
 By combining modern aesthetics with user-friendly interfaces. </br></br>
 
->For Installing or updating Instructions scroll below ⬇⬇ or [click here](#inst) </br>
->❗❗❗ CYNAGEOS IS CONSTANTLY BEING UPDATED (CHECK UPDATING INSTRUCTIONS BELOW) ❗❗❗
-
-## What makes The cynageOS?</br>
-
-![cynageOS_show](https://github.com/user-attachments/assets/a323d14a-886d-43b5-ba23-ae03eba488e8)
-
-
-### Minimilitic nature 
-cynageOS integrates the features of the desktop in a very minimalistic nature to keep away the distractions and allows you to focus on your work. ``The Simple by design concept`` 
-
-The sysBar ``Clyde`` integrates itself with the wallpaper to show Important information in a very subtle manner
-
-### cCal
-cynicalCalibrator </br>
-A useful Settings applet to control and calibrate cynageOS </br>
-
-> can also be activated using the keybinding ```AURA``` on asus keyboards </br>
-> This can be changed in keybindings.conf by changing the aura binding  
-
-### Wallpapers
-quick change : ```ALT```+```-->```  or  ```ALT```+```<--``` </br>
-or simply use the change wallpaper applet
-
-### Themes
-The themes applet lets to easily switch the color profiles and the shaders 
-
-### AURA
-Change the keyboard colors easily 
-
-
-### DeTox
-Cleans cynageOS of cache and unused app data
-
-### Notification center
-Custom configuration of swaync
-
-
-### Others 
-❏ Super FAST!!! </br>
-❏ Amazing animations </br>
-❏ Looks COOOL </br>
-❏ Devloper friendly</br>
-
-
-<p align="center">
-  <img width="150" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/COSlogo/COS.png" />   
-</p>
-
-<a id="inst"></a>
-### Installation
-
-⚠️ Under ~~development~~ constant development 
-
-The installation script is made for Arch, but **may** work on some Arch based distros.   
-
-THIS IS SPECIALLY TUNED FOR ASUS ( ROG & TUF ) LAPTOPS. </br>   
-
-> **Warning**
->
-> Install script will auto-detect nvidia card and install nvidia-dkms drivers for your kernel.   
-> Nvidia drm will be enabled in grub, so please [ensure](https://wiki.archlinux.org/title/NVIDIA) your nvidia card supports dkms drivers/hyprland.
-> If on install the resolution is incorrect pls change in ```~/.config/hypr/hyprland.conf``` under monitor.
-> The keybinding for utility capsule is there only for ROG and TUF laptops. For others change in ```~/.config/hypr/keybindings.conf```
-
-After minimal Arch install (with grub), clone and execute -
-```shell
-pacman -Sy git
-git clone https://github.com/ekahPruthvi/cynageOS.git
-sudo chmod +x cynageOS
-sudo chmod -R 777 cynageOS
-cd ~/cynageOS/Scripts
-./install.sh
-```
-RESTART pc after the install completes and sddm appears 
-
-> **Note**
->
-> You can also create your own list (for ex. `custom_apps.lst`) with all your favorite apps and pass the file as a parameter to install it -
->```shell
->./install.sh custom_apps.lst
->```
-
-Please reboot after the install script completes and takes you to sddm login screen (or black screen) for the first time.   
-For more details, please refer [installation.md](https://github.com/ekahPruthvi/cynageOS/blob/main/installation.md)
-
-### Updating
-
-If you have a working cynageOS installation, Checkout the github releases page under the cynageos tag and download the tarball file.
-![image](https://github.com/user-attachments/assets/0da922f4-fbf4-4016-a680-ae2348890871)
-</br>
-
-Download the latest update and extract it.
-![image](https://github.com/user-attachments/assets/fb031dd0-226b-4792-9c39-0e57454ba9bb)
-
-</br>
-Now Run the updateX_XX.sh file either in the terminal or by simply through the file manager.
-
-![image](https://github.com/user-attachments/assets/9f55341a-1eee-4087-8a8a-ab52eda7719f)
+> [!CAUTION]
+> The source code is being updated from `.4.9` to `5.0.0`
+> Please wait a couple of days
 
 ### INSTALL ARCH
 NOT TO BE USED AS A GUIDE. USE ONLY IF YOU KNOW WHAT YOU ARE DOING
