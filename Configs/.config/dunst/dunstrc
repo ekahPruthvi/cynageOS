@@ -20,8 +20,10 @@
     follow = mouse
     width = 650
     height = (0,36)
-    origin = bottom-center
-    offset = (-30,20)
+    # origin = bottom-center
+    # offset = (-30,20)
+    origin = top-left
+    offset = (-9999, -9999) 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
 
@@ -147,7 +149,7 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "%s - %b"
+    format = "<b>%s</b> %b"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
@@ -177,6 +179,8 @@
 
     # Display indicators for URLs (U) and actions (A).
     show_indicators = yes
+    ignore_newline = true
+    show_indicators = false
 
     ### Icons ###
 
@@ -428,19 +432,16 @@
     background = "#f5e0dc"
     foreground = "#1e1e2e"
     frame_color = "#ff4075"
-    icon = "$HOME/.config/dunst/icons/critical.svg"
     timeout = 0
 
 [urgency_low]
     background = "#f5e0dc"
     foreground = "#1e1e2e"
     frame_color = "#f38ba8"
-    icon = "$HOME/.config/dunst/icons/hyprdots.svg"
-    timeout = 5
+    timeout = 1
 
 [urgency_normal]
     background = "#00000065"
     foreground = "#ffffff"
     frame_color = "#000000"
-    icon = "$HOME/.config/dunst/icons/hyprdots.svg"
-    timeout = 20
+    timeout = 1

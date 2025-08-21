@@ -94,9 +94,6 @@ To add your own custom theme, please refer [theming.md](https://github.com/ekahP
 - Available themes
     - [x] Cynage
     - [x] Lightage
-    - [x] Developer
-    - [x] Rosé-Pine
-    - [x] Graphite-Mono
 
 <details>
 <summary><h4>Packages</h4></summary>
@@ -104,9 +101,6 @@ To add your own custom theme, please refer [theming.md](https://github.com/ekahP
 | nvidia | |
 | :-- | --- |
 linux-headers | for main kernel (script will auto detect from /usr/lib/modules/)
-linux-zen-headers | for zen kernel (script will auto detect from /usr/lib/modules/)
-linux-lts-headers | for lts kernel (script will auto detect from /usr/lib/modules/)
-nvidia-dkms | nvidia drivers (script will auto detect from lspci -k | grep -A 2 -E "(VGA|3D)")
 nvidia-utils | nvidia drivers (script will auto detect from lspci -k | grep -A 2 -E "(VGA|3D)")
 
 | tools | |
@@ -189,4 +183,3 @@ pokemon-colorscripts-git | display pokemon sprites
 ### Credits
 
 This install script and some modules has been adopted from hyprdots with modifications. </br>
-quickshell config is adopted from [caelestia-dots](https://github.com/caelestia-dots/shell?tab=readme-ov-file) with little modification 
