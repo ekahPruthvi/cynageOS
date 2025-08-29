@@ -179,7 +179,3 @@ zsh-autosuggestions-git | see completion as you type
 pokemon-colorscripts-git | display pokemon sprites
 
 </details>
-
-### Credits
-
-This install script and some modules has been adopted from hyprdots with modifications. </br>
