@@ -1,0 +1,375 @@
+/* Dark Theme */
+/* BASE */
+
+window {
+    background-color: rgba(20, 20, 20, 0);
+}
+
+/* LABELS */
+
+label.time {
+    font-size: 16px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.83);
+}
+
+label.date {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+label.noti-low {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+label.noti-normal {
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 10px;
+}
+
+label.noti-critical {
+    color: #ff8282;
+    font-weight: 800;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 10px;
+}
+
+/* BUTTONS */
+
+button.qlicons {
+    all: unset;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    transform: scale(1.0);
+}
+
+button.qlicons:hover {
+    background-color: rgb(29, 29, 29);
+    border-radius: 10px;
+    transform: scale(1.5);
+}
+
+button.cos {
+    all: unset;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgba(49, 49, 49, 0);
+    transition: transform 0.2s ease;
+    transform: scale(1.0);
+}
+
+button.cos:hover {
+    transform: scale(1.1);
+}
+
+button.statusicon {
+    all: unset;
+    padding: 10px;
+    background-color: rgba(49, 49, 49, 0);
+    color: rgb(197, 197, 197);
+    transition: color 0.2s ease;
+}
+
+button.statusicon:hover {
+    color: rgb(255, 255, 255);
+}
+
+.notification_btn {
+    all: unset;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.83);
+    transform: scale(1.0);
+    transition: font-weight 0.2s ease, transform 0.2s ease;
+}
+
+.notification_btn:hover {
+    font-weight: 900;
+    transform: scale(1.05);
+}
+
+#close_button {
+    all: unset;
+    min-height: 10px;
+    min-width: 100px;
+    font-size: 2px;
+    color: rgba(0, 0, 0, 0);
+    padding: 0px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: background-color 300ms ease;
+}
+
+#close_button:hover {
+    background-color: rgba(255, 0, 102, 0.55);
+}
+
+/* COMPONENT STYLES */
+
+#timecapsule,
+.qlbar,
+#cynbar {
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: rgba(243, 243, 243, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.425) 0px 0px 7px;
+}
+
+
+#noticapsule {
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: rgba(70, 70, 70, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.425) 0px 0px 7px;
+}
+
+#bubble {
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 30px 30px 30px;
+    transition: 
+        transform 500ms cubic-bezier(0.68, -0.55, 0.27, 1.55),
+        opacity   400ms cubic-bezier(0.53, 0, 0.38, 1);
+    transform: scale(1.0);
+    opacity: 1.0;
+}
+
+#bubble.scale-out {
+    transform: scale(0.7);
+    opacity: 0.0;
+}
+
+#bubble.scale-in {
+    transform: scale(1.0);
+    opacity: 1.0;
+}
+
+#timecapsule {
+    padding: 5px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.qlbar {
+    padding: 5px;
+}
+
+#cynbar {
+    background-color: rgba(70, 70, 70, 0.2);
+    padding: 5px 5px 10px 5px;
+    box-shadow: rgba(92, 91, 91, 0.11) 3px 3px 6px 0px inset,
+                rgba(202, 214, 224, 0.116) -3px -3px 6px 1px inset;
+}
+
+#noticapsule {
+    padding: 5px;
+    box-shadow: rgba(92, 91, 91, 0.11) 3px 3px 6px 0px inset,
+                rgba(202, 214, 224, 0.116) -3px -3px 6px 1px inset;
+}
+
+
+/* SHADOWS */
+
+#shadow {
+    color: transparent;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* VOLUME LEVELS */
+
+#volumelevel.muted {
+    background-color: crimson;
+    opacity: 0.6;
+}
+
+#volumelevel.blight trough block.filled {
+    background-color: rgba(255, 199, 69, 0.56);
+}
+
+#volumelevel.vol trough block.filled {
+    background-color: rgba(255, 255, 255, 0.81);
+}
+
+/* NOTIFICATION VIEW */
+
+#notivbox {
+    padding-top: 10px;
+}
+
+#notification_heading {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.notification_heading_button {
+    all: unset;
+    background-color: transparent;
+}
+
+/*notification bubble scroller bar*/
+
+#notification_scroller {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#notification_scroller scrollbar {
+    background-color: transparent;
+    border-radius: 12px;
+    margin: 2px;
+    min-width: 6px;
+    min-height: 6px;
+}
+
+#notification_scroller scrollbar slider {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    transition: background-color 150ms ease;
+}
+
+#notification_scroller scrollbar:hover slider {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#notification_scroller scrollbar.vertical {
+    margin-left: 2px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#notification_scroller scrollbar.horizontal {
+    margin-top: 2px;
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+}
+
+.scale-in {
+  animation: scale-in 1s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  transform-origin: center;
+}
+
+/* widgets */
+
+#dummy {
+    color: transparent;
+}
+
+button.widgets_grid {
+    border-radius: 20px;
+    padding: 50px;
+    background-color: rgba(56, 56, 56, 0.384);
+    color: rgba(255, 255, 255, 0.356);
+    text-shadow: 0px 4px 18px #000000;
+    font-weight: 800;
+    font-size: large;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button.widgets_grid:hover {
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+.menu {
+    color: rgba(255, 255, 255, 0.384);
+    border-radius: 50%;
+}
+
+calendar.view {
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(167, 167, 167, 0.048);
+    background: linear-gradient(167deg,rgba(255, 255, 255, 0) 0%, rgba(167, 167, 167, 0.048) 100%);
+    padding: 4px;
+}
+
+calendar.view > header {
+    background-color: #ffffff48;
+    border-radius: 50px;
+    padding: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+calendar.view > header > button {
+    background-color: #ffffff18;
+    border-radius: 100px;
+    border: none;
+    color: #333;
+    margin: 6px;
+}
+
+calendar.view > header > button:hover {
+    background-color: #ffffff3d;
+}
+
+calendar.view > header > label.year {
+    font-weight: bold;
+    color: #000000;
+}
+
+calendar.view header stack.month {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+calendar.view > grid > label.day-name {
+    font-weight: 600;
+    color: #a0a0a0;
+}
+
+calendar.view > grid > label.week-number {
+    color: #ffffff;
+    font-style: italic;
+}
+
+calendar.view > grid > label.day-number {
+    color: #ffffffa6;
+    background: transparent;
+}
+
+calendar.view > grid > label.other-month {
+    color: #ffffff5d;
+    opacity: 0.6;
+}
+
+calendar.view > grid > label.today {
+    background-color: #00000056;
+    border-radius: 50px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+calendar.view > grid > label:selected {
+    background-color: #00000034;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #ffffff;
+}
