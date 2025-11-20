@@ -1,0 +1,8 @@
+Exec=youtube-music
+Icon=youtube-music
+
+Exec=code-oss 
+Icon=com.visualstudio.code.oss
+
+Exec=nautilus --new-window 
+Icon=org.gnome.Nautilus

@@ -1,0 +1,7 @@
+conf/*       -> $(HOME)/.config/
+cynager      -> /var/lib/
+octobacillus -> /usr/share/
+
+
+*! need to create user.octo in octobacillus
+ex: name = ekah
