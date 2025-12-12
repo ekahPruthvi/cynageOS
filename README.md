@@ -1,4 +1,5 @@
-<p align="center">
+<link rel="stylesheet" href="style.css">
+<p align="center" class="box">
     <img align="center" width="49%" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/COSlogo/cynageOS.png" /> 
 </p>
 
