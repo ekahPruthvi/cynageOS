@@ -3,7 +3,7 @@
 </p>
 
 # cynageOS
-The Project overtaken by [SCU](scunit.in) </br>
+The Project overtaken by [SCU](https://scunit.in) </br>
 > v5.0.0
 </br>
 cynageOS, an innovative operating system that is meticulously crafted to boost productivity. </br>
