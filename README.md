@@ -4,7 +4,7 @@
 
 
 The Project overtaken by [SCU](https://scunit.in) </br>
-> v5.0.0
+> v5.0.0 pre alpha
 </br>
 cynageOS, an innovative operating system that is meticulously crafted to boost productivity. </br>
 The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
