@@ -1,6 +1,3 @@
-<p align="center">
-    <img align="center" width="49%" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/COSlogo/cynageOS.png" /> 
-</p>
 
 # Capsulator - Installer for cynageOS
 
