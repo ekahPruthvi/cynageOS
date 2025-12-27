@@ -1,7 +1,7 @@
 
-<p align="center" >
-	<img width="1000" alt="capsule" src="https://github.com/user-attachments/assets/bae83861-0366-4018-920b-abc42287e570" />
-</p>
+| <img width="100vw" alt="capsule" src="https://github.com/user-attachments/assets/bae83861-0366-4018-920b-abc42287e570" /> |
+| - |
+
 
 The Project overtaken by [SCU](https://scunit.in) </br>
 > v5.0.0
