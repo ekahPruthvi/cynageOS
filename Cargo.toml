@@ -1,0 +1,13 @@
+[package]
+name = "cap"
+version = "1.0.0"
+edition = "2024"
+authors = ["ekahPruthvi <ekahpdp@gmail.com>"]
+description = "cynageos installer"
+
+[dependencies]
+gtk4 = "0.9.6"
+gtk4-layer-shell = "0.5.0"
+libc = "0.2.177"
+signal-hook = "0.3.18"
+vte4 = "0.8.0"

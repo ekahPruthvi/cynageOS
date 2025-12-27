@@ -1,0 +1,408 @@
+/* Light Theme */
+/* BASE */
+
+window {
+    background-color: rgba(20, 20, 20, 0);
+}
+
+/* Labels */
+
+label.time {
+    font-size: 16px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.83);
+}
+
+label.date {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+#notivlabel {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.83);
+}
+
+label.noti-low {
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+label.noti-normal {
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    padding: 10px;
+}
+
+label.noti-critical {
+    color: #b00020;
+    font-weight: 800;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Buttons */
+
+button.qlicons {
+    all: unset;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgba(49, 49, 49, 0);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    transform: scale(1.0);
+}
+
+button.qlicons:hover {
+    background-color: rgb(184, 184, 184);
+    border-radius: 10px;
+    transform: scale(1.5);
+}
+
+button.cos {
+    all: unset;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgba(49, 49, 49, 0);
+    transition: transform 0.2s ease;
+    transform: scale(1.0);
+    color: black;
+}
+
+button.cos:hover {
+    transform: scale(1.1);
+}
+
+button.statusicon {
+    all: unset;
+    padding: 10px;
+    background-color: rgba(49, 49, 49, 0);
+    transition: color 0.2s ease;
+    color: rgb(0, 0, 0);
+}
+
+button.statusicon:hover {
+    color: rgb(56, 56, 56);
+}
+
+.notification_btn {
+    all: unset;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.75);
+    transform: scale(1.0);
+    transition: font-weight 0.2s ease, transform 0.2s ease;
+}
+
+.notification_btn:hover {
+    font-weight: 900;
+    transform: scale(1.05);
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#close_button {
+    all: unset;
+    min-height: 10px;
+    min-width: 100px;
+    font-size: 2px;
+    color: rgba(255, 255, 255, 0);
+    padding: 0px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: background-color 300ms ease;
+}
+
+#close_button:hover {
+    background-color: rgba(255, 0, 102, 0.35);
+}
+
+/* COMPONENT STYLES */
+
+#timecapsule {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 5px 20px;
+    border: 0.5px solid rgba(34, 34, 34, 0.12);
+    box-shadow: rgba(0, 0, 0, 0.425) 0px 0px 2px;
+}
+
+.qlbar {
+    background-color: rgba(255, 255, 255, 0.096);
+    border-radius: 50px;
+    padding: 5px;
+    border: 0.5px solid rgba(29, 29, 29, 0.12);
+    box-shadow: rgba(0, 0, 0, 0.425) 0px 0px 2px;
+}
+
+#cynbar {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 50px;
+    padding: 5px 5px 10px 5px;
+    border: 1px solid rgba(34, 34, 34, 0.12);
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#noticapsule {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 50px;
+    padding: 5px;
+    border: 1px solid rgba(36, 36, 36, 0.12);
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#notivbox {
+    padding-top: 10px;
+}
+
+#bubble {
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.55);    
+    padding: 10px 30px 30px 30px;
+    transition: 
+        transform 500ms cubic-bezier(0.68, -0.55, 0.27, 1.55),
+        opacity   400ms cubic-bezier(0.53, 0, 0.38, 1);
+    transform: scale(1.0);
+    opacity: 1.0;
+}
+
+#bubble.scale-out {
+    transform: scale(0.7);
+    opacity: 0.0;
+}
+
+#bubble.scale-in {
+    transform: scale(1.0);
+    opacity: 1.0;
+}
+
+#notification_heading {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.notification_heading_button {
+    all: unset;
+    background-color: transparent;
+}
+
+/* Volume */
+
+#volumelevel.muted {
+    background-color: crimson;
+    opacity: 0.6;
+}
+
+#volumelevel.blight trough block.filled {
+    background-color: rgba(255, 199, 69, 0.56);
+}
+
+#volumelevel.vol trough block.filled {
+    background-color: rgba(255, 255, 255, 0.81);
+}
+
+/* Scrollbars */
+
+#notification_scroller {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#notification_scroller scrollbar {
+    background-color: transparent;
+    border-radius: 12px;
+    margin: 2px;
+    min-width: 6px;
+    min-height: 6px;
+}
+
+#notification_scroller scrollbar slider {
+    background-color: rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    transition: background-color 150ms ease;
+}
+
+#notification_scroller scrollbar:hover slider {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#notification_scroller scrollbar.vertical {
+    margin-left: 2px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#notification_scroller scrollbar.horizontal {
+    margin-top: 2px;
+}
+
+/* Shadow */
+
+#shadow {
+    color: transparent;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+}
+
+.scale-in {
+  animation: scale-in 1s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  transform-origin: center;
+}
+
+/* Widgets */
+
+#dummy {
+    color: transparent;
+}
+
+.menu {
+    color: rgba(0, 0, 0, 0.384);
+    border-radius: 50%;
+}
+
+button.widgets_grid {
+    border-radius: 20px;
+    padding: 50px;
+    background-color: rgba(56, 56, 56, 0.384);
+    color: rgba(255, 255, 255, 0.356);
+    text-shadow: 0px 4px 18px #000000;
+    font-weight: 800;
+    font-size: large;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button.widgets_grid:hover {
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+calendar.view {
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(167, 167, 167, 0.048);
+    background: linear-gradient(167deg,rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.048) 100%);
+    padding: 4px;
+}
+
+calendar.view > header {
+    background-color: #ffffff48;
+    border-radius: 50px;
+    padding: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+calendar.view > header > button {
+    background-color: #ffffff18;
+    border-radius: 100px;
+    border: none;
+    color: #333;
+    margin: 6px;
+}
+
+calendar.view > header > button:hover {
+    background-color: #ffffff3d;
+}
+
+calendar.view > header > label.year {
+    font-weight: bold;
+    color: #000000;
+}
+
+calendar.view header stack.month {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+calendar.view > grid > label.day-name {
+    font-weight: 600;
+    color: #000000;
+}
+
+calendar.view > grid > label.week-number {
+    color: #464646;
+    font-style: italic;
+}
+
+calendar.view > grid > label.day-number {
+    color: #313131a6;
+    background: transparent;
+}
+
+calendar.view > grid > label.other-month {
+    color: #4e4e4e5d;
+    opacity: 0.6;
+}
+
+calendar.view > grid > label.today {
+    background-color: #00000056;
+    border-radius: 50px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+calendar.view > grid > label:selected {
+    background-color: #00000034;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+button.batt_widget {
+    all: unset;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(116, 116, 116, 0.384);
+    color: rgba(37, 37, 37, 0.356);
+    font-weight: 800;
+    font-size: large;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+levelbar.batt_lvl {
+  border-radius: 5px;
+  background: #222;
+  /* border: 2px solid #444; */
+}
+
+levelbar.batt_lvl trough {
+  background-color: #333;
+}
+
+levelbar.batt_lvl block.filled {
+  background: linear-gradient(to right, #ffffff, #b6b6b6);
+  box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(163, 163, 163, 0.32) 0px 2px 16px 0px;
+  border-radius: 2px;
+}
+
+levelbar.batt_lvl block.filled.low {
+  background-color: orange;
+}
+
+levelbar.batt_lvl block {
+  min-width: 30px;
+  min-height: 60px;
+  margin: 2px;
+}

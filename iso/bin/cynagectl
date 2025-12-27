@@ -1,0 +1,253 @@
+#!/usr/bin/env sh
+
+# set variables
+ConfDir="$HOME/.config"
+
+themeset() {
+    if [ "$1" == light ] ; then 
+        ThemeSet="lightage"
+        ln -sf $HOME/.config/capsule/light.css $HOME/.config/capsule/style.css
+    else
+        ThemeSet="cynage"
+        ln -sf $HOME/.config/capsule/dark.css $HOME/.config/capsule/style.css
+    fi
+
+    # kitty
+    ln -fs $ConfDir/kitty/themes/${ThemeSet}.conf $ConfDir/kitty/themes/theme.conf
+    killall -SIGUSR1 kitty
+    
+    # capsule
+    pidof capsule | xargs kill -SIGUSR1
+
+    # qt5ct
+    sed -i "/^color_scheme_path=/c\color_scheme_path=$ConfDir/qt5ct/colors/${ThemeSet}.conf" $ConfDir/qt5ct/qt5ct.conf
+    IconSet=`awk -F "'" '$0 ~ /gsettings set org.gnome.desktop.interface icon-theme/{print $2}' $ConfDir/hypr/themes/${ThemeSet}.conf`
+    sed -i "/^icon_theme=/c\icon_theme=${IconSet}" $ConfDir/qt5ct/qt5ct.conf
+
+    # gtk3
+    sed -i "/^gtk-theme-name=/c\gtk-theme-name=${ThemeSet}" $ConfDir/gtk-3.0/settings.ini
+    sed -i "/^gtk-icon-theme-name=/c\gtk-icon-theme-name=${IconSet}" $ConfDir/gtk-3.0/settings.ini
+
+    # flatpak GTK
+    flatpak --user override --env=GTK_THEME="${ThemeSet}"
+    flatpak --user override --env=ICON_THEME="${IconSet}"
+
+    # hyprland
+    ln -fs $ConfDir/hypr/themes/${ThemeSet}.conf $ConfDir/hypr/themes/theme.conf
+    hyprctl reload
+}
+
+notiv_toggle() {
+    local arg="$1"
+    local mute_file="$ConfDir/hypr/sound/notiv/mute.mp3"
+    local notiv_file="$ConfDir/hypr/sound/notiv/notiv.mp3"
+
+    case "$arg" in
+        "true" )
+            if [ -e "$mute_file" ]; then
+                mv "$mute_file" "$notiv_file"
+                echo "ok"
+            fi
+            ;;
+        "false" )
+            if [ -e "$notiv_file" ]; then
+                mv "$notiv_file" "$mute_file"
+                echo "ok"
+            fi
+            ;;
+        * )
+            if [ -e "$notiv_file" ]; then
+                echo "toggle-on"
+            else
+                echo "toggle-off"
+            fi
+            ;;
+    esac
+}
+
+wallctl() {
+    local arg="$1"
+    local file="$2"
+    local wall_file="$ConfDir/swww"
+    local cynage_dir="$wall_file/cynage"
+    local cache_dir="$wall_file/.cache/cynage"
+
+    case "$arg" in
+        "add" )
+            if [ -e "$file" ]; then
+                mv "$file" "$cynage_dir/"
+                echo "ok"
+            else
+                echo "file does not exist"
+            fi
+            ;;
+        "remove" )
+            if [ -e "$cynage_dir" ]; then
+                local target_file="$cynage_dir/$file*"
+                rm -f $cache_dir/$file*
+                echo "$target_file"
+                mv $target_file $HOME/.local/share/Trash/files/
+                echo "ok"
+            else 
+                echo "file does not exist"
+            fi
+            ;;
+        * )
+            echo "invalid option: use <add|remove>"
+            ;;
+    esac
+}
+
+detox() {
+    clear
+    echo "▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"
+    echo "██░▄▄▀█░██░▄▄█░▄▄▀█░▄▄▀██▄██░▄▄▀█░▄▄▄████░███░█▀▄▄▀█░██░█░▄▄▀███▄░▄█░▄▄▀█░▄▄█▄░▄█░▄▄▀█░██░███"
+    echo "██░████░██░▄▄█░▀▀░█░██░██░▄█░██░█░█▄▀████▄▀▀▀▄█░██░█░██░█░▀▀▄████░██░██░█▄▄▀██░██░▀▀░█░██░███"
+    echo "██░▀▀▄█▄▄█▄▄▄█▄██▄█▄██▄█▄▄▄█▄██▄█▄▄▄▄██████░████▄▄███▄▄▄█▄█▄▄███▀░▀█▄██▄█▄▄▄██▄██▄██▄█▄▄█▄▄██"
+    echo "▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀"
+
+    echo "Pacman and yay cache" | pv -qL 10
+    sleep 2
+    yay -Sc
+
+    echo -n "Clear all cache including recent packages? [y/N] " | pv -qL 40
+    read -r flag
+
+    if [[ "$flag" =~ ^[Yy]$ ]]; then
+        yay -Scc
+    fi
+
+    echo "Removing orphan packages..." | pv -qL 10
+    sleep 2
+    orphans=$(pacman -Qtdq)
+    if [ -n "$orphans" ]; then
+        sudo pacman -Rns $orphans
+    else
+        echo "No orphan packages found."
+    fi
+
+    echo "Clearing user cache..." | pv -qL 10
+    sleep 2
+    du -sh ~/.cache/
+    rm -rf ~/.cache/*
+
+    echo "Cleaning flatpak..." | pv -qL 10
+    sleep 2
+    sudo rm -rfv /var/tmp/flatpak-cache-*
+    flatpak uninstall --unused -y
+
+    echo "Vacuuming systemd journal..." | pv -qL 10
+    sleep 2
+    sudo journalctl --vacuum-size=50M
+
+    sleep 3
+}
+
+alt() {
+    echo "type the groq api key :" | pv -qL 30
+    read key
+    chmod 600 "$ConfDir/alt/key.dat"
+    echo "$key" > $ConfDir/alt/key.dat
+    chmod 400 "$ConfDir/alt/key.dat"
+}
+
+inst() {
+    if [[ "$1" == "get" ]]; then
+        sudo pacman -Sy "$2"
+    elif [[ "$1" == "yeet" ]]; then
+        sudo pacman -Rns "$2"
+    elif [[ "$1" == "getty" ]]; then
+        sudo pacman -S "$2"
+    elif [[ "$1" == "list" ]]; then
+        pacman -Qs "$2"
+    elif [[ "$1" == "ser" ]]; then
+        pacman -Ss "$2"
+    elif [[ "$1" == "uppy" ]]; then
+        echo "1 - Full system update incl cynageOS"
+        echo "2 - only packages update"
+        echo "3 - only pacman updaye excl yay"
+        echo "please update flatpak application if hav to seperatly"
+        printf "choose: "
+        read op
+        case $op in 
+            1 ) 
+                local_version=$(awk -F' *: *' '/^ *ver *:/{print $2}' "/var/lib/cynager/info.probe" | tr -d '[:space:]')
+                remote_version=$(curl -s https://raw.githubusercontent.com/ekahPruthvi/cynageOS/refs/heads/main/version | sed 's/^v//; s/[^0-9.].*//')
+                local_version_clean=$(echo "$local_version" | sed 's/^v//')
+                printf "local version:$local_version_clean\t cynageOS remote version:$remote_version\n"
+                if [[ "$local_version_clean" == "$remote_version" ]]; then
+                    echo "bob"
+                else
+                    echo "notbob"
+                fi
+                ;;
+
+            2 ) 
+                yay;;
+            3 ) 
+                echo "sudo pacman -Syu";;
+        esac
+    else
+        if [[ "$local_version_clean" == "$remote_version" ]]; then
+            echo "latest"
+        else
+            echo "older"
+        fi
+    fi  
+}
+
+# evaluate options
+while getopts "snwxhai" option ; do
+    case $option in
+
+    s ) # set selected theme
+        shift $((OPTIND -1))
+        themeset $1 
+        exit ;;
+
+    n ) # toggle notification sound
+        shift $((OPTIND -1))
+        notiv_toggle $1 
+        exit ;;
+    
+    w ) # wallpaper settings
+        shift $((OPTIND -1))
+        wallctl $1 $2
+        exit ;;
+
+    x ) # detox
+        detox
+        exit ;;
+
+    a ) #set alt. key thingy
+        shift $((OPTIND -1))
+        alt $1
+        exit ;;
+
+    i ) #installer
+        shift $((OPTIND -1))
+        inst $1 $2
+        exit ;;
+
+    h ) # help
+        echo "s : set theme from parameter"
+        echo "n : toggle notification sound <true|false> blank for status"
+        echo "w : add or remove wallpapers <add|remove> for removing do not give any ext (.png|jpeg)"
+        echo "x : run Detox to clean your install"
+        echo "i : to update (cynageOS|arch+yay|arch)"
+        echo "h : to show this message"
+        exit 1 ;;
+
+    * ) # invalid option
+        echo "s : set theme from parameter"
+        echo "n : toggle notification sound <true|false> blank for status"
+        echo "w : add or remove wallpapers <add|remove> for removing do not give any ext (.png|jpeg)"
+        echo "x : run Detox to clean your install"
+        echo "i : to update (cynageOS|arch+yay|arch)"
+        echo "h : to show this message"
+        exit 1 ;;
+
+    esac
+done
+
+printf "use any parameter\n-h to show help message\n"

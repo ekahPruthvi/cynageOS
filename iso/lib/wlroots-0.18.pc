@@ -1,0 +1,22 @@
+prefix=/usr
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+have_drm_backend=true
+have_x11_backend=true
+have_libinput_backend=true
+have_xwayland=true
+have_gles2_renderer=true
+have_vulkan_renderer=true
+have_gbm_allocator=true
+have_session=true
+have_color_management=true
+
+Name: wlroots-0.18
+Description: Wayland compositor library
+URL: https://gitlab.freedesktop.org/wlroots/wlroots
+Version: 0.18.2
+Requires.private: wayland-server >= 1.23, libdrm >= 2.4.122, xkbcommon, pixman-1 >= 0.42.0, egl, gbm, glesv2, vulkan >= 1.2.182, lcms2, libudev, libseat >= 0.2.0, libdisplay-info, libliftoff >= 0.4.0, libinput >= 1.19.0, xcb, xcb-dri3, xcb-present, xcb-render, xcb-renderutil, xcb-shm, xcb-xfixes, xcb-xinput, wayland-client, xcb-composite, xcb-ewmh, xcb-icccm, xcb-res, xcb-errors
+Libs: -L${libdir} -lwlroots-0.18
+Libs.private: -lm -lrt
+Cflags: -I${includedir}/wlroots-0.18
