@@ -2,8 +2,6 @@
 | <img width="100%" alt="capsule" src="https://github.com/user-attachments/assets/bae83861-0366-4018-920b-abc42287e570" /> |
 | - |
 
-<br>
-
 | v5.0.0 pre-alpha|
 | - |
 
@@ -32,7 +30,8 @@ By combining modern aesthetics with user-friendly interfaces. </br></br>
 - Install CynageOS and refer to [Capsulator User Manual](ISO.md)
 
 <br><br>
-# CDIG (Capsule Design Interface Guidelines)
+# CDIG (Capsule Design Interface Guidelines)]
+`upcomming`
 
 <br><br>
 # Theming
