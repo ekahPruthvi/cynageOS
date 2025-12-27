@@ -10,9 +10,23 @@ cynageOS, an innovative operating system that is meticulously crafted to boost p
 The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
 By combining modern aesthetics with user-friendly interfaces. </br></br>
 
-> [!CAUTION]
-> The source code is being updated from `.4.9` to `5.0.0`
-> Please wait a couple of days
+> [!NOTE]  
+> This repository houses the links to all `CynageOS Modules` and `The Capsule Design Language Guidelines` <br>
+> For more information regardeing cynageOS and its modules please refer to [This Page](https://ekahpruthvi.github.io/StertorusPages/blogs/notes.html).
+
+# CynageOS Modules
+| | |
+| --- | --- |
+| [<img width="238" height="438" alt="alt" src="https://github.com/user-attachments/assets/5a7535c1-94cd-4272-8f12-3ad044069e31" />](https://github.com/ekahPruthvi/altDotlauncher) <br> <p align="center">Alt Launcher (application launcher)</p> | [<img width="238" height="638" alt="calibrate" src="https://github.com/user-attachments/assets/fa1cede7-0594-4f8b-8518-b25096205e7f" />](https://github.com/ekahPruthvi/calibrate/tree/main) <br> <p align="center">Calibrate (Settings)</p> |
+| [<img width="238" height="438" alt="capsule" src="https://github.com/user-attachments/assets/9ee3dfa0-45ca-4977-9f86-f9e822db2450" />](https://github.com/ekahPruthvi/capsule_shell) <br> <p align="center">Capsule Shell (cynageOS Navigation)</p> | [<img width="238" height="438" alt="clipper" src="https://github.com/user-attachments/assets/75700744-47e7-4b71-9fc9-d76b2e815066" />](https://github.com/ekahPruthvi/clipper) <br> <p align="center">Clipper (Clipboard Manager)</p> |
+| [<img width="238" height="438" alt="octo (1)" src="https://github.com/user-attachments/assets/ffe2ff9d-0922-4887-98c5-fbf4bb6a907b" />](https://github.com/ekahPruthvi/octobacillus) <br> <p align="center">Octo (Lock and Login Screens)</p> | [<img width="238" height="438" alt="Power" src="https://github.com/user-attachments/assets/7c51b58d-07ee-486e-a647-f1c74ff310f6" />](https://github.com/ekahPruthvi/powerCynide) <br> <p align="center">Power Cynide (Shutdown Menu)</p> |
+| | |
+
+
+
+
+
+---
 
 ### INSTALL ARCH
 NOT TO BE USED AS A GUIDE. USE ONLY IF YOU KNOW WHAT YOU ARE DOING
