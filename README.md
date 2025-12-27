@@ -1,19 +1,21 @@
 
-| <img width="100vw" alt="capsule" src="https://github.com/user-attachments/assets/bae83861-0366-4018-920b-abc42287e570" /> |
+| <img width="100%" alt="capsule" src="https://github.com/user-attachments/assets/bae83861-0366-4018-920b-abc42287e570" /> |
 | - |
 
+<br>
 
-The Project overtaken by [SCU](https://scunit.in) </br>
-> v5.0.0 pre alpha
-</br>
+| v5.0.0 pre-alpha|
+| - |
+
 cynageOS, an innovative operating system that is meticulously crafted to boost productivity. </br>
 The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
 By combining modern aesthetics with user-friendly interfaces. </br></br>
 
 > [!NOTE]  
-> This repository houses the links to all `CynageOS Modules` and `The Capsule Design Language Guidelines` <br>
+> This repository houses the links to all `CynageOS Modules` and `The Capsule Design Interface Guidelines` <br>
 > For more information regardeing cynageOS and its modules please refer to [This Page](https://ekahpruthvi.github.io/StertorusPages/blogs/notes.html).
 
+<br><br>
 # CynageOS Modules
 | | | |
 | --- | --- | --- |
@@ -21,96 +23,26 @@ By combining modern aesthetics with user-friendly interfaces. </br></br>
 | [<img width="238" height="438" alt="clipper" src="https://github.com/user-attachments/assets/75700744-47e7-4b71-9fc9-d76b2e815066" />](https://github.com/ekahPruthvi/clipper) <br> <p align="center">Clipper (Clipboard Manager)</p> | [<img width="238" height="438" alt="octo (1)" src="https://github.com/user-attachments/assets/ffe2ff9d-0922-4887-98c5-fbf4bb6a907b" />](https://github.com/ekahPruthvi/octobacillus) <br> <p align="center">Octo (Lock and Login Screens)</p> | [<img width="238" height="438" alt="Power" src="https://github.com/user-attachments/assets/7c51b58d-07ee-486e-a647-f1c74ff310f6" />](https://github.com/ekahPruthvi/powerCynide) <br> <p align="center">Power Cynide (Shutdown Menu)</p> |
 | | | |
 
+<br><br>
+# Installation (iso)
+- Download cynageOSv5.0.1-XXnmXX.XX.XX-x86_64.iso from [releases page](https://github.com/ekahPruthvi/cynageOS/releases)
+- Flash the iso into a usb pendrive using
+  - Balena Etcher
+  - Rusfus Or any other
+- Install CynageOS and refer to [Capsulator User Manual](ISO.md)
 
+<br><br>
+# CDIG (Capsule Design Interface Guidelines)
 
-
-
----
-
-### INSTALL ARCH
-NOT TO BE USED AS A GUIDE. USE ONLY IF YOU KNOW WHAT YOU ARE DOING
-```bash
-▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-██░▀██░█▀▄▄▀█▄░▄█░▄▄█░▄▄█████
-██░█░█░█░██░██░██░▄▄█▄▄▀█▀▀██
-██░██▄░██▄▄███▄██▄▄▄█▄▄▄█▄▄██
-▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-INSTALL arch
-1] <iwctl> - station 'device' get-networks
-	     station 'device' connect 'ssid'
-
-2] <pacman -Sy> and <pacman -Sy archlinux-keyring>
-	 
-3] <lsblk> and <cfdisk> -  to get the partition names and creating them
-			   create EFI partition and linux filesystem 
-			   and linux swap (optional)
-
-4] <mkfs.fat -F32 '/dev/devicelocation'> - for boot partition
-   <mkfs.ext4 '/dev/devicelocation'> - for root partition
-   (optional)
-   <mkswap '/dev/deviceloaction'> - for swap partition
-
-5] <mount 'root partition' /mnt> - mounting the root partition into /mnt to access it
-   <mkdir /mnt/boot> - making boot directory for linking boot partition with root partition
-   <mount 'boot partition' /mnt/boot> - mounting bootpartition in /mnt/boot
-   (optional)
-   <swapon 'swap partition'> - to mount the swap partition
-
-NOW lsblk should give the mounted output
-
-6] <pacstrap -i /mnt base base-devel linux linux-firmware git sudo neofetch htop 'intel-ucode' nano vim bluez bluez-utils 'networkmanager'>  - installing basic linux and its packages in mnt root partition
-																	       REMEMBER replace intel-ucode with amd-ucode for amd processors and use the 
-																	       tools of your liking (bluez and networkmanager)	
-
-7] <genfstab -U /mnt >> /mnt/etc/fstab> - generating file system and check if it is generated with <cat /mnt/etc/fstab>
-
-NOW to chroot into /mnt and finish settingup arch linux
-
-8] <arch-chroot /mnt> - change root into /mnt
-   <passwd> - set password
-   <useradd -m -g users -G wheel, storage, power, video, audio -s /bin/bash 'username'> - replace username with your user name
-   <passwd 'username'>
-   <visudo> - HERE uncomment to allow members of group wheel to execute any command
-   
-9] <su - 'username'> - superuser into the username
-   <sudo pacman -Syu> - update archlinux
-   <exit> - exit out of superuser
-
-10]<ln -sf /usr/share/zoneinfo/'zone' /etc/localtime> - use tab space after zoneinfo/ to find the zones available and type it in zone
-   <hwclock --systohc> 
-   <nano /etc/locale.gen> - select language (for english us en-US UTF-8) 
-   <locale-gen> - genrate locale
-   <nano /etc/locale.conf> -> LANG=en_US.UTF-8
-   <nano /etc/hostname> -> 'computername' 
-   <nano /etc/hosts> -> 127.0.0.1		 localhost
-			::1			 localhost
-			127.0.1.1 		 'computername'.localdomain		'computername'
-
-11]<pacman -S grub efibootmgr dosfstools mtools os-prober> - install efi tools 
-   <grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id='bootloader_name'> - installing grub in /boot
-   <grub-mkconfig -o /boot/grub/grub.cfg> - enable osprober before this step to show other os in grub menu
-   
-ENABLING system services
-
-12]<systemctl enable bluetooth>
-   <systemctl enable NetworkManager>
-
-EXIT and unmounting
-
-13]<exit>
-   <umount -lR /mnt>
-   <shutdown now>
-```
-
-### Theming
+<br><br>
+# Theming
 To add your own custom theme, please refer [theming.md](https://github.com/ekahPruthvi/cynageOS/blob/main/theming.md)
 - Available themes
     - [x] Cynage
     - [x] Lightage
 
-<details>
-<summary><h4>Packages</h4></summary>
-
+<br><br>
+# Packages
 | nvidia | |
 | :-- | --- |
 linux-headers | for main kernel (script will auto detect from /usr/lib/modules/)
@@ -191,4 +123,3 @@ zsh-syntax-highlighting-git | highlighting of commands
 zsh-autosuggestions-git | see completion as you type
 pokemon-colorscripts-git | display pokemon sprites
 
-</details>
