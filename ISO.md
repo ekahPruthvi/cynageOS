@@ -1,9 +1,8 @@
 
 # Capsulator - Installer for cynageOS
 
-> alpha testing 2
-
-<b>Capsulator</b> is written in Rust. It uses the GTK4 toolkit for the graphical interface and VTE4 for terminal integration. The installer runs on the [cage](https://github.com/cage-kiosk/cage) Wayland kiosk display server.
+<b>Capsulator</b> is written in Rust, It uses the GTK4 toolkit for the graphical interface<br> and VTE4 for terminal integration. <br>
+The installer runs on the [cage](https://github.com/cage-kiosk/cage) Wayland kiosk display server.
 
 ## Pages
 > ### 1
@@ -29,4 +28,10 @@
 > ### 7
 >> Finish
 >> Information
+
+> [!NOTE]
+> The Installer Does not come with all the required programs and installs while running <br>
+> This makes `ETC: ~ 03:00:00`
+> (Will be fixed in the upcomming releases)
+
  
