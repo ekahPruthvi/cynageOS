@@ -30,7 +30,7 @@ By combining modern aesthetics with user-friendly interfaces. </br></br>
 - Install CynageOS and refer to [Capsulator User Manual](ISO.md)
 
 <br><br>
-# CDIG (Capsule Design Interface Guidelines)]
+# CDIG (Capsule Design Interface Guidelines)
 `upcomming`
 
 <br><br>
@@ -41,7 +41,7 @@ To add your own custom theme, please refer [theming.md](https://github.com/ekahP
     - [x] Lightage
 
 <br><br>
-# Packages
+# Packages (to be updated)
 | nvidia | |
 | :-- | --- |
 linux-headers | for main kernel (script will auto detect from /usr/lib/modules/)
