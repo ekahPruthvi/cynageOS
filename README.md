@@ -1,8 +1,8 @@
-<p align="center" class="box">
-    <img align="center" width="49%" src="https://raw.githubusercontent.com/ekahPruthvi/cynageOS/main/Source/Pictures/COSlogo/cynageOS.png" />
+
+<p class="box">
+	<img width="500" alt="capsule" src="https://github.com/user-attachments/assets/bae83861-0366-4018-920b-abc42287e570" />
 </p>
 
-# cynageOS
 The Project overtaken by [SCU](https://scunit.in) </br>
 > v5.0.0
 </br>
