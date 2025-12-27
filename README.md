@@ -27,7 +27,7 @@ By combining modern aesthetics with user-friendly interfaces. </br></br>
 - Flash the iso into a usb pendrive using
   - Balena Etcher
   - Rusfus Or any other
-- Install CynageOS and refer to [Capsulator User Manual](ISO.md)
+- Install CynageOS and refer to [Capsulator User Information](ISO.md)
 
 <br><br>
 # CDIG (Capsule Design Interface Guidelines)
