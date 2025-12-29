@@ -904,7 +904,7 @@ fn build_ui(app: &Application) {
         glib::ControlFlow::Continue
     });
 
-    // ---------------------------------------------------------------- 7t page
+    // ---------------------------------------------------------------- 8t page
     let done = GtkBox::new(Orientation::Vertical, 5);
     // done.set_widget_name("inbox-dark");
     done.set_vexpand(true);
@@ -949,7 +949,7 @@ fn build_ui(app: &Application) {
             .spawn();
     });  
 
-    // ---------------------------------------------------------------- m
+    // ---------------------------------------------------------------- main shi
     stack_box.append(&stack);
     main_box.append(&stack_box);
     
