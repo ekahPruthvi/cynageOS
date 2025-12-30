@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # prepare required packages for cynageOS ISO build
 
 TARGET_DIR="$HOME/req_pkgs/"
