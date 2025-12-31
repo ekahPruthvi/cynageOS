@@ -16,7 +16,7 @@ PKGS=(
   polkit-kde-agent pv pyprland qt5-graphicaleffects qt5-imageformats qt5-quickcontrols qt5-quickcontrols2
   qt5-wayland qt5ct qt6-virtualkeyboard qt6-wayland qt6ct rpi-imager rustup sddm slurp smassh-bin
   sox swww system-config-printer systemd tk ttf-bigblueterminal-nerd ttf-heavydata-nerd udiskie
-  usbutils uthash v4l-utils zen-browser vte4 wev wf-recorder wget wireplumber
+  usbutils uthash v4l-utils min-browser-bin vte4 wev wf-recorder wget wireplumber
   xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xf86-video-vesa xorg-bdftopcf
   xorg-docs xorg-font-util xorg-fonts-100dpi xorg-fonts-75dpi xorg-iceauth xorg-mkfontscale
   xorg-server-devel xorg-server-xephyr xorg-server-xnest xorg-server-xvfb xorg-sessreg xorg-smproxy

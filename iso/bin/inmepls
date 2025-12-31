@@ -7,20 +7,4 @@ echo -e "\e[31mGetting your system ready and firing up the installer ....\e[0m" 
 
 NetworkManager &
 
-# if ping -c 1 google.com > /dev/null 2>&1
-# then
-#     echo "You are connected to the internet, continuing" && sleep 3s
-# else
-#     echo -e "\e[31mConnectingy to internet using nmtui"
-#     echo -e "please exit once connected,"
-#     echo -e "now press return to continue\e[0m" && read
-#     nmtui
-# fi
-
-# give internet and connect before running these
-
-# pacman -Sy
-# pacman -U --noconfirm /var/lib/cos/backend/wlroots0.19-0.19.1-2-x86_64.pkg.tar.zst
-# pacman -U --noconfirm /var/lib/cos/backend/cage-0.2.0-3-x86_64.pkg.tar.zst
-
 cage cap

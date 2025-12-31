@@ -143,6 +143,7 @@ cp -pa /usr/lib/wlroots-0.18.pc /mnt/usr/lib/
 cp -pa /etc/os-release /mnt/etc/os-release
 
 cp -pa /var/lib/cos/yay-12.5.3-1-x86_64.pkg.tar.zst /mnt/root/
+cp -pa /var/lib/cos/req_pkgs /mnt/root/
 
 cat <<EOF > /mnt/root/chroot_setup.sh
 #!/bin/bash
@@ -237,6 +238,8 @@ sed -i '/%wheel ALL=(ALL:ALL) NOPASSWD: ALL/s/^/# /' /etc/sudoers
 chmod 777 /root/yay-12.5.3-1-x86_64.pkg.tar.zst
 pacman -U /root/yay-12.5.3-1-x86_64.pkg.tar.zst
 
+chmod -R 644 /root/req_pkgs/*
+
 echo "Finished inside chroot."
 EOF
 
@@ -244,6 +247,10 @@ chmod +x /mnt/root/chroot_setup.sh
 
 echo "Entering chroot to complete Arch setup..."
 arch-chroot /mnt /root/chroot_setup.sh
+
+mv /var/lib/cos/cos_module_shi/cynager/ /mnt/var/lib/cynager/
+mv /var/lib/cos/cos_module_shi/octobacillus/ /mnt/usr/share/octobacillus/
+echo "name = ${USERNAME}" > /mnt/usr/share/octobacillus/user.octo
 
 echo "Cleaning chroot setup script..."
 rm /mnt/root/chroot_setup.sh

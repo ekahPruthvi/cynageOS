@@ -63,7 +63,7 @@ cat <<EOT > /mnt/root/cyn.sh
 # ****++++++++++++++=====+===========================-=-=-==---==--===++++=+**##%%%%###########
 # **++++++++*+++======+=++===============================----=-=--=====++++**##%%%%############
 
-printf"
+cat << EOF
 
 ░▀█▀░█▀▀▄░█▀▀░▀█▀░█▀▀▄░█░░█░░░▀░░█▀▀▄░█▀▀▀
 ░▒█░░█░▒█░▀▀▄░░█░░█▄▄█░█░░█░░░█▀░█░▒█░█░▀▄
@@ -77,7 +77,7 @@ printf"
 ░█▄▄█░█▄▄▀░█░░█░█░▀▄░█▄▄▀░█▄▄█░█░▀░█░▀▀▄░░░▄▄
 ░█░░░░▀░▀▀░░▀▀░░▀▀▀▀░▀░▀▀░▀░░▀░▀░░▒▀░▀▀▀░░░▀▀
 
-"
+EOF
 
 sleep 2s
 
@@ -90,30 +90,10 @@ elif lspci | grep -E -i 'amd|ati|radeon'; then
   pacman -Sy --needed --noconfirm xf86-video-amdgpu linux-firmware-amdgpu linux-firmware-radeon vulkan-radeon
 fi 
 
-su - $USER -c 'yay -S archiso ark bc blueman brightnessctl cliphist code cpio'
-su - $USER -c 'yay -S dnsmasq dosfstools dunst efibootmgr espeak-ng eza ffmpegthumbs flatpak fuse2'
-su - $USER -c 'yay -S greetd grimblast-git grub gst-plugin-pipewire gst-plugins-base gtk4-layer-shell' 
-su - $USER -c 'yay -S hostapd hyprland hyprpicker hyprshot i2c-tools imagemagick iw jq kde-cli-tools'
-su - $USER -c 'yay -S kdeconnect kitty kvantum kvantum-qt5 libconfig libev libnotify libresprite linux-headers'
-su - $USER -c 'yay -S loupe man-db mpv mtools nautilus netdiscover network-manager-applet'
-su - $USER -c 'yay -S noto-fonts-emoji nwg-look oh-my-zsh-git pacman-contrib pam-python pamixer parallel pavucontrol' 
-su - $USER -c 'yay -S pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse playerctl pokemon-colorscripts-git' 
-su - $USER -c 'yay -S polkit-kde-agent pv pyprland qt5-graphicaleffects qt5-imageformats qt5-quickcontrols qt5-quickcontrols2'
-su - $USER -c 'yay -S qt5-wayland qt5ct qt6-virtualkeyboard qt6-wayland qt6ct rpi-imager rustup sddm slurp smassh-bin'
-su - $USER -c 'yay -S sox swww system-config-printer systemd tk ttf-bigblueterminal-nerd ttf-heavydata-nerd udiskie'
-su - $USER -c 'yay -S usbutils uthash v4l-utils zen-browser vte4 wev wf-recorder wget wireplumber'
-su - $USER -c 'yay -S xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xf86-video-vesa xorg-bdftopcf'
-su - $USER -c 'yay -S xorg-docs xorg-font-util xorg-fonts-100dpi xorg-fonts-75dpi xorg-iceauth xorg-mkfontscale'
-su - $USER -c 'yay -S xorg-server-devel xorg-server-xephyr xorg-server-xnest xorg-server-xvfb xorg-sessreg xorg-smproxy'
-su - $USER -c 'yay -S xorg-x11perf xorg-xbacklight xorg-xcmsdb xorg-xcursorgen xorg-xdpyinfo xorg-xdriinfo xorg-xev'
-su - $USER -c 'yay -S xorg-xgamma xorg-xhost xorg-xinput xorg-xkbevd xorg-xkbutils xorg-xkill xorg-xlsatoms' 
-su - $USER -c 'yay -S xorg-xlsclients xorg-xmodmap xorg-xpr xorg-xrandr xorg-xrdb xorg-xrefresh'
-su - $USER -c 'yay -S xorg-xsetroot xorg-xvinfo xorg-xwd xorg-xwininfo xorg-xwud zen-browser'
-su - $USER -c 'yay -S zsh-autosuggestions-git zsh-syntax-highlighting-git zsh-theme-powerlevel10k-git'
-su - $USER -c 'yay -S xcb-util-renderutil xcb-util-wm xcb-util-errors wayland wayland-protocols egl-wayland'
-su - $USER -c 'yay -S libglvnd vulkan-icd-loader vulkan-headers glslang libdrm libinput libxkbcommon pixman'
-su - $USER -c 'yay -S seatd hwdata libdisplay-info libliftoff xorg-xwayland libxkbcommon gtk4 gtk4-layer-shell vte4 mesa'
-
+for pkg in /root/req_pkgs/*.pkg.tar.zst; do
+  su - $USER -c 'yay -U --noconfirm "$pkg"'
+done
+su - $USER -c 'yay -S --noconfirm min-browser-bin'
 
 mv /etc/sudo.bak /etc/sudoers
 
@@ -165,6 +145,12 @@ arch-chroot /mnt /root/cyn.sh
 
 echo "Cleaning cynageOS setup script..."
 rm /mnt/root/cyn.sh
+
+mv /var/lib/cos/cos_module_shi/config/ /mnt/home/$USER/.config/
+mv /var/lib/cos/cos_module_shi/style/icons/ /mnt/usr/share/icons/
+mv /var/lib/cos/cos_module_shi/style/icons/ /mnt/home/$USER/.icons/
+mv /var/lib/cos/cos_module_shi/style/themes/ /mnt/usr/share/themes/
+mv /var/lib/cos/cos_module_shi/style/themes/ /mnt/home/$USER/.themes/
 
 echo "Unmounting and Finishing up"
 umount -lR /mnt
