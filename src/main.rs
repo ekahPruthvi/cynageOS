@@ -185,19 +185,6 @@ fn build_ui(app: &Application) {
         window.set_anchor(edge, anchor);
     }
 
-    let key_controller = EventControllerKey::new();
-    let app_clone = app.clone();
-    let pressed_keys = RefCell::new(HashSet::new());
-    key_controller.connect_key_pressed(move |_, keyval, _, _| {
-        pressed_keys.borrow_mut().insert(keyval);
-        let keys = pressed_keys.borrow();
-        if keys.contains(&gtk4::gdk::Key::Escape) && keys.contains(&gtk4::gdk::Key::_1) {
-            app_clone.quit();
-        }
-        gtk4::glib::Propagation::Stop
-    });
-    window.add_controller(key_controller);
-
     let css = CssProvider::new();
     css.load_from_data(
         "
@@ -500,6 +487,10 @@ fn build_ui(app: &Application) {
             font-size: 30px;
             font-weight: 200;
         }
+
+        .none {
+            all: unset;
+        }
         
         ",
     );
@@ -683,15 +674,16 @@ fn build_ui(app: &Application) {
     picture.set_vexpand(true);
 
     let start = Button::builder()
-        .child(&Label::new(Some("Begin installation")))
+        // .child(&Label::new(Some("Begin installation")))
+        .child(&picture)
+        .css_classes(&["none"])
         .hexpand(true)
         .vexpand(true)
         .halign(gtk4::Align::Center)
-        .valign(gtk4::Align::Baseline)
+        .valign(gtk4::Align::Center)
         .margin_bottom(20)
         .build();
 
-    up_box.append(&picture);
     up_box.append(&start);
     stack.add_named(&up_box, Some("intro"));
     if is_connected(){
