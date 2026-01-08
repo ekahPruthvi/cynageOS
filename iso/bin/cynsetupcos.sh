@@ -91,9 +91,9 @@ elif lspci | grep -E -i 'amd|ati|radeon'; then
 fi 
 
 for pkg in /root/req_pkgs/*.pkg.tar.zst; do
-  su - $USER -c 'yay -U --noconfirm "$pkg"'
+  pacman -U --noconfirm "$pkg"
 done
-su - $USER -c 'yay -S --noconfirm min-browser-bin'
+sudo -u "$USER" yay -U --noconfirm "$pkg"
 
 mv /etc/sudo.bak /etc/sudoers
 
