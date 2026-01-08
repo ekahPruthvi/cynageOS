@@ -491,6 +491,10 @@ fn build_ui(app: &Application) {
         .none {
             all: unset;
         }
+
+        .none:hover {
+            all: unset;
+        }
         
         ",
     );
@@ -676,7 +680,7 @@ fn build_ui(app: &Application) {
     let start = Button::builder()
         // .child(&Label::new(Some("Begin installation")))
         .child(&picture)
-        .css_classes(&["none"])
+        .css_classes(["none"])
         .hexpand(true)
         .vexpand(true)
         .halign(gtk4::Align::Center)
