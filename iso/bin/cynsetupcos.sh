@@ -90,9 +90,16 @@ elif lspci | grep -E -i 'amd|ati|radeon'; then
   pacman -Sy --needed --noconfirm xf86-video-amdgpu linux-firmware-amdgpu linux-firmware-radeon vulkan-radeon
 fi 
 
-for pkg in /root/req_pkgs/*.pkg.tar.zst; do
-  pacman -U --noconfirm "$pkg"
-done
+shopt -s nullglob
+pkgs=(/root/req_pkgs/*)
+
+if [ ${#pkgs[@]} -gt 0 ]; then
+  pacman -U --noconfirm "${pkgs[@]}"
+else
+  echo "No .pkg.tar.zst files found in /root/req_pkgs/"
+fi
+shopt -u nullglob
+
 sudo -u "$USER" yay -U --noconfirm "$pkg"
 
 mv /etc/sudo.bak /etc/sudoers
@@ -136,8 +143,8 @@ EOF
 
 EOT
 
-# sleep 1s
-# pidof cap | xargs kill -38 FOR CPYING CONFIGS
+sleep 1s
+pidof cap | xargs kill -38
 
 chmod +x /mnt/root/cyn.sh
 echo "Entering chroot to complete cynageOS setup..."
@@ -147,10 +154,10 @@ echo "Cleaning cynageOS setup script..."
 rm /mnt/root/cyn.sh
 
 mv /var/lib/cos/cos_module_shi/config/ /mnt/home/$USER/.config/
-mv /var/lib/cos/cos_module_shi/style/icons/ /mnt/usr/share/icons/
-mv /var/lib/cos/cos_module_shi/style/icons/ /mnt/home/$USER/.icons/
-mv /var/lib/cos/cos_module_shi/style/themes/ /mnt/usr/share/themes/
-mv /var/lib/cos/cos_module_shi/style/themes/ /mnt/home/$USER/.themes/
+cp -par /var/lib/cos/cos_module_shi/style/icons/Bibata-Modern-Ice /mnt/usr/share/icons/
+cp -par /var/lib/cos/cos_module_shi/style/icons/cynide /mnt/usr/share/icons/
+cp -par /var/lib/cos/cos_module_shi/style/themes/cynage /mnt/usr/share/themes/
+cp -par /var/lib/cos/cos_module_shi/style/themes/lightage /mnt/usr/share/themes/
 
 echo "Unmounting and Finishing up"
 umount -lR /mnt
