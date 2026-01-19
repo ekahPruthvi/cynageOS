@@ -1,8 +1,6 @@
 #!/bin/bash
 # prepare required packages for cynageOS ISO build
 
-TARGET_DIR="$HOME/req_pkgs/"
-mkdir -p "$TARGET_DIR"
 
 PKGS=(
   archiso ark bc blueman brightnessctl cliphist code cpio
@@ -11,7 +9,7 @@ PKGS=(
   hostapd hyprland hyprpicker hyprshot i2c-tools imagemagick iw jq kde-cli-tools
   kdeconnect kitty kvantum kvantum-qt5 libconfig libev libnotify libresprite linux-headers
   loupe man-db mpv mtools nautilus netdiscover network-manager-applet
-  noto-fonts-emoji nwg-look oh-my-zsh-git pacman-contrib pam-python pamixer parallel pavucontrol
+  noto-fonts-emoji oh-my-zsh-git pacman-contrib pamixer parallel pavucontrol
   pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse playerctl pokemon-colorscripts-git
   polkit-kde-agent pv pyprland qt5-graphicaleffects qt5-imageformats qt5-quickcontrols qt5-quickcontrols2
   qt5-wayland qt5ct qt6-virtualkeyboard qt6-wayland qt6ct rpi-imager rustup sddm slurp smassh-bin
@@ -30,8 +28,5 @@ PKGS=(
   seatd hwdata libdisplay-info libliftoff xorg-xwayland libxkbcommon gtk4 gtk4-layer-shell vte4 mesa
 )
 
-sudo pacman -Scc --noconfirm
-yay -Sw --noconfirm "${PKGS[@]}"
+yay -Sy --noconfirm "${PKGS[@]}"
 
-cp /var/cache/pacman/pkg/*.pkg.tar.zst "$TARGET_DIR"
-echo "All packages downloaded and copied to $TARGET_DIR"

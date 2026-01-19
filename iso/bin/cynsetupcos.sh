@@ -4,7 +4,7 @@
 
 set -e
 
-USER="$(cat bob.txt)"
+USERR="$(cat bob.txt)"
 
 cat <<EOT > /mnt/root/cyn.sh
 # @@@@@%%%%%%%%%####********+++++++++++++++++++******########%%%%%%%%%%%%%%%%%%%%%%%%%##%######
@@ -153,11 +153,11 @@ arch-chroot /mnt /root/cyn.sh
 echo "Cleaning cynageOS setup script..."
 rm /mnt/root/cyn.sh
 
-mv /var/lib/cos/cos_module_shi/config/ /mnt/home/$USER/.config/
+mv /var/lib/cos/cos_module_shi/config/ /mnt/home/$USERR/.config/
 cp -par /var/lib/cos/cos_module_shi/style/icons/Bibata-Modern-Ice /mnt/usr/share/icons/
 cp -par /var/lib/cos/cos_module_shi/style/icons/cynide /mnt/usr/share/icons/
-cp -par /var/lib/cos/cos_module_shi/style/themes/cynage /mnt/usr/share/themes/
-cp -par /var/lib/cos/cos_module_shi/style/themes/lightage /mnt/usr/share/themes/
+chown -R $USERR:$USERR /mnt/home/$USERR/.config/
+chmod 755 /mnt/home/$USERR/.config/
 
 echo "Unmounting and Finishing up"
 umount -lR /mnt
