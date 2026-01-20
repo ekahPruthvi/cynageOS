@@ -1,7 +1,7 @@
 use gtk4::glib::property::PropertySet;
 use gtk4::{
     glib, prelude::*, Application, ApplicationWindow, Box as GtkBox, Button, CssProvider, DrawingArea, Entry, Label, ScrolledWindow, 
-    Orientation, Overlay, Stack, Picture, EventControllerKey
+    Orientation, Overlay, Stack, Picture
 };
 use gtk4::gdk::Display;
 use gtk4_layer_shell::{LayerShell, Layer, Edge};
@@ -12,8 +12,6 @@ use vte4::{Terminal, PtyFlags, TerminalExtManual};
 use gtk4::glib::{SpawnFlags,Pid,Error };
 use std::sync::{Arc, atomic::{AtomicBool, Ordering}};
 use signal_hook::flag;
-use std::collections::HashSet;
-use std::cell::RefCell;
 
 fn main() {
     let _ = Command::new("NetworkManager");
