@@ -101,6 +101,9 @@ fi
 shopt -u nullglob
 
 sudo -u "$USER" yay -U --noconfirm "$pkg"
+# after fixing pkg installs
+chsh -s /bin/zsh
+sudo -u "$USER" chsh -s /bin/zsh
 
 mv /etc/sudo.bak /etc/sudoers
 
@@ -124,7 +127,7 @@ cat << EOF
 
 EOF
 
-sed -i -E -e "s|^command = .*|command = \"cage -m last -s /usr/bin/octobacillus\"|" "/etc/greetd/config.toml"
+sed -i -E -e "s|^command = .*|command = \"niri -c /usr/bin/octobacillus/comp/config.kdl\"|" "/etc/greetd/config.toml"
 systemctl enable greetd.service
 
 cat << EOF
@@ -156,8 +159,11 @@ rm /mnt/root/cyn.sh
 mv /var/lib/cos/cos_module_shi/config/ /mnt/home/$USERR/.config/
 cp -par /var/lib/cos/cos_module_shi/style/icons/Bibata-Modern-Ice /mnt/usr/share/icons/
 cp -par /var/lib/cos/cos_module_shi/style/icons/cynide /mnt/usr/share/icons/
-chown -R $USERR:$USERR /mnt/home/$USERR/.config/
-chmod 755 /mnt/home/$USERR/.config/
+chown -R $USERR /mnt/home/$USERR/.config/
+chmod 755 -R /mnt/home/$USERR/.config/
+chown -R $USERR /var/lib/cynager/
+chmod 755 -R /var/lib/cynager/
+
 
 echo "Unmounting and Finishing up"
 umount -lR /mnt

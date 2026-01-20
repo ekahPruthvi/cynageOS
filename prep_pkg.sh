@@ -1,11 +1,13 @@
 #!/bin/bash
 # prepare required packages for cynageOS ISO build
 
+TARGET_DIR="$HOME/req_pkgs/"
+mkdir -p "$TARGET_DIR"
 
 PKGS=(
   archiso ark bc blueman brightnessctl cliphist code cpio
   dnsmasq dosfstools dunst efibootmgr espeak-ng eza ffmpegthumbs flatpak fuse2
-  greetd grimblast-git grub gst-plugin-pipewire gst-plugins-base
+  greetd grub gst-plugin-pipewire gst-plugins-base
   hostapd i2c-tools imagemagick iw jq kde-cli-tools
   kdeconnect kitty kvantum kvantum-qt5 libconfig libev libnotify libresprite linux-headers
   loupe man-db mpv mtools nautilus netdiscover network-manager-applet
@@ -28,5 +30,7 @@ PKGS=(
   seatd hwdata libdisplay-info libliftoff xorg-xwayland libxkbcommon gtk4 gtk4-layer-shell vte4 mesa
 )
 
+sudo pacman -Scc --noconfirm
 yay -Sy --noconfirm "${PKGS[@]}"
 
+cp -pa "$HOME/req_pkgs/" "$TARGET_DIR/"
