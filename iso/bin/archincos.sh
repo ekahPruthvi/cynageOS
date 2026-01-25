@@ -126,7 +126,6 @@ genfstab -U /mnt >> /mnt/etc/fstab
 echo "Resulting /mnt/etc/fstab:"
 cat /mnt/etc/fstab
 
-cp -pa /usr/bin/cage  /mnt/usr/bin/
 cp -pa /usr/bin/altDot  /mnt/usr/bin/
 cp -pa /usr/bin/batt_low  /mnt/usr/bin/
 cp -pa /usr/bin/calibrate  /mnt/usr/bin/
