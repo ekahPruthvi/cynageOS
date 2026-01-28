@@ -1,0 +1,4 @@
+
+spawn-sh-at-startup "mpv --no-video --volume=100 $HOME/.config/niri/sound/startup/default.mp3"
+spawn-sh-at-startup "octobacillus"
+// user commands -----------------------------------------------------------------------------------------------------------------

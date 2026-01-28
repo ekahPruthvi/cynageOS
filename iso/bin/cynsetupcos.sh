@@ -90,17 +90,37 @@ elif lspci | grep -E -i 'amd|ati|radeon'; then
   pacman -Sy --needed --noconfirm xf86-video-amdgpu linux-firmware-amdgpu linux-firmware-radeon vulkan-radeon
 fi 
 
-shopt -s nullglob
-pkgs=(/root/req_pkgs/*)
+# Define your package list
+PKGS=(
+  niri greetd archiso ark bc blueman brightnessctl cliphist code 
+  cpio dnsmasq dosfstools dunst efibootmgr espeak-ng eza ffmpegthumbs flatpak fuse2
+  grub gst-plugin-pipewire gst-plugins-base
+  hostapd i2c-tools imagemagick iw jq kde-cli-tools
+  kdeconnect kitty kvantum kvantum-qt5 libconfig libev libnotify libresprite linux-headers
+  man-db mpv mtools nautilus network-manager-applet adobe-source-han-sans-jp-fonts otf-ipafont
+  noto-fonts-emoji pacman-contrib pamixer parallel pavucontrol
+  pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse playerctl
+  polkit-kde-agent pv qt5-graphicaleffects qt5-imageformats qt5-quickcontrols qt5-quickcontrols2
+  qt5-wayland qt5ct qt6-virtualkeyboard qt6-wayland qt6ct rpi-imager rustup sddm slurp
+  sox swww system-config-printer systemd tk ttf-bigblueterminal-nerd ttf-heavydata-nerd udiskie
+  usbutils uthash v4l-utils vte4 wev wf-recorder wget wireplumber
+  xdg-desktop-portal-gtk xdg-desktop-portal-gnome gnome-keyring xf86-video-vesa xorg-bdftopcf
+  xorg-docs xorg-font-util xorg-fonts-100dpi xorg-fonts-75dpi xorg-iceauth xorg-mkfontscale
+  xorg-server-devel xorg-server-xephyr xorg-server-xnest xorg-server-xvfb xorg-sessreg xorg-smproxy
+  xorg-x11perf xorg-xbacklight xorg-xcmsdb xorg-xcursorgen xorg-xdpyinfo xorg-xdriinfo xorg-xev
+  xorg-xgamma xorg-xhost xorg-xinput xorg-xkbevd xorg-xkbutils xorg-xkill xorg-xlsatoms
+  xorg-xlsclients xorg-xmodmap xorg-xpr xorg-xrandr xorg-xrdb xorg-xrefresh
+  xorg-xsetroot xorg-xvinfo xorg-xwd xorg-xwininfo xorg-xwud
+  xcb-util-renderutil xcb-util-wm xcb-util-errors wayland wayland-protocols egl-wayland
+  libglvnd vulkan-icd-loader vulkan-headers glslang libdrm libinput libxkbcommon pixman
+  seatd hwdata libdisplay-info libliftoff xorg-xwayland libxkbcommon gtk4 gtk4-layer-shell vte4 mesa
+)
 
-if [ ${#pkgs[@]} -gt 0 ]; then
-  pacman -U --noconfirm "${pkgs[@]}"
-else
-  echo "No .pkg.tar.zst files found in /root/req_pkgs/"
-fi
-shopt -u nullglob
+# no pacman apps -> netdiscover oh-my-zsh-git pokemon-colorscripts-git zsh-autosuggestions-git zsh-syntax-highlighting-git zsh-theme-powerlevel10k-git
 
-sudo -u "$USER" yay -U --noconfirm "$pkg"
+# Update and install
+pacman -Sy --needed --noconfirm "${PKGS[@]}"
+
 # after fixing pkg installs
 chsh -s /bin/zsh
 sudo -u "$USER" chsh -s /bin/zsh
@@ -159,11 +179,17 @@ rm /mnt/root/cyn.sh
 mv /var/lib/cos/cos_module_shi/config/ /mnt/home/$USERR/.config/
 cp -par /var/lib/cos/cos_module_shi/style/icons/Bibata-Modern-Ice /mnt/usr/share/icons/
 cp -par /var/lib/cos/cos_module_shi/style/icons/cynide /mnt/usr/share/icons/
-chown -R $USERR /mnt/home/$USERR/.config/
-chmod 755 -R /mnt/home/$USERR/.config/
-chown -R $USERR /var/lib/cynager/
-chmod 755 -R /var/lib/cynager/
 
+find /mnt/usr/share/icons/cynide -type d -exec chmod 755 {} +
+find /mnt/usr/share/icons/cynide -type f -exec chmod 644 {} +
+chown -R root:root /mnt/usr/share/icons/cynide
+
+chown -R "$USERR:$USERR" "/mnt/home/$USERR/.config/"
+find "/mnt/home/$USERR/.config/" -type d -exec chmod 700 {} +
+find "/mnt/home/$USERR/.config/" -type f -exec chmod 600 {} +
+
+chown -R $USERR /var/lib/cynager/
+chmod 700 -R /var/lib/cynager/
 
 echo "Unmounting and Finishing up"
 umount -lR /mnt

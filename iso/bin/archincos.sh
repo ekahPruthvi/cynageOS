@@ -141,9 +141,6 @@ cp -pa /usr/lib/libwlroots-0.18.so /mnt/usr/lib/
 cp -pa /usr/lib/wlroots-0.18.pc /mnt/usr/lib/
 cp -pa /etc/os-release /mnt/etc/os-release
 
-cp -pa /var/lib/cos/yay-12.5.3-1-x86_64.pkg.tar.zst /mnt/root/
-cp -par /var/lib/cos/req_pkgs /mnt/root/
-
 cat <<EOF > /mnt/root/chroot_setup.sh
 #!/bin/bash
 set -e
@@ -158,7 +155,7 @@ printf "
 
 echo "Setting root password..."
 until passwd; do
-    echo "Password did not match or failed. Try again..."
+    echo "~~~ Cher monsieur/Chère madame, your passwords do not match, Essaie encore, s'il te plaît ~~~"
 done
 
 echo "Adding user $USERNAME..."

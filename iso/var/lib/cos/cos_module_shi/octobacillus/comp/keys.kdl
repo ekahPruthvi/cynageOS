@@ -1,0 +1,9 @@
+
+binds {
+    // Mod+Shift+Slash { show-hotkey-overlay; }
+    Mod+Backspace repeat=false hotkey-overlay-title="Run: alt." { spawn-sh "pkill terminatee || exec terminatee"; }
+
+    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+
+    Mod+Shift+P { power-off-monitors; }
+}
