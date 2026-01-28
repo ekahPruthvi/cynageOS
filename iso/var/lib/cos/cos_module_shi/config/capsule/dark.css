@@ -128,14 +128,14 @@ button.statusicon:hover {
 #noticapsule {
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.12);
-    background-color: rgba(70, 70, 70, 0.2);
+    background-color: rgb(29, 29, 29);
     box-shadow: rgba(0, 0, 0, 0.425) 0px 0px 7px;
 }
 
 #bubble {
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.12);
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(42, 42, 42);
     padding: 10px 30px 30px 30px;
     transition: 
         transform 500ms cubic-bezier(0.68, -0.55, 0.27, 1.55),
@@ -165,16 +165,16 @@ button.statusicon:hover {
 }
 
 #cynbar {
-    background-color: rgba(70, 70, 70, 0.2);
+    background-color: rgb(29, 29, 29);
     padding: 5px 5px 10px 5px;
-    box-shadow: rgba(92, 91, 91, 0.11) 3px 3px 6px 0px inset,
-                rgba(202, 214, 224, 0.116) -3px -3px 6px 1px inset;
+    /* box-shadow: rgba(92, 91, 91, 0.11) 3px 3px 6px 0px inset,
+                rgba(202, 214, 224, 0.116) -3px -3px 6px 1px inset; */
 }
 
 #noticapsule {
     padding: 5px;
-    box-shadow: rgba(92, 91, 91, 0.11) 3px 3px 6px 0px inset,
-                rgba(202, 214, 224, 0.116) -3px -3px 6px 1px inset;
+    /* box-shadow: rgba(92, 91, 91, 0.11) 3px 3px 6px 0px inset,
+                rgba(202, 214, 224, 0.116) -3px -3px 6px 1px inset; */
 }
 
 

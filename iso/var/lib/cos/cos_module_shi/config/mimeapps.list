@@ -1,0 +1,30 @@
+[Default Applications]
+x-scheme-handler/http=zen.desktop
+x-scheme-handler/https=zen.desktop
+x-scheme-handler/chrome=zen.desktop
+text/html=zen.desktop
+application/x-extension-htm=zen.desktop
+application/x-extension-html=zen.desktop
+application/x-extension-shtml=zen.desktop
+application/xhtml+xml=zen.desktop
+application/x-extension-xhtml=zen.desktop
+application/x-extension-xht=zen.desktop
+text/css=code-oss.desktop
+application/json=code-oss.desktop
+x-scheme-handler/discord=vesktop.desktop
+text/plain=code-oss.desktop
+
+[Added Associations]
+x-scheme-handler/http=zen.desktop;userapp-Zen-PJF2I3.desktop;userapp-Zen-RRSUI3.desktop;
+x-scheme-handler/https=zen.desktop;userapp-Zen-PJF2I3.desktop;userapp-Zen-RRSUI3.desktop;
+x-scheme-handler/chrome=zen.desktop;userapp-Zen-PJF2I3.desktop;userapp-Zen-RRSUI3.desktop;
+text/html=userapp-Zen-RRSUI3.desktop;userapp-Zen-PJF2I3.desktop;zen.desktop;
+application/x-extension-htm=userapp-Zen-RRSUI3.desktop;userapp-Zen-PJF2I3.desktop;zen.desktop;
+application/x-extension-html=userapp-Zen-RRSUI3.desktop;userapp-Zen-PJF2I3.desktop;zen.desktop;
+application/x-extension-shtml=userapp-Zen-RRSUI3.desktop;userapp-Zen-PJF2I3.desktop;zen.desktop;
+application/xhtml+xml=userapp-Zen-RRSUI3.desktop;userapp-Zen-PJF2I3.desktop;zen.desktop;
+application/x-extension-xhtml=userapp-Zen-RRSUI3.desktop;userapp-Zen-PJF2I3.desktop;zen.desktop;
+application/x-extension-xht=userapp-Zen-RRSUI3.desktop;userapp-Zen-PJF2I3.desktop;zen.desktop;
+text/css=code-oss.desktop;
+application/json=code-oss.desktop;
+text/plain=code-oss.desktop;

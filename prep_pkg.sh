@@ -27,7 +27,8 @@ PKGS=(
   zsh-autosuggestions-git zsh-syntax-highlighting-git zsh-theme-powerlevel10k-git
   xcb-util-renderutil xcb-util-wm xcb-util-errors wayland wayland-protocols egl-wayland
   libglvnd vulkan-icd-loader vulkan-headers glslang libdrm libinput libxkbcommon pixman
-  seatd hwdata libdisplay-info libliftoff xorg-xwayland libxkbcommon gtk4 gtk4-layer-shell vte4 mesa
+  seatd hwdata libdisplay-info libliftoff xorg-xwayland libxkbcommon gtk4 gtk4-layer-shell vte4 mesa adobe-source-han-sans-jp-fonts
+  otf-ipafont
 )
 
 sudo pacman -Scc --noconfirm

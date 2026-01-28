@@ -1,0 +1,235 @@
+include "display.kdl"
+include "startup.kdl"
+include "keys.kdl"
+
+input {
+    keyboard {
+        xkb {
+        }
+        // numlock
+    }
+
+    touchpad {
+        // off
+        tap
+        // dwt
+        // dwtp
+        // drag false
+        drag-lock
+        natural-scroll
+        accel-speed 0.6
+        // accel-profile "flat"
+        // scroll-factor 1.0
+        // scroll-factor vertical=1.0 horizontal=-2.0
+        scroll-method "two-finger"
+        // scroll-button 273
+        // scroll-button-lock
+        // tap-button-map "left-middle-right"
+        // click-method "clickfinger"
+        // left-handed
+        disabled-on-external-mouse
+        // middle-emulation
+    }
+
+    mouse {
+        // off
+        // natural-scroll
+        accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-factor 1.0
+        // scroll-factor vertical=1.0 horizontal=-2.0
+        // scroll-method "no-scroll"
+        // scroll-button 273
+        // scroll-button-lock
+        // left-handed
+        // middle-emulation
+    }
+
+    trackpoint {
+        // off
+        // natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "on-button-down"
+        // scroll-button 273
+        // scroll-button-lock
+        // left-handed
+        // middle-emulation
+    }
+
+    trackball {
+        // off
+        // natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "on-button-down"
+        // scroll-button 273
+        // scroll-button-lock
+        // left-handed
+        // middle-emulation
+    }
+
+    tablet {
+        // off
+        map-to-output "eDP-1"
+        // left-handed
+        // calibration-matrix 1.0 0.0 0.0 0.0 1.0 0.0
+    }
+
+    touch {
+        // off
+        map-to-output "eDP-1"
+        // calibration-matrix 1.0 0.0 0.0 0.0 1.0 0.0
+    }
+    focus-follows-mouse max-scroll-amount="0%"
+}
+
+
+layout {
+    center-focused-column "always"
+    background-color "transparent"
+    // empty-workspace-above-first
+    
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    default-column-width { proportion 0.5; }
+
+    focus-ring {
+        width 10
+        active-color "#202020ff"
+        urgent-color "#bb0000ff"
+    }
+
+    border {
+        width 4
+        active-color "#202020ff"
+        inactive-color "#202020ff"
+        urgent-color "#9b0000"
+    }
+
+    shadow {
+        on
+        softness 50
+        spread 10
+        offset x=0 y=0
+        color "rgba(0, 0, 0, 0.71)"
+    }
+
+    tab-indicator {
+        on
+        place-within-column
+        gap 5
+        width 4
+        length total-proportion=0.5
+        position "right"
+        gaps-between-tabs 10
+        corner-radius 8
+        active-color "rgba(255, 255, 255, 1)"
+        inactive-color "rgba(157, 157, 157, 1)"
+        urgent-color "red"
+    }
+
+    struts {
+        left 64
+        right 64
+        top 60
+        bottom 60
+    }
+}
+
+overview {
+    workspace-shadow {
+        off
+    }
+}
+
+gestures {
+    dnd-edge-view-scroll {
+        trigger-width 30
+        delay-ms 100
+        max-speed 1500
+    }
+
+    dnd-edge-workspace-switch {
+        trigger-height 50
+        delay-ms 100
+        max-speed 1500
+    }
+
+    hot-corners {
+        // off
+        top-left
+        // top-right
+        // bottom-left
+        // bottom-right
+    }
+}
+
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+prefer-no-csd
+
+screenshot-path null
+
+animations {
+}
+
+cursor {
+    hide-when-typing
+    xcursor-theme "Bibata-Modern-Ice"
+    xcursor-size 20
+}
+
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+layer-rule {
+    match namespace="^swww-daemon$"
+    place-within-backdrop true
+}
+
+window-rule {
+    match app-id=r#"kitty$"#
+    open-floating true
+    default-window-height { fixed 500; }
+    default-column-width { proportion 0.75; }
+}
+
+window-rule {
+    geometry-corner-radius 10
+    clip-to-geometry true
+}
+
+recent-windows {
+    // off
+    debounce-ms 750
+
+    open-delay-ms 150
+
+    highlight {
+        active-color "#242424ff"
+        urgent-color "#ff9999ff"
+        padding 30
+        corner-radius 10
+    }
+
+    previews {
+        max-height 480
+        max-scale 0.5
+    }
+
+}
+
+switch-events {
+    tablet-mode-on { spawn "bash" "-c" "gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled true"; }
+    tablet-mode-off { spawn "bash" "-c" "gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false"; }
+}

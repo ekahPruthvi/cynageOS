@@ -1,0 +1,19 @@
+spawn-at-startup "capsule"
+spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
+
+spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
+spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
+spawn-sh-at-startup "wpctl set-volume @DEFAULT_AUDIO_SINK@ 90%"
+spawn-sh-at-startup "mpv --no-video --volume=100 $HOME/.config/niri/sound/startup/default.mp3"
+
+spawn-sh-at-startup "swww-daemon && ./scripts/swwwallpaper.sh"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface icon-theme 'cynide'"
+spawn-sh-at-startup "kvantummanager --set cynage"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-name 'Cantarell 10'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface document-font-name 'Cantarell 10'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface monospace-font-name 'CaskaydiaCove Nerd Font Mono 9'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-antialiasing 'rgba'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-hinting 'full'"
+
+// user commands -----------------------------------------------------------------------------------------------------------------
