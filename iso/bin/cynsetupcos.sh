@@ -90,7 +90,6 @@ elif lspci | grep -E -i 'amd|ati|radeon'; then
   pacman -Sy --needed --noconfirm xf86-video-amdgpu linux-firmware-amdgpu linux-firmware-radeon vulkan-radeon
 fi 
 
-# Define your package list
 PKGS=(
   niri greetd archiso ark bc blueman brightnessctl cliphist code 
   cpio dnsmasq dosfstools dunst efibootmgr espeak-ng eza ffmpegthumbs flatpak fuse2
