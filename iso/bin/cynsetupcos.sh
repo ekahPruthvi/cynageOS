@@ -161,8 +161,6 @@ cat << EOF
 
 EOF
 
-# copy confis
-
 EOT
 
 sleep 1s

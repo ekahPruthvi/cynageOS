@@ -8,8 +8,8 @@ cp -r /usr/share/archiso/configs/releng $HOME/cynageiso/cos/
 # PROFILEDEF.SH
 PROFILEDEF="$HOME/cynageiso/cos/profiledef.sh"
 
-read -rp "Enter the version number (e.g., 5): " version
-read -rp "Enter the release type (e.g., alpha2 or stable): " release_type
+version='v5.0.0'
+release_type='alpha1'
 
 new_iso_name="cynageOSv$version"
 new_iso_label="cosv${version}_${release_type}_\$(date --date=\"@${SOURCE_DATE_EPOCH:-\$(date +%s)}\" +%Y%m)"
@@ -108,7 +108,7 @@ cp -r "$BaseDir/iso/lib" "$HOME/cynageiso/cos/airootfs/usr/"
 cp -r "$BaseDir/iso/var" "$HOME/cynageiso/cos/airootfs/"
 
 cd $BaseDir
-cargo build --release &&mv "$BaseDir/target/release/cap" "$HOME/cynageiso/cos/airootfs/usr/bin/" && cargo clean
+cargo build --release && mv "$BaseDir/target/release/cap" "$HOME/cynageiso/cos/airootfs/usr/bin/" && cargo clean
 
 echo "Managing permissions and creating the MOTD" && sleep 3s
 
