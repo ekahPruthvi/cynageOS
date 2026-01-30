@@ -149,6 +149,8 @@ EOF
 sed -i -E -e "s|^command = .*|command = \"niri -c /usr/bin/octobacillus/comp/config.kdl\"|" "/etc/greetd/config.toml"
 systemctl enable greetd.service
 
+echo "export NIRI_CONFIG=/var/lib/cynager/niri/config.kdl" >> ~/.bashrc
+
 cat << EOF
 
 ░▒█▀▀▀░░▀░░█▀▀▄░░▀░░█▀▀░█░░░░░▀░░█▀▀▄░█▀▀▀
