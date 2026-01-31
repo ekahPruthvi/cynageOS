@@ -6,5 +6,5 @@ set -e
 echo -e "\e[31mGetting your system ready and firing up the installer ....\e[0m" && sleep 3s
 
 NetworkManager &
-
-niri -c /var/lib/cos/compls/config.kdl 
+export WLR_RENDERER=pixman
+exec cage cap

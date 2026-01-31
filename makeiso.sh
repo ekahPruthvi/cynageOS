@@ -54,10 +54,6 @@ echo "Adding entries to file_permissions in $PROFILEDEF" && sleep 3s
 
 # packages.x86_64
 cat <<EOF >> $HOME/cynageiso/cos/packages.x86_64
-niri 
-xwayland-satellite 
-xdg-desktop-portal-gnome 
-xdg-desktop-portal-gtk
 kitty
 gcc
 meson
@@ -114,7 +110,7 @@ cp -r "$BaseDir/iso/lib" "$HOME/cynageiso/cos/airootfs/usr/"
 cp -r "$BaseDir/iso/var" "$HOME/cynageiso/cos/airootfs/"
 
 cd $BaseDir
-cargo build --release && mv "$BaseDir/target/release/cap" "$HOME/cynageiso/cos/airootfs/usr/bin/" && cargo clean
+cargo build --release && mv "$BaseDir/target/release/cap" "$HOME/cynageiso/cos/airootfs/usr/bin/"
 
 echo "Managing permissions and creating the MOTD" && sleep 3s
 
@@ -180,6 +176,8 @@ echo "Getting files redy for mkarchiso" && sleep 3s
 echo "Starting mkarchiso" && sleep 3s
 
 cd "$HOME/cynageiso/cos/"
+echo "press return"
+read
 sudo mkarchiso -v .
 
 
