@@ -7,4 +7,4 @@ echo -e "\e[31mGetting your system ready and firing up the installer ....\e[0m" 
 
 NetworkManager &
 
-cage cap
+niri -c /var/lib/cos/compls/config.kdl 

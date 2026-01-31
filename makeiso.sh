@@ -53,6 +53,10 @@ echo "Adding entries to file_permissions in $PROFILEDEF" && sleep 3s
 
 # packages.x86_64
 cat <<EOF >> $HOME/cynageiso/cos/packages.x86_64
+niri 
+xwayland-satellite 
+xdg-desktop-portal-gnome 
+xdg-desktop-portal-gtk
 gcc
 meson
 mesa
