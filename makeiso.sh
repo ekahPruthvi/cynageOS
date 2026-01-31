@@ -8,8 +8,9 @@ cp -r /usr/share/archiso/configs/releng $HOME/cynageiso/cos/
 # PROFILEDEF.SH
 PROFILEDEF="$HOME/cynageiso/cos/profiledef.sh"
 
-version='v5.0.0'
-release_type='alpha1'
+#change
+version='v5.0.0'                                                                    
+release_type='alpha1'                                                               
 
 new_iso_name="cynageOSv$version"
 new_iso_label="cosv${version}_${release_type}_\$(date --date=\"@${SOURCE_DATE_EPOCH:-\$(date +%s)}\" +%Y%m)"
@@ -57,6 +58,7 @@ niri
 xwayland-satellite 
 xdg-desktop-portal-gnome 
 xdg-desktop-portal-gtk
+kitty
 gcc
 meson
 mesa
@@ -122,6 +124,7 @@ echo "cynageOS" > "$HOME/cynageiso/cos/airootfs/etc/hostname"
 # required packages
 TARGET_DIR="$HOME/cynageiso/cos/airootfs/var/lib/cos/"
 
+#change
 # MoTD
 cat << EOF > $HOME/cynageiso/cos/airootfs/etc/motd
 __________________________________________________________________________________________________________________________________________
