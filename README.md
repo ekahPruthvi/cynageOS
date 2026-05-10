@@ -15,6 +15,15 @@ By combining modern aesthetics with user-friendly interfaces. </br></br>
 > This repository houses the links to all `CynageOS Modules` and `The Capsule Design Interface Guidelines` <br>
 > For more information regardeing cynageOS and its modules please refer to [This Page](https://ekahpruthvi.github.io/StertorusPages/blogs/notes.html).
 
+| Desktop Previerw |  |
+|---|---|
+| <img width="1919" height="1080" alt="image" src="https://github.com/user-attachments/assets/70717769-ebfe-49da-aaec-c4b44d5c1a5c" /> | <img width="1919" height="1080" alt="image" src="https://github.com/user-attachments/assets/53b5ab61-9d07-43c2-b9ad-b7f2f3c40cd9" /> | 
+| <img width="1917" height="1080" alt="image" src="https://github.com/user-attachments/assets/ffb2bdf5-bcbd-4a26-9ff4-52b269da8a35" /> | <img width="1916" height="1080" alt="image" src="https://github.com/user-attachments/assets/e1747818-9a9d-4ef1-8639-3dc56d7ce768" /> |
+
+
+
+
+
 <br><br>
 
 |   | Module  | version  |
