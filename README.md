@@ -54,7 +54,6 @@ CDIG focuses on Interface Feedback and the whole UI language built around smooth
 
 <br><br>
 # Theming
-To add your own custom theme, please refer [theming.md](https://github.com/ekahPruthvi/cynageOS/blob/main/theming.md)
 - Available themes
     - Cynage
     - Lightage (dropped support for a more unified look)
