@@ -9,7 +9,8 @@
 
 cynageOS, an innovative operating system that is meticulously crafted to boost productivity. </br>
 The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
-By combining modern aesthetics with user-friendly interfaces. </br></br>
+By combining modern aesthetics with user-friendly interfaces. </br>
+And it is based on `Arch Linux` </br></br>
 
 > [!NOTE]  
 > This repository houses the links to all `CynageOS Modules` and `The Capsule Design Interface Guidelines` <br>
