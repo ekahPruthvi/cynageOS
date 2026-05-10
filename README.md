@@ -2,8 +2,10 @@
 | <img width="100%" alt="capsule" src="https://github.com/user-attachments/assets/bae83861-0366-4018-920b-abc42287e570" /> |
 | - |
 
-| v5.0.0 pre-alpha|
-| - |
+> [!CAUTION]
+> v5.1.0 pre-alpha <br>
+> Still in development not all features are implimented <br>
+> And certainly not production ready
 
 cynageOS, an innovative operating system that is meticulously crafted to boost productivity. </br>
 The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
@@ -14,12 +16,15 @@ By combining modern aesthetics with user-friendly interfaces. </br></br>
 > For more information regardeing cynageOS and its modules please refer to [This Page](https://ekahpruthvi.github.io/StertorusPages/blogs/notes.html).
 
 <br><br>
-# CynageOS Modules
-| | | |
-| --- | --- | --- |
-| [<img width="238" height="438" alt="alt" src="https://github.com/user-attachments/assets/5a7535c1-94cd-4272-8f12-3ad044069e31" />](https://github.com/ekahPruthvi/altDotlauncher) <br> <p align="center">Alt Launcher (application launcher)</p> | [<img width="238" height="638" alt="calibrate" src="https://github.com/user-attachments/assets/9ee3dfa0-45ca-4977-9f86-f9e822db2450" />](https://github.com/ekahPruthvi/calibrate) <br> <p align="center">Calibrate (Settings)</p> | [<img width="118" height="202" alt="capsule" src="https://github.com/user-attachments/assets/7015c035-7923-46f6-9299-99276e515d83" />](https://github.com/ekahPruthvi/capsule_shell) <br> <p align="center">Capsule Shell (cynageOS Navigation)</p> |
-| [<img width="238" height="438" alt="clipper" src="https://github.com/user-attachments/assets/75700744-47e7-4b71-9fc9-d76b2e815066" />](https://github.com/ekahPruthvi/clipper) <br> <p align="center">Clipper (Clipboard Manager)</p> | [<img width="238" height="438" alt="octo" src="https://github.com/user-attachments/assets/7630cb8d-fc12-4e07-879a-d6d6abd30e2e" />](https://github.com/ekahPruthvi/octobacillus) <br> <p align="center">Octo (Lock and Login Screens)</p> | [<img width="238" height="438" alt="Power" src="https://github.com/user-attachments/assets/7c51b58d-07ee-486e-a647-f1c74ff310f6" />](https://github.com/ekahPruthvi/powerCynide) <br> <p align="center">Power Cynide (Shutdown Menu)</p> |
-| | | |
+
+|   | Module  | version  |
+|---|---|---|
+| [<img height="128" alt="alt" src="https://github.com/user-attachments/assets/5a7535c1-94cd-4272-8f12-3ad044069e31" />](https://github.com/ekahPruthvi/altDotlauncher)  | <p>Alt Launcher (application launcher)</p> | 1.2.0 |
+| [<img height="128" alt="calibrate" src="https://github.com/user-attachments/assets/9ee3dfa0-45ca-4977-9f86-f9e822db2450" />](https://github.com/ekahPruthvi/calibrate) | <p>Calibrate (Settings)</p> | 1.0.0 |
+| [<img height="128" alt="capsule" src="https://github.com/user-attachments/assets/7015c035-7923-46f6-9299-99276e515d83" />](https://github.com/ekahPruthvi/capsule_shell)  | <p>Capsule Shell (cynageOS Navigation)</p> | 1.1.5 |
+| [<img height="128" alt="clipper" src="https://github.com/user-attachments/assets/75700744-47e7-4b71-9fc9-d76b2e815066" />](https://github.com/ekahPruthvi/clipper) | <p>Clipper (Clipboard Manager)</p> | 1.0.0 |
+| [<img height="128" alt="octo" src="https://github.com/user-attachments/assets/7630cb8d-fc12-4e07-879a-d6d6abd30e2e" />](https://github.com/ekahPruthvi/octobacillus) | <p>Octo (Lock and Login Screens)</p> | 1.0.2 |
+| [<img height="128" alt="Power" src="https://github.com/user-attachments/assets/7c51b58d-07ee-486e-a647-f1c74ff310f6" />](https://github.com/ekahPruthvi/powerCynide) | <p>Power Cynide (Shutdown menu)</p> | 1.0.0 |
 
 
 
@@ -33,17 +38,22 @@ By combining modern aesthetics with user-friendly interfaces. </br></br>
 
 <br><br>
 # CDIG (Capsule Design Interface Guidelines)
-`upcomming`
+The CDIG is the design language followed by the cynageOS applications ecosystem.<br>
+The style that reflects smooth capsule and curveres as well as distinct sharp corners in places of heigher attention.<br> 
+<br>
+CDIG focuses on Interface Feedback and the whole UI language built around smoother and more prominant feedback ('as in UI that feels alive') and reactive to the USER.
+
+`UPCOMMING`
 
 <br><br>
 # Theming
 To add your own custom theme, please refer [theming.md](https://github.com/ekahPruthvi/cynageOS/blob/main/theming.md)
 - Available themes
-    - [x] Cynage
-    - [x] Lightage
+    - Cynage
+    - Lightage (dropped support for a more unified look)
 
 <br><br>
-# Packages (to be updated)
+# Packages (not updated to the latest requirements)
 | nvidia | |
 | :-- | --- |
 linux-headers | for main kernel (script will auto detect from /usr/lib/modules/)
