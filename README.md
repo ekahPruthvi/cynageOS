@@ -1,18 +1,16 @@
 
 | <img width="100%" alt="capsule" src="https://github.com/user-attachments/assets/bae83861-0366-4018-920b-abc42287e570" /> |
 | - |
+> [!NOTE]
+> `v5.1.0 alpha`
 
 > [!CAUTION]
-> `v5.1.0 alpha` <br>
 > Still in development not all features are implimented <br>
 > And certainly not production ready <br>
-> This project is not VIBE CODED. AI HELP IS ONLY TAKEN TO LEARN ABOUT HOW TO MAKE AN ISO,
+> This project is not VIBE CODED. AI HELP IS ONLY TAKEN TO LEARN ABOUT HOW TO MAKE AN ISO,<br>
 > AI help is taken to learn because it saved my time while also studying.
 
-cynageOS, an innovative operating system that is meticulously crafted to boost productivity. </br>
-The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
-By combining modern aesthetics with user-friendly interfaces. </br>
-And it is based on `Arch Linux` </br></br>
+cynageOS is a Linux desktop environment (DE) with an Arch Linux ISO, and has been designed as a bold alternative to the now common DEs.<br>Thanks for the developers behind niri WM for making such a wonderfull WM and ipc support</br>
 
 | Desktop Previerw |  |
 |---|---|
@@ -21,7 +19,8 @@ And it is based on `Arch Linux` </br></br>
 
 <br>
 
-> [!NOTE]  
+## COS Modules
+
 > This repository houses the links to all `CynageOS Modules` and `The Capsule Design Interface Guidelines` <br>
 > For more information regardeing cynageOS and its modules please refer to [This Page](https://ekahpruthvi.github.io/StertorusPages/blogs/notes.html).
 
