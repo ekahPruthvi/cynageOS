@@ -3,7 +3,7 @@
 | - |
 
 > [!CAUTION]
-> `v5.1.0 pre-alpha` <br>
+> `v5.1.0 alpha` <br>
 > Still in development not all features are implimented <br>
 > And certainly not production ready
 
