@@ -28,12 +28,12 @@ By combining modern aesthetics with user-friendly interfaces. </br></br>
 
 |   | Module  | version  |
 |---|---|---|
-| [<img height="128" alt="alt" src="https://github.com/user-attachments/assets/5a7535c1-94cd-4272-8f12-3ad044069e31" />](https://github.com/ekahPruthvi/altDotlauncher)  | <p>Alt Launcher (application launcher)</p> | 1.2.0 |
-| [<img height="128" alt="calibrate" src="https://github.com/user-attachments/assets/9ee3dfa0-45ca-4977-9f86-f9e822db2450" />](https://github.com/ekahPruthvi/calibrate) | <p>Calibrate (Settings)</p> | 1.0.0 |
-| [<img height="128" alt="capsule" src="https://github.com/user-attachments/assets/7015c035-7923-46f6-9299-99276e515d83" />](https://github.com/ekahPruthvi/capsule_shell)  | <p>Capsule Shell (cynageOS Navigation)</p> | 1.1.5 |
-| [<img height="128" alt="clipper" src="https://github.com/user-attachments/assets/75700744-47e7-4b71-9fc9-d76b2e815066" />](https://github.com/ekahPruthvi/clipper) | <p>Clipper (Clipboard Manager)</p> | 1.0.0 |
-| [<img height="128" alt="octo" src="https://github.com/user-attachments/assets/7630cb8d-fc12-4e07-879a-d6d6abd30e2e" />](https://github.com/ekahPruthvi/octobacillus) | <p>Octo (Lock and Login Screens)</p> | 1.0.2 |
-| [<img height="128" alt="Power" src="https://github.com/user-attachments/assets/7c51b58d-07ee-486e-a647-f1c74ff310f6" />](https://github.com/ekahPruthvi/powerCynide) | <p>Power Cynide (Shutdown menu)</p> | 1.0.0 |
+| [<img height="100" alt="alt" src="https://github.com/user-attachments/assets/5a7535c1-94cd-4272-8f12-3ad044069e31" />](https://github.com/ekahPruthvi/altDotlauncher)  | <p>Alt Launcher (application launcher)</p> | 1.2.0 |
+| [<img height="100" alt="calibrate" src="https://github.com/user-attachments/assets/9ee3dfa0-45ca-4977-9f86-f9e822db2450" />](https://github.com/ekahPruthvi/calibrate) | <p>Calibrate (Settings)</p> | 1.0.0 |
+| [<img height="100" alt="capsule" src="https://github.com/user-attachments/assets/7015c035-7923-46f6-9299-99276e515d83" />](https://github.com/ekahPruthvi/capsule_shell)  | <p>Capsule Shell (cynageOS Navigation)</p> | 1.1.5 |
+| [<img height="100" alt="clipper" src="https://github.com/user-attachments/assets/75700744-47e7-4b71-9fc9-d76b2e815066" />](https://github.com/ekahPruthvi/clipper) | <p>Clipper (Clipboard Manager)</p> | 1.0.0 |
+| [<img height="100" alt="octo" src="https://github.com/user-attachments/assets/7630cb8d-fc12-4e07-879a-d6d6abd30e2e" />](https://github.com/ekahPruthvi/octobacillus) | <p>Octo (Lock and Login Screens)</p> | 1.0.2 |
+| [<img height="100" alt="Power" src="https://github.com/user-attachments/assets/7c51b58d-07ee-486e-a647-f1c74ff310f6" />](https://github.com/ekahPruthvi/powerCynide) | <p>Power Cynide (Shutdown menu)</p> | 1.0.0 |
 
 
 
