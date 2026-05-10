@@ -6,8 +6,8 @@
 > `v5.1.0 alpha` <br>
 > Still in development not all features are implimented <br>
 > And certainly not production ready <br>
-> This project is not VIBE CODED. AI HELP IS ONLY TAKEN TO LEARN ABOUT HOW TO MAKE AN ISO
-> AI help is taken to learn because it saved my time while also studying for my degree.
+> This project is not VIBE CODED. AI HELP IS ONLY TAKEN TO LEARN ABOUT HOW TO MAKE AN ISO,
+> AI help is taken to learn because it saved my time while also studying.
 
 cynageOS, an innovative operating system that is meticulously crafted to boost productivity. </br>
 The design philosophy revolves around minimizing distractions while providing an aesthetically pleasing experience.</br>
