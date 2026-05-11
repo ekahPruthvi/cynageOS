@@ -4,6 +4,10 @@
 > [!NOTE]
 > `v5.1.0 alpha`
 
+
+| Visitors  |![:pdpdawg7846](https://count.getloli.com/@:pdpdawg7846?theme=sketch-1)|
+|---|---|
+
 > [!CAUTION]
 > Still in development not all features are implimented <br>
 > And certainly not production ready <br>
