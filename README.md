@@ -2,7 +2,7 @@
 | <img width="100%" alt="capsule" src="https://github.com/user-attachments/assets/bae83861-0366-4018-920b-abc42287e570" /> |
 | - |
 > [!NOTE]
-> `v5.1.0 alpha`
+> `v5 alpha`
 
 
 | Visitors  |![:pdpdawg7846](https://count.getloli.com/@:pdpdawg7846?theme=sketch-1)|
@@ -25,8 +25,15 @@ cynageOS is a Linux desktop environment (DE) with an Arch Linux ISO, and has bee
 
 ## COS Modules
 
-> This repository houses the links to all `CynageOS Modules` and `The Capsule Design Interface Guidelines` <br>
-> For more information regardeing cynageOS and its modules please refer to [This Page](https://ekahpruthvi.github.io/StertorusPages/blogs/notes.html).
+> ### This repository houses the links to all `CynageOS Modules` (click on the icons)  and `The Capsule Design Interface Guidelines` <br>
+> ### For more information regardeing cynageOS and its modules please refer to [This Page](https://ekahpruthvi.github.io/StertorusPages/blogs/notes.html).
+
+```text
+version info : *.*.**
+                 | | └ Minor bug fixes and small changes.
+                 | └ New feature addons and test features.
+                 └ Major Updates and Changes.
+```
 
 |   | Module  | version  |
 |---|---|---|
