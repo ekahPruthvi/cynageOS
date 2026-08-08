@@ -29,10 +29,10 @@ cynageOS is a Linux desktop environment (DE) with an Arch Linux ISO, and has bee
 > ### For more information regardeing cynageOS and its modules please refer to [This Page](https://ekahpruthvi.github.io/StertorusPages/blogs/notes.html).
 
 ```text
-version info : *.*.**
-                 | | └ Minor bug fixes and small changes.
-                 | └ New feature addons and test features.
-                 └ Major Updates and Changes.
+version info : 0.0.00
+               | | └ Minor bug fixes and small changes.
+               | └ New feature addons and test features.
+               └ Major Updates and Changes.
 ```
 
 |   | Module  | version  |
