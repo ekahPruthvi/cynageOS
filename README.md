@@ -33,6 +33,7 @@ version info : 0.0.00
                | | └ Minor bug fixes and small changes.
                | └ New feature addons and test features.
                └ Major Updates and Changes.
+this version for the modules are the module binaries included in the latest ISO release and do not reflect the actual test binaries.
 ```
 
 |   | Module  | version  |
