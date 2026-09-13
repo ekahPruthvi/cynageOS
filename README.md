@@ -11,8 +11,6 @@
 > [!CAUTION]
 > Still in development not all features are implimented <br>
 > And certainly not production ready <br>
-> This project is not VIBE CODED. AI HELP IS ONLY TAKEN TO LEARN ABOUT HOW TO MAKE AN ISO,<br>
-> AI help is taken to learn because it saved my time while also studying.
 
 cynageOS is a Linux desktop environment (DE) with an Arch Linux ISO, and has been designed as a bold alternative to the now common DEs.<br>Thanks for the developers behind niri WM for making such a wonderfull WM and ipc support</br>
 
